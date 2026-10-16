@@ -1,13 +1,13 @@
-{
-    "python.pythonPath": "/usr/local/bin/python3.10",
-    "workbench.colorCustomizations": {
-      "titleBar.activeBackground": "#4CAF50",  // Colore della barra del titolo
-      "statusBar.background": "#388E3C",      // Colore della barra di stato
-      "editor.background": "#06032c",         // Colore di sfondo dell'editor (area del codice)
-      "editor.foreground": "#e2c9d9",          // Colore del testo del codice
-      "sideBar.background": "#34428083",        // Colore di sfondo della barra laterale
-      "sideBar.foreground": "#d6d3d3",        // Colore del testo nella barra laterale
-      "sideBarSectionHeader.background": "#3b3a29",  // Colore dello sfondo delle sezioni nella barra laterale
-      "sideBarTitle.foreground": "#000000"    // Colore del titolo delle sezioni nella barra laterale
-    },
-}
+// {
+//     "python.pythonPath": "/usr/local/bin/python3.10",
+//     "workbench.colorCustomizations": {
+//       "titleBar.activeBackground": "#4CAF50",  // Colore della barra del titolo
+//       "statusBar.background": "#388E3C",      // Colore della barra di stato
+//       "editor.background": "#06032c",         // Colore di sfondo dell'editor (area del codice)
+//       "editor.foreground": "#e2c9d9",          // Colore del testo del codice
+//       "sideBar.background": "#34428083",        // Colore di sfondo della barra laterale
+//       "sideBar.foreground": "#d6d3d3",        // Colore del testo nella barra laterale
+//       "sideBarSectionHeader.background": "#3b3a29",  // Colore dello sfondo delle sezioni nella barra laterale
+//       "sideBarTitle.foreground": "#000000"    // Colore del titolo delle sezioni nella barra laterale
+//     },
+// }
