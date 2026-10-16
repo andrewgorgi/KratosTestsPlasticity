@@ -1,0 +1,190 @@
+{
+  "problem_data": {
+    "problem_name": "example_1_kratos",
+    "echo_level": 0,
+    "parallel_type": "OpenMP",
+    "start_time": 0,
+    "end_time": 1.0
+  },
+  "solver_settings"  : {
+    "solver_type"                        : "stationary",
+    "analysis_type"                      : "non_linear",
+    "model_part_name"                    : "IgaModelPart",
+    "domain_size"                        : 2,
+    "model_import_settings": { "input_type": "use_input_model_part" },
+    "material_import_settings": { "materials_filename": "materials.json" },
+    "linear_solver_settings":{
+      "solver_type": "skyline_lu_factorization"
+      // "solver_type": "LinearSolversApplication.sparse_lu"
+    }, 
+    "line_search"                        : false,
+    "echo_level"                         : 0,
+    "compute_reactions"                  : false,
+    "max_iteration"                      : 3,
+    "solution_relative_tolerance"        : 1e-14,
+    "solution_absolute_tolerance"        : 1e-14,
+    "residual_relative_tolerance"        : 1e-14,
+    "residual_absolute_tolerance"        : 1e-14,
+    "time_stepping"                      : {
+        "time_step" : 1e20
+    }
+},
+  "modelers": [
+    {
+      "modeler_name" : "import_mdpa_modeler",
+      "kratos_module" : "KratosMultiphysics",
+      "Parameters" : {
+        // "input_filename" : "mdpa_files/Weird_shape_bunny",
+        "input_filename" : "mdpa_files/Weird_shape3",
+        // "input_filename" : "mdpa_files/circle_for_sbm2",
+        "model_part_name" : "initial_skin_model_part_in"
+        }
+    },
+    {
+      "modeler_name" : "import_mdpa_modeler",
+      "kratos_module" : "KratosMultiphysics",
+      "Parameters" : {
+        "input_filename" : "mdpa_files/external_5",
+        // "input_filename" : "mdpa_files/circle_for_sbm2",
+        "model_part_name" : "initial_skin_model_part_out"
+        }
+    },
+    {
+      "modeler_name": "NurbsGeometryModelerSbm",
+      "Parameters": {
+          // "echo_level": 4,
+          "model_part_name" : "IgaModelPart",
+          "lower_point_xyz": [0.0,0.0,0.0],
+          "upper_point_xyz": [2.0,2.1,0.0],
+          "lower_point_uvw": [0.0,0.0,0.0],
+          "upper_point_uvw": [2.0,2.1,0.0],
+          "polynomial_order" : [2, 2],
+          "number_of_knot_spans" : [45,45],
+          "lambda_outer": 0.5,
+          "lambda_inner": 0.5,
+          "number_of_inner_loops": 1,
+          "skin_model_part_outer_initial_name": "initial_skin_model_part_out",    
+          "skin_model_part_inner_initial_name": "initial_skin_model_part_in",           
+          "skin_model_part_name": "skin_model_part"
+      }
+    },
+    {
+      "modeler_name": "IgaModelerSbm",
+      "Parameters": {
+      "echo_level": 4,
+      "skin_model_part_name": "skin_model_part",
+      "analysis_model_part_name": "IgaModelPart",
+      "element_condition_list": [
+          {
+              "geometry_type": "GeometrySurface",
+              "iga_model_part": "ConvectionDiffusionDomain",
+              "type": "element",
+              "name": "LaplacianIGAElement",
+              "shape_function_derivatives_order": 2
+          },
+          {
+              "geometry_type": "SurfaceEdge",
+              // "brep_ids" : [2,3,4,5],
+              "iga_model_part": "SBM_Support_outer",
+              "type": "condition",
+              "name": "SbmLaplacianConditionDirichlet",
+              // "name": "SupportLaplacianCondition",
+              "shape_function_derivatives_order": 6,
+              "sbm_parameters": {
+                  "is_inner" : false
+              }
+          }
+          ,
+          {
+            "geometry_type": "SurfaceEdge",
+            "iga_model_part": "SBM_Support_inner",
+            "type": "condition",
+            "name": "SbmLaplacianConditionDirichlet",
+            // "name": "SupportLaplacianCondition",
+            "shape_function_derivatives_order": 6,
+            "sbm_parameters": {
+                "is_inner" : true
+            }
+          }
+      ]
+      }
+  }
+  ],
+  "processes": {
+    "additional_processes": [
+      {
+        "python_module": "assign_iga_external_conditions_process",
+        "kratos_module" : "KratosMultiphysics.IgaApplication",
+        "process_name"  : "AssignIgaExternalConditionsProcess",
+        "Parameters": {
+          "echo_level": 0,
+          "model_part_name": "IgaModelPart",
+          "element_condition_list": [
+            {
+                "iga_model_part": "ConvectionDiffusionDomain",
+                "variables": [
+                {
+                    "variable_name": "HEAT_FLUX",
+                    // "value": "-4.0"
+                    // "value": "-6*x-6*y"
+                    "value": "0.0"
+                }]
+            },
+            {
+                "iga_model_part": "SBM_Support_outer",
+                "variables": [
+                {
+                    "variable_name": "TEMPERATURE",
+                    // "value": "x**2+y**2"
+                    // "value": "x**3+y**3"
+                    "value"           : "sin(x)*sinh(y)"
+                }]
+            }
+            ,
+            {
+                "iga_model_part": "SBM_Support_inner",
+                "variables": [
+                {
+                    "variable_name": "TEMPERATURE",
+                    // "value": "x**2+y**2"
+                    // "value": "x**3+y**3"
+                    "value"           : "sin(x)*sinh(y)"
+                }]
+            }
+          ]
+        }
+      }
+    ],
+    "dirichlet_process_list": [
+       {
+        "kratos_module": "KratosMultiphysics",
+        "python_module": "assign_scalar_variable_to_nodes_process",
+        "Parameters": {
+          "model_part_name": "skin_model_part.outer",
+          "variable_name": "TEMPERATURE",
+          // "value"           : "x**3+y**3"
+          "value"           : "sin(x)*sinh(y)"
+          // "value"           : "x**2+y**2"
+        }
+      }
+      ,
+      {
+        "kratos_module": "KratosMultiphysics",
+        "python_module": "assign_scalar_variable_to_nodes_process",
+        "Parameters": {
+          "model_part_name": "skin_model_part.inner",
+          "variable_name": "TEMPERATURE",
+          // "value"           : "x**3+y**3"
+          "value"           : "sin(x)*sinh(y)"
+          // "value"           : "x**2+y**2"
+        }
+      }
+    ],
+    "constraints_process_list"        : []
+},
+  "output_processes": {
+    "output_process_list": []
+  }
+}
+
+
