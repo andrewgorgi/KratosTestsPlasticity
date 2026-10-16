@@ -1,0 +1,29 @@
+{
+  "method": "body_fitted",
+  "spans": [
+    20.0,
+    10.0
+  ],
+  "hx": 0.2,
+  "hy": 0.2,
+  "active_cells": 200,
+  "active_points": 1800,
+  "points_per_cell": [
+    9
+  ],
+  "area": 8.0,
+  "gauss_min": [
+    0.022540333075851654,
+    0.022540333075851654
+  ],
+  "gauss_max": [
+    3.97745966692415,
+    1.9774596669241489
+  ],
+  "conditions": 300,
+  "condition_types": [
+    "\"SupportSolidCondition\""
+  ],
+  "exact_trial_yielded_boundary_points": 0,
+  "exact_trial_boundary_max": 1.2096619576886424e-12
+}

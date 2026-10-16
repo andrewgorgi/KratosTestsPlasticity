@@ -1,0 +1,77 @@
+[
+  {
+    "case": "annulus_elastic",
+    "degree": 2,
+    "spans": 20,
+    "dt": 0.0001,
+    "material": {
+      "DENSITY": 1.0,
+      "EXPONENTIAL_SATURATION_YIELD_STRESS": 201.0,
+      "HARDENING_EXPONENT": 0.0,
+      "ISOTROPIC_HARDENING_MODULUS": 10000.0,
+      "PENALTY_FACTOR": -1,
+      "POISSON_RATIO": 0.0,
+      "THICKNESS": 1.0,
+      "YIELD_STRESS": 201.0,
+      "YOUNG_MODULUS": 67000.0
+    },
+    "status": "converged",
+    "time": 0.0002,
+    "L2_relative": 0.0020659405452688904,
+    "H1_bulk_relative": 0.01331671153700986,
+    "max_equivalent_plastic_strain": 0.0,
+    "boundary": "dirichlet",
+    "lambda_inner": 1.0,
+    "lambda_outer": 1.0
+  },
+  {
+    "case": "annulus_elastic",
+    "degree": 2,
+    "spans": 40,
+    "dt": 0.0001,
+    "material": {
+      "DENSITY": 1.0,
+      "EXPONENTIAL_SATURATION_YIELD_STRESS": 201.0,
+      "HARDENING_EXPONENT": 0.0,
+      "ISOTROPIC_HARDENING_MODULUS": 10000.0,
+      "PENALTY_FACTOR": -1,
+      "POISSON_RATIO": 0.0,
+      "THICKNESS": 1.0,
+      "YIELD_STRESS": 201.0,
+      "YOUNG_MODULUS": 67000.0
+    },
+    "status": "converged",
+    "time": 0.0002,
+    "L2_relative": 0.0004571071098523954,
+    "H1_bulk_relative": 0.005235250518656749,
+    "max_equivalent_plastic_strain": 0.0,
+    "boundary": "dirichlet",
+    "lambda_inner": 1.0,
+    "lambda_outer": 1.0
+  },
+  {
+    "case": "annulus_elastic",
+    "degree": 2,
+    "spans": 80,
+    "dt": 0.0001,
+    "material": {
+      "DENSITY": 1.0,
+      "EXPONENTIAL_SATURATION_YIELD_STRESS": 201.0,
+      "HARDENING_EXPONENT": 0.0,
+      "ISOTROPIC_HARDENING_MODULUS": 10000.0,
+      "PENALTY_FACTOR": -1,
+      "POISSON_RATIO": 0.0,
+      "THICKNESS": 1.0,
+      "YIELD_STRESS": 201.0,
+      "YOUNG_MODULUS": 67000.0
+    },
+    "status": "converged",
+    "time": 0.0002,
+    "L2_relative": 0.00010814836181550432,
+    "H1_bulk_relative": 0.002434152225359837,
+    "max_equivalent_plastic_strain": 0.0,
+    "boundary": "dirichlet",
+    "lambda_inner": 1.0,
+    "lambda_outer": 1.0
+  }
+]

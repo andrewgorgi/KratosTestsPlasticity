@@ -1,0 +1,26 @@
+diff --git a/applications/IgaApplication/custom_conditions/support_solid_condition.cpp b/applications/IgaApplication/custom_conditions/support_solid_condition.cpp
+index 340b4bfbf15..659ab013909 100644
+--- a/applications/IgaApplication/custom_conditions/support_solid_condition.cpp
++++ b/applications/IgaApplication/custom_conditions/support_solid_condition.cpp
+@@ -20,7 +20,7 @@
+ #include "custom_conditions/support_solid_condition.h"
+ // #define SWITCH_OFF_NISCHE  
+ 
+-#define ANALYTICAL_TANGENT
++// Use the tangent returned by the selected constitutive law.
+ 
+ namespace Kratos
+ {
+diff --git a/applications/IgaApplication/custom_elements/solid_element.cpp b/applications/IgaApplication/custom_elements/solid_element.cpp
+index b31aa6218fc..fe9e27f4b37 100644
+--- a/applications/IgaApplication/custom_elements/solid_element.cpp
++++ b/applications/IgaApplication/custom_elements/solid_element.cpp
+@@ -22,7 +22,7 @@
+ // Application includes
+ #include "custom_elements/solid_element.h"
+ 
+-#define ANALYTICAL_TANGENT
++// Use stress and tangent returned by the selected constitutive law.
+ 
+ namespace Kratos
+ {

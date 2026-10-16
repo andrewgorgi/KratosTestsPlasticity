@@ -1,0 +1,18 @@
+MACRO_OFF_SYNTAX_OK cut_sbm_solid_element.cpp
+/tmp/cut_analytical_macro_off/cut_sbm_solid_condition.cpp: In member function ‘virtual void Kratos::CutSbmSolidCondition::CalculateRightHandSide(Kratos::Condition::VectorType&, const Kratos::ProcessInfo&)’:
+/tmp/cut_analytical_macro_off/cut_sbm_solid_condition.cpp:319:23: warning: unused variable ‘id1’ [-Wunused-variable]
+  319 |             const int id1 = 2*idim;
+      |                       ^~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-template-id-cdtor’ may have been intended to silence earlier diagnostics
+MACRO_OFF_SYNTAX_OK cut_sbm_solid_condition.cpp
+/tmp/cut_analytical_macro_off/cut_sbm_solid_interface_condition.cpp: In member function ‘virtual void Kratos::CutSbmSolidInterfaceCondition::CalculateRightHandSide(Kratos::Condition::VectorType&, const Kratos::ProcessInfo&)’:
+/tmp/cut_analytical_macro_off/cut_sbm_solid_interface_condition.cpp:609:19: warning: unused variable ‘r_D_on_true_plus’ [-Wunused-variable]
+  609 |     const Matrix& r_D_on_true_plus = values_true_plus.GetConstitutiveMatrix();
+      |                   ^~~~~~~~~~~~~~~~
+/tmp/cut_analytical_macro_off/cut_sbm_solid_interface_condition.cpp:634:19: warning: unused variable ‘r_D_on_true_minus’ [-Wunused-variable]
+  634 |     const Matrix& r_D_on_true_minus = values_true_minus.GetConstitutiveMatrix();
+      |                   ^~~~~~~~~~~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-template-id-cdtor’ may have been intended to silence earlier diagnostics
+MACRO_OFF_SYNTAX_OK cut_sbm_solid_interface_condition.cpp

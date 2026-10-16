@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "model_part_name": "IgaModelPart",
+      "properties_id": 2,
+      "Material": {
+        "name": "lin_el",
+        "constitutive_law": {
+          "name": "LinearElasticPlaneStrain2DLaw"
+        },
+        "Variables": {
+          "DENSITY": 1.0,
+          "YOUNG_MODULUS": 67000.0,
+          "POISSON_RATIO": 0.0,
+          "THICKNESS": 1.0,
+          "PENALTY_FACTOR": -1.0
+        },
+        "Tables": {}
+      }
+    }
+  ]
+}

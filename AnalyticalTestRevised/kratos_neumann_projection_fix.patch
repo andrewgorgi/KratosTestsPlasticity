@@ -1,0 +1,68 @@
+--- a/applications/IgaApplication/custom_modelers/iga_modeler_sbm.cpp
++++ b/applications/IgaApplication/custom_modelers/iga_modeler_sbm.cpp
+@@ -455,19 +455,53 @@
+             // Use the search in radius to find the closest point
+             SizeType obtained_results = testBins.SearchInRadius(*p_integration_point, search_radius, results.begin(), list_of_distances.begin(), number_of_results);
+ 
++            // A shifted Neumann operator needs a nonzero projection onto
++            // the true normal. Near mixed-boundary corners, distance alone can
++            // project a vertical surrogate face onto a horizontal Neumann side.
++            // Keep those incompatible candidates out of both projection choices.
++            const ModelPart& r_skin = is_inner ? skin_sub_model_part_in : skin_sub_model_part_out;
++            array_1d<double, 3> surrogate_normal = -geometries[j].Normal(
++                0, geometries[j].GetDefaultIntegrationMethod());
++            surrogate_normal /= norm_2(surrogate_normal);
++            const auto compatible_projection = [&](const IndexType result_index) {
++                const auto& r_skin_condition = r_skin.GetCondition(results[result_index]->Id());
++                if (r_skin_condition.GetValue(CONDITION_NAME) != "SbmLoadSolidCondition") {
++                    return true;
++                }
++                const auto& r_skin_geometry = r_skin_condition.GetGeometry();
++                array_1d<double, 3> true_normal = r_skin_geometry[0].GetValue(NORMAL);
++                if (norm_2(true_normal) <= 1e-13 && r_skin_geometry.size() == 2) {
++                    const auto tangent = r_skin_geometry[1] - r_skin_geometry[0];
++                    true_normal[0] = tangent[1];
++                    true_normal[1] = -tangent[0];
++                    true_normal[2] = 0.0;
++                }
++                if (is_inner) {
++                    true_normal *= -1.0;
++                }
++                const double normal_length = norm_2(true_normal);
++                return normal_length > 1e-13 &&
++                    inner_prod(surrogate_normal, true_normal) / normal_length > 1e-12;
++            };
++
+             double minimum_distance = 1e14;
+ 
+-            // Find the nearest node
+-            IndexType nearest_node_id;
++            // Find the nearest compatible skin point.
++            IndexType nearest_node_id = obtained_results;
+             for (IndexType k = 0; k < obtained_results; k++) {
+                 double current_distance = list_of_distances[k];   
+-                if (current_distance < minimum_distance) { 
++                if (current_distance < minimum_distance && compatible_projection(k)) {
+                     minimum_distance = current_distance;
+                     nearest_node_id = k;
+                 }
+             }
+             KRATOS_ERROR_IF(obtained_results == 0) << "::[IgaModelerSbm]:: Zero points found in serch for projection of point: " <<
+                 integration_point << std::endl;
++
++            KRATOS_ERROR_IF(nearest_node_id == obtained_results)
++                << "No compatible skin projection for surrogate point " << integration_point
++                << ". SbmLoadSolidCondition requires a positive true/surrogate normal product."
++                << std::endl;
+ 
+             std::string closest_layer_name;
+             const int closest_condition_id = results[nearest_node_id]->Id();
+@@ -487,7 +521,7 @@
+                     condition_layer_name = skin_sub_model_part_in.GetCondition(condition_id).GetValue(LAYER_NAME);
+                 else
+                     condition_layer_name = skin_sub_model_part_out.GetCondition(condition_id).GetValue(LAYER_NAME);
+-                if (current_distance < minimum_distance && condition_layer_name != closest_layer_name) { 
++                if (current_distance < minimum_distance && condition_layer_name != closest_layer_name && compatible_projection(k)) { 
+                     minimum_distance = current_distance;
+                     second_nearest_node_id = k;
+                 }

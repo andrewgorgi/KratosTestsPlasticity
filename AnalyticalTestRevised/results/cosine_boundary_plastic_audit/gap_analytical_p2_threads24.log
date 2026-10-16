@@ -1,0 +1,180 @@
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.3."0"-branch_plasticity_IGA_GAP_SBM-72d38d4d83f-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 24.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [9](-0.5,0.0875,0.675,1.2625,1.85,2.4375,3.025,3.6125,4.2)
+    KNOT_VECTOR_V : [5](-0.3,0.3,0.9,1.5,2.1)
+    KNOT_SPAN_SIZES : [2](0.5875,0.6)
+    PARAMETER_SPACE_CORNERS : [[2](-0.5,4.2), [2](-0.3,2.1)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 9
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Number of Geometries  : 17
+    Mesh 0 :
+        Number of Nodes       : 105
+        Number of Properties  : 1
+        Number of Elements    : 11088
+        Number of Conditions  : 304
+        Number of Constraints : 0
+
+    -GapElements- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 288
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -GapInterfaces- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 192
+            Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 97200
+            Number of Properties  : 0
+            Number of Elements    : 10800
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -bottom- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+    -left- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -right- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 GAP_ANALYTICAL_RUN {"degree": 2, "threads": 24, "spans": [8, 4], "success": true, "L2_relative": 0.040400949052586586, "H1_bulk_relative": 0.09104432513694902, "area": 8.0, "H1_bulk_area": 4.229999999999999, "time": 0.0025, "iterations": [{"time": 0.00125, "converged": true, "iterations": 6}, {"time": 0.0025, "converged": true, "iterations": 5}]}
+:
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 45
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 16
+            Number of Constraints : 0
+    -top- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+::[MechanicalSolver]:: : Finished initialization. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.00125 
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.0025 
+::[KSM Simulation]:: : Analysis -END-  
+Deregistering KratosMultiphysics
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering IgaApplication
+Deregistering StructuralMechanicsApplication

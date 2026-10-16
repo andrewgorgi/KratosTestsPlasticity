@@ -1,0 +1,113 @@
+{
+    "Surfaces": [],
+    "Lines": [
+        {
+            "Layer": "Layer0",
+            "Weights": [
+                1,
+                1
+            ],
+            "CPCoordinates": [
+                [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    1.0,
+                    0.0
+                ]
+            ],
+            "knotVector": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "id": 1,
+            "pDegree": 1
+        },
+        {
+            "Layer": "Layer0",
+            "Weights": [
+                1,
+                1
+            ],
+            "CPCoordinates": [
+                [
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    2.0,
+                    0.0
+                ]
+            ],
+            "knotVector": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "id": 2,
+            "pDegree": 1
+        },
+        {
+            "Layer": "Layer0",
+            "Weights": [
+                1,
+                1
+            ],
+            "CPCoordinates": [
+                [
+                    0.0,
+                    2.0,
+                    0.0
+                ],
+                [
+                    -1.0,
+                    1.0,
+                    0.0
+                ]
+            ],
+            "knotVector": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "id": 3,
+            "pDegree": 1
+        },
+        {
+            "Layer": "Layer0",
+            "Weights": [
+                1,
+                1
+            ],
+            "CPCoordinates": [
+                [
+                    -1.0,
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "knotVector": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "id": 4,
+            "pDegree": 1
+        }
+    ]
+}

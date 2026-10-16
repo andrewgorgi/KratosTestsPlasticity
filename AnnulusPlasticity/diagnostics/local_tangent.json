@@ -1,0 +1,194 @@
+[
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 49,
+    "h": 1e-07,
+    "relative_tangent_error": 1.874834293559466e-11,
+    "fd_norm": 13804.664152548756
+  },
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 49,
+    "h": 1e-08,
+    "relative_tangent_error": 7.366983839369273e-10,
+    "fd_norm": 13804.664153173264
+  },
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 50,
+    "h": 1e-07,
+    "relative_tangent_error": 1.7464541438219087e-11,
+    "fd_norm": 18056.252160731055
+  },
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 50,
+    "h": 1e-08,
+    "relative_tangent_error": 1.1495991406526815e-10,
+    "fd_norm": 18056.25216143017
+  },
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 51,
+    "h": 1e-07,
+    "relative_tangent_error": 5.375619598647737e-11,
+    "fd_norm": 10711.23465192468
+  },
+  {
+    "degree": 1,
+    "condition": "SbmSolidCondition",
+    "id": 51,
+    "h": 1e-08,
+    "relative_tangent_error": 7.843826595168471e-11,
+    "fd_norm": 10711.234652788198
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 145,
+    "h": 1e-07,
+    "relative_tangent_error": 2.182002363124987e-10,
+    "fd_norm": 1116.041218531901
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 145,
+    "h": 1e-08,
+    "relative_tangent_error": 1.1096048655547429e-10,
+    "fd_norm": 1116.0412184030781
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 146,
+    "h": 1e-07,
+    "relative_tangent_error": 2.245932422424381e-10,
+    "fd_norm": 776.505679552705
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 146,
+    "h": 1e-08,
+    "relative_tangent_error": 2.111295072598827e-09,
+    "fd_norm": 776.5056781643156
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 147,
+    "h": 1e-07,
+    "relative_tangent_error": 8.174619518779442e-11,
+    "fd_norm": 721.6923331962457
+  },
+  {
+    "degree": 1,
+    "condition": "SbmLoadSolidCondition",
+    "id": 147,
+    "h": 1e-08,
+    "relative_tangent_error": 4.689254611722062e-10,
+    "fd_norm": 721.6923329821534
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 49,
+    "h": 1e-07,
+    "relative_tangent_error": 1.3307647120487522e-10,
+    "fd_norm": 1519.0645885139322
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 49,
+    "h": 1e-08,
+    "relative_tangent_error": 6.170450879451121e-10,
+    "fd_norm": 1519.0645882186896
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 50,
+    "h": 1e-07,
+    "relative_tangent_error": 9.925027470549248e-11,
+    "fd_norm": 2443.9803000272996
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 50,
+    "h": 1e-08,
+    "relative_tangent_error": 1.540639927296069e-09,
+    "fd_norm": 2443.980302950982
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 51,
+    "h": 1e-07,
+    "relative_tangent_error": 7.450146711012381e-11,
+    "fd_norm": 2238.892543311406
+  },
+  {
+    "degree": 2,
+    "condition": "SbmSolidCondition",
+    "id": 51,
+    "h": 1e-08,
+    "relative_tangent_error": 7.919457173607929e-10,
+    "fd_norm": 2238.892544151166
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 209,
+    "h": 1e-07,
+    "relative_tangent_error": 9.393822492792716e-11,
+    "fd_norm": 155.49866588576228
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 209,
+    "h": 1e-08,
+    "relative_tangent_error": 1.650004420008097e-09,
+    "fd_norm": 155.49866610904675
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 210,
+    "h": 1e-07,
+    "relative_tangent_error": 3.7143636593242903e-11,
+    "fd_norm": 618.7489314311669
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 210,
+    "h": 1e-08,
+    "relative_tangent_error": 5.039797929180644e-10,
+    "fd_norm": 618.7489317133874
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 211,
+    "h": 1e-07,
+    "relative_tangent_error": 2.1212986711225712e-11,
+    "fd_norm": 1541.6727118452982
+  },
+  {
+    "degree": 2,
+    "condition": "SbmLoadSolidCondition",
+    "id": 211,
+    "h": 1e-08,
+    "relative_tangent_error": 1.699804026785074e-10,
+    "fd_norm": 1541.6727121161346
+  }
+]

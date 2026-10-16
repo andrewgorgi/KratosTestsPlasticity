@@ -1,0 +1,159 @@
+{
+    "modelers": [
+        {
+            "Parameters": {
+                "input_filename": "../../AnalyticalTestRevised/geometry/outer_circle.json",
+                "link_layer_to_condition_name": [
+                    {
+                        "condition_name": "SbmSolidCondition",
+                        "layer_name": "Layer0"
+                    }
+                ],
+                "model_part_name": "initial_skin_outer"
+            },
+            "modeler_name": "ImportNurbsSbmModeler"
+        },
+        {
+            "Parameters": {
+                "input_filename": "../../AnalyticalTestRevised/geometry/inner_circle.json",
+                "link_layer_to_condition_name": [
+                    {
+                        "condition_name": "SbmLoadSolidCondition",
+                        "layer_name": "Layer0"
+                    }
+                ],
+                "model_part_name": "initial_skin_inner"
+            },
+            "modeler_name": "ImportNurbsSbmModeler"
+        },
+        {
+            "Parameters": {
+                "echo_level": 0,
+                "lambda_inner": 0.5,
+                "lambda_outer": 0.5,
+                "lower_point_xyz": [
+                    -2.2,
+                    -2.2,
+                    0.0
+                ],
+                "model_part_name": "IgaModelPart",
+                "number_initial_points_if_importing_nurbs": 1000,
+                "number_of_inner_loops": 1,
+                "number_of_knot_spans": [
+                    40,
+                    40
+                ],
+                "polynomial_order": [
+                    1,
+                    1
+                ],
+                "skin_model_part_inner_initial_name": "initial_skin_inner",
+                "skin_model_part_name": "skin_model_part",
+                "skin_model_part_outer_initial_name": "initial_skin_outer",
+                "upper_point_xyz": [
+                    2.2,
+                    2.2,
+                    0.0
+                ]
+            },
+            "modeler_name": "NurbsGeometryModelerSbm"
+        },
+        {
+            "Parameters": {
+                "analysis_model_part_name": "IgaModelPart",
+                "echo_level": 0,
+                "element_condition_list": [
+                    {
+                        "geometry_type": "GeometrySurface",
+                        "iga_model_part": "StructuralAnalysisDomain",
+                        "name": "SolidElement",
+                        "number_of_integration_points_per_span": 4,
+                        "shape_function_derivatives_order": 2,
+                        "type": "element"
+                    },
+                    {
+                        "geometry_type": "SurfaceEdge",
+                        "iga_model_part": "SBM_Support_outer",
+                        "name": "SbmCondition",
+                        "sbm_parameters": {
+                            "is_inner": false,
+                            "projection_type": "analytical"
+                        },
+                        "shape_function_derivatives_order": 7,
+                        "type": "condition"
+                    },
+                    {
+                        "geometry_type": "SurfaceEdge",
+                        "iga_model_part": "SBM_Inner",
+                        "name": "SbmCondition",
+                        "sbm_parameters": {
+                            "is_inner": true,
+                            "projection_type": "analytical"
+                        },
+                        "shape_function_derivatives_order": 7,
+                        "type": "condition"
+                    }
+                ],
+                "skin_model_part_name": "skin_model_part"
+            },
+            "modeler_name": "IgaModelerSbm"
+        }
+    ],
+    "output_processes": {
+        "output_process_list": []
+    },
+    "problem_data": {
+        "echo_level": 0,
+        "end_time": 0.0002,
+        "parallel_type": "OpenMP",
+        "problem_name": "sbm_annulus_mixed_plastic_hardening",
+        "start_time": 0.0
+    },
+    "processes": {
+        "additional_processes": [],
+        "constraints_process_list": [],
+        "dirichlet_process_list": []
+    },
+    "solver_settings": {
+        "analysis_type": "non_linear",
+        "auxiliary_dofs_list": [],
+        "auxiliary_reaction_list": [],
+        "auxiliary_variables_list": [],
+        "buffer_size": 2,
+        "builder_and_solver_settings": {
+            "advanced_settings": {},
+            "type": "block"
+        },
+        "clear_storage": false,
+        "compute_reactions": false,
+        "convergence_criterion": "and_criterion",
+        "displacement_absolute_tolerance": 1e-12,
+        "displacement_relative_tolerance": 1e-10,
+        "domain_size": 2,
+        "echo_level": 0,
+        "linear_solver_settings": {
+            "solver_type": "LinearSolversApplication.sparse_lu"
+        },
+        "material_import_settings": {
+            "materials_filename": "/home/agorgi/Documents/GECKO/Tests/AndreaSbmPlasticity/AnnulusPlasticity/diagnostics/analytical_elastic_control/annulus_elastic/p1/n40/materials.json"
+        },
+        "max_iteration": 100,
+        "model_import_settings": {
+            "input_type": "use_input_model_part"
+        },
+        "model_part_name": "IgaModelPart",
+        "move_mesh_flag": false,
+        "reform_dofs_at_each_step": false,
+        "residual_absolute_tolerance": 1e-10,
+        "residual_relative_tolerance": 1e-09,
+        "rotation_dofs": false,
+        "solver_type": "Static",
+        "solving_strategy_settings": {
+            "advanced_settings": {},
+            "type": "newton_raphson"
+        },
+        "time_stepping": {
+            "time_step": 0.0001
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "mode": "sbm_aligned",
+  "L2_relative": 0.0010549604557722255,
+  "H1_bulk_relative": 0.004327599313182479,
+  "area": 7.999999999999997,
+  "H1_bulk_area": 7.999999999999997,
+  "time": 0.0025,
+  "iterations": [
+    {
+      "time": 0.00125,
+      "iterations": 6,
+      "converged": true
+    },
+    {
+      "time": 0.0025,
+      "iterations": 6,
+      "converged": true
+    }
+  ]
+}

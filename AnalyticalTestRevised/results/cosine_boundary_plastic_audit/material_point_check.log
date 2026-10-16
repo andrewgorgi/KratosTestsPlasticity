@@ -1,0 +1,29 @@
+MATERIAL_CHECK [{"time": 0.00125, "strain": [0.001963495408493621, -0.007853981633974483, 0.0], "stress_incremental": [-62.70850645843232, -224.87875403806657, 0.0], "stress_analytic": [-43.83060049420365, -263.139580181376, 0.0], "relative_difference": 0.15993319492221567}, {"time": 0.0025, "strain": [0.003926990816987242, -0.015707963267948967, 0.0], "stress_incremental": [-170.23039834559404, -221.74319268813542, 0.0], "stress_analytic": [-175.38479286327623, -394.69377255044856, 0.0], "relative_difference": 0.4006132684822132}]
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.3."0"-branch_plasticity_IGA_GAP_SBM-72d38d4d83f-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 24.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+Deregistering KratosMultiphysics
+Deregistering IgaApplication
+Deregistering StructuralMechanicsApplication
+Deregistering ConstitutiveLawsApplication

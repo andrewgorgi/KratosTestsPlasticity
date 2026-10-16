@@ -1,0 +1,17 @@
+[  2%] Built target tinyexpr
+[  4%] Built target gidpost
+[  4%] Built target KratosVersion
+[  4%] Built target clipper
+[ 63%] Built target KratosCore
+[ 87%] Built target KratosStructuralMechanicsCore
+[ 87%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaCore.dir/custom_conditions/cut_sbm_solid_interface_condition.cpp.o
+[ 87%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaCore.dir/custom_conditions/cut_sbm_solid_condition.cpp.o
+/home/agorgi/Documents/GECKO/KratosPR/applications/IgaApplication/custom_conditions/cut_sbm_solid_condition.cpp: In member function ‘virtual void Kratos::CutSbmSolidCondition::CalculateRightHandSide(Kratos::Condition::VectorType&, const Kratos::ProcessInfo&)’:
+/home/agorgi/Documents/GECKO/KratosPR/applications/IgaApplication/custom_conditions/cut_sbm_solid_condition.cpp:319:23: warning: unused variable ‘id1’ [-Wunused-variable]
+  319 |             const int id1 = 2*idim;
+      |                       ^~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-template-id-cdtor’ may have been intended to silence earlier diagnostics
+[ 87%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaCore.dir/custom_elements/cut_sbm_solid_element.cpp.o
+[ 87%] Linking CXX shared library libKratosIgaCore.so
+[100%] Built target KratosIgaCore

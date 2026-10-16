@@ -1,0 +1,164 @@
+{
+  "properties": [
+    {
+      "model_part_name": "IgaModelPart",
+      "properties_id": 2,
+      "Material": {
+        "Variables": {"PENALTY_FACTOR": -1 },
+        // "Variables": { "PENALTY_FACTOR": -1},
+        "Tables": {}
+      }
+    },
+    // {
+    //   "model_part_name": "IgaModelPart.StructuralAnalysisDomain",
+    //   "properties_id": 2,
+    //   "Material": {
+    //     "name": "lin_el",
+    //     "constitutive_law": { "name": "LinearElasticPlaneStress2DLaw" },
+    //     "Variables": {
+    //       "DENSITY"       : 2.7E-9,
+    //       "YOUNG_MODULUS" : 67000,
+    //       "POISSON_RATIO" : 0.338,
+    //       "THICKNESS"     : 1.0
+    //     },
+    //     "Tables": {}
+    //   }
+    // }
+    // "Material"        : {
+      //     "constitutive_law" : {
+      //         "name"              : "SmallStrainIsotropicPlasticityFactory",
+      //         "yield_surface"     : "VonMises",
+      //         "plastic_potential" : "VonMises"
+      //     },
+      //     "Variables"        : {
+      //         "DENSITY"                   : 1.0,
+      //         "YOUNG_MODULUS"             : 210e9,
+      //         "POISSON_RATIO"             : 0.3,
+      //         "FRACTURE_ENERGY"           : 1e10,
+      //         "YIELD_STRESS_COMPRESSION"  : 250e9,
+      //         "YIELD_STRESS_TENSION"      : 250e9,
+      //         "HARDENING_CURVE"           : 3
+      //     },
+      //     "Tables"           : {}
+      // }
+
+      // {
+      //       "model_part_name" : "IgaModelPart.StructuralAnalysisDomain",
+      //       "properties_id"   : 2,
+      //       "Material"        : {
+      //           "constitutive_law" : {
+      //   		    "name" : "SmallStrainIsotropicPlasticityPlaneStressVonMisesVonMises",
+      //           "yield_surface": "VonMises",
+      //           "plastic_potential": "VonMises"
+      //           },
+      //           "Variables"        : {
+      //               "DENSITY"       : 2.71,
+      //               "YOUNG_MODULUS" : 210E9,
+      //               "POISSON_RATIO" : 0.3,
+      //               "THICKNESS"     : 1.0,
+      //               "YIELD_STRESS" : 250E6,
+      //               "FRACTURE_ENERGY" : 1E40,
+      //               "HARDENING_CURVE" : 3//,
+      //               // "MAX_NUMBER_NL_CL_ITERATIONS": 10000
+      //               // ,
+      //               // "TANGENT_OPERATOR_ESTIMATION" : 5
+      //           // const Vector& total_strain_vector = r_material_properties[TOTAL_STRAIN_VECTOR_PLASTICITY_POINT_CURVE];
+    
+      //           // applications/ConstitutiveLawsApplication/tests/CurveByPointsPlasticity/plastic_test_materials.json
+      //               // "TOTAL_STRAIN_VECTOR_PLASTICITY_POINT_CURVE" :
+      //               // [0.0, 0.001500, 0.004355, 0.041746, 0.079137, 0.116528, 0.153920, 0.191311, 0.228702, 0.266093, 0.303484, 0.340875, 0.378266, 0.415657, 0.453048, 0.490440, 0.527831, 0.565222, 0.602613, 0.640004, 0.677395, 0.714786, 0.752178, 0.789569, 0.826960, 0.864351, 0.901742, 0.939133, 0.976524, 1.013915, 1.051307, 1.088698, 1.126089, 1.163480, 1.200871, 1.238262, 1.275653, 1.313044, 1.350436, 1.387827, 1.425218, 1.462609, 1.500000],
+      //               // "EQUIVALENT_STRESS_VECTOR_PLASTICITY_POINT_CURVE": 
+      //               // [180E6, 201394816.000, 204729466.000, 207018374.000, 209255214.000, 211439983.000, 213572684.000, 215653315.000, 217681877.000, 219658369.000, 221582793.000, 223455146.000,
+      //               // 225275431.000, 227043646.000, 228759792.000, 230423868.000, 232035876.000, 233595813.000, 235103681.000, 236559480.000, 237963209.000, 239314868.000,
+      //               // 240614458.000, 241861979.000, 243057430.000, 244200812.000, 245292124.000, 246331379.000, 247318554.000, 248253660.000, 249136696.000, 249967664.000,
+      //               // 250746561.000, 251473390.000, 252148149.000, 252770839.000, 253341460.000, 253860011.000, 254326493.000, 254740905.000, 255103249.000, 255413522.000,
+      //               // 255671727.000]
+      //           },
+      //           "Tables"           : null
+      //       }
+      //   }
+
+      // FIXME: idiada
+    {
+        "model_part_name" : "IgaModelPart.StructuralAnalysisDomain",
+        "properties_id"   : 2,
+        "Material"        : {
+            "constitutive_law" : {
+				    "name" : "SmallStrainIsotropicPlasticityPlaneStressVonMisesVonMises",
+            "yield_surface": "VonMises",
+            "plastic_potential": "VonMises"
+            },
+            "Variables"        : {
+                "DENSITY"       : 2.7E-9,
+                "YOUNG_MODULUS" : 67000,
+                "POISSON_RATIO" : 0.338,
+                "THICKNESS"     : 1.0,
+                "YIELD_STRESS" : 201,
+                "FRACTURE_ENERGY" : 1E10,
+                "PERTURBATION_SIZE" : 1.0e-10,
+                // "HARDENING_CURVE" : 1,
+
+                "HARDENING_CURVE" : 6,
+            //     // "MAX_NUMBER_NL_CL_ITERATIONS": 10000 ,
+                "TANGENT_OPERATOR_ESTIMATION" : 2,
+            // // const Vector& total_strain_vector = r_material_properties[TOTAL_STRAIN_VECTOR_PLASTICITY_POINT_CURVE];
+
+            // // applications/ConstitutiveLawsApplication/tests/CurveByPointsPlasticity/plastic_test_materials.json
+
+                "PLASTIC_STRAIN_VECTOR_PLASTICITY_POINT_CURVE" :
+                [0.000,
+                 0.002,
+                 0.005,
+                 0.01,
+                 0.02,
+                 0.05,
+                 0.1,
+                 0.2,
+                 0.5,
+                 1.00],
+
+
+                "EQUIVALENT_STRESS_VECTOR_PLASTICITY_POINT_CURVE":
+                [201,
+                 212.3,
+                 227.3,
+                 247.8,
+                 276.2,
+                 310.2,
+                 319.2,
+                 319.9,
+                 320.0,
+                 320.0]
+            },
+            "Tables"           : null
+        }
+    }
+
+
+    // ,
+    // {
+    //   "model_part_name" : "IgaModelPart.GapInterfaces",
+    //   "properties_id"   : 2,
+    //   "Material"        : {
+    //       "constitutive_law" : {
+    //       "name" : "SmallStrainIsotropicPlasticityPlaneStressVonMisesVonMises",
+    //       "yield_surface": "VonMises",
+    //       "plastic_potential": "VonMises"
+    //       },
+    //       "Variables"        : {
+    //           "DENSITY"       : 1.0,
+    //           "YOUNG_MODULUS" : 210E9,
+    //           "POISSON_RATIO" : 0.3,
+    //           "THICKNESS"     : 1.0,
+    //           "YIELD_STRESS" : 250E6,
+    //           "FRACTURE_ENERGY" : 1E40,
+    //           "HARDENING_CURVE" : 3,
+    //           "MAX_NUMBER_NL_CL_ITERATIONS": 10000,
+
+    //           "PENALTY_FACTOR": -1
+    //       },
+    //       "Tables"           : null
+    //   }
+    // }
+  ]
+}

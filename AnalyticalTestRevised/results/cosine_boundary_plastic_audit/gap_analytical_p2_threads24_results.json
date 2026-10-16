@@ -1,0 +1,26 @@
+{
+  "degree": 2,
+  "threads": 24,
+  "spans": [
+    8,
+    4
+  ],
+  "success": true,
+  "L2_relative": 0.040400949052586586,
+  "H1_bulk_relative": 0.09104432513694902,
+  "area": 8.0,
+  "H1_bulk_area": 4.229999999999999,
+  "time": 0.0025,
+  "iterations": [
+    {
+      "time": 0.00125,
+      "converged": true,
+      "iterations": 6
+    },
+    {
+      "time": 0.0025,
+      "converged": true,
+      "iterations": 5
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "properties": [
+    {
+      "model_part_name": "IgaModelPart",
+      "properties_id": 2,
+      "Material": {
+        "Variables": {"PENALTY_FACTOR": -1},
+        // "Variables": { "PENALTY_FACTOR": -1},
+        "Tables": {}
+      }
+    },
+    // {
+    //     "model_part_name": "IgaModelPart.StructuralAnalysisDomain",
+    //     "properties_id": 2,
+    //     "Material": {
+    //       "name": "lin_el",
+    //       "constitutive_law": { "name": "LinearElasticPlaneStress2DLaw" },
+    //       "Variables": {
+    //         "DENSITY"       : 1.0,
+    //         "YOUNG_MODULUS" : 67000,
+    //         "POISSON_RATIO" : 0.338,
+    //         "THICKNESS"     : 1.0
+    //       },
+    //       "Tables": {}
+    //     }
+    //   }
+    {
+        "model_part_name" : "IgaModelPart.StructuralAnalysisDomain",
+        "properties_id"   : 2,
+        "Material"        : {
+            "constitutive_law" : {
+				    "name" : "SmallStrainIsotropicPlasticityPlaneStrainVonMisesVonMises",
+            "yield_surface": "VonMises",
+            "plastic_potential": "VonMises"
+            },
+            "Variables"        : {
+                "DENSITY"       : 1,
+                "YOUNG_MODULUS" : 67000,
+                "POISSON_RATIO" : 0.0,
+                "THICKNESS"     : 1.0,
+                "YIELD_STRESS" : 201,
+                "FRACTURE_ENERGY" : 1E10,
+                // "PERTURBATION_SIZE" : 1.0e-13,
+                // "CONSIDER_PERTURBATION_THRESHOLD": true,
+                "HARDENING_CURVE" : 3,
+                "TANGENT_OPERATOR_ESTIMATION" : 2
+
+            },
+            "Tables"           : null
+        }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/agorgi/Documents/GECKO/Tests/AndreaSbmPlasticity/AnnulusPlasticity/diagnose_mixed.py", line 99, in run
+    analysis.Run()
+  File "/home/agorgi/Documents/GECKO/Kratos/bin/Release/KratosMultiphysics/analysis_stage.py", line 50, in Run
+    self.RunSolutionLoop()
+  File "/home/agorgi/Documents/GECKO/Kratos/bin/Release/KratosMultiphysics/analysis_stage.py", line 66, in RunSolutionLoop
+    _ = self.SolveSolutionStep()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agorgi/Documents/GECKO/Kratos/bin/Release/KratosMultiphysics/analysis_stage.py", line 162, in SolveSolutionStep
+    return self._GetSolver().SolveSolutionStep()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agorgi/Documents/GECKO/Tests/AndreaSbmPlasticity/AnalyticalTestRevised/study.py", line 39, in solve_checked
+    raise RuntimeError(f'Newton non convergente al tempo {self.time:g}; '
+RuntimeError: Newton non convergente al tempo 0.001; nessuna norma di errore viene calcolata.

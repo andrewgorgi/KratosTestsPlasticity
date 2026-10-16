@@ -1,0 +1,4 @@
+__pycache__/
+*/results/
+*/txt_files/
+diagnostics/**/solution.npz

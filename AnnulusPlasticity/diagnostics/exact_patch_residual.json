@@ -1,0 +1,86 @@
+[
+  {
+    "case": "patch_elastic",
+    "degree": 1,
+    "spans": 10,
+    "relative_exact_patch_residual": 1.9320509297274483e-06,
+    "residual_norm": 0.0002547187982368759
+  },
+  {
+    "case": "patch_elastic",
+    "degree": 1,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.377882632810793e-06,
+    "residual_norm": 0.00023249533007525295
+  },
+  {
+    "case": "patch_elastic",
+    "degree": 2,
+    "spans": 10,
+    "relative_exact_patch_residual": 1.7946414850046826e-06,
+    "residual_norm": 0.00018156695122172647
+  },
+  {
+    "case": "patch_elastic",
+    "degree": 2,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.3428018850344884e-06,
+    "residual_norm": 0.00017457245230262453
+  },
+  {
+    "case": "patch_hardening",
+    "degree": 1,
+    "spans": 10,
+    "relative_exact_patch_residual": 2.017247074442791e-06,
+    "residual_norm": 0.001459722846823758
+  },
+  {
+    "case": "patch_hardening",
+    "degree": 1,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.42102372393393e-06,
+    "residual_norm": 0.001299247019640245
+  },
+  {
+    "case": "patch_hardening",
+    "degree": 2,
+    "spans": 10,
+    "relative_exact_patch_residual": 1.8053861950681757e-06,
+    "residual_norm": 0.0010025316717905016
+  },
+  {
+    "case": "patch_hardening",
+    "degree": 2,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.3417562026045273e-06,
+    "residual_norm": 0.0009577467511507697
+  },
+  {
+    "case": "patch_perfect",
+    "degree": 1,
+    "spans": 10,
+    "relative_exact_patch_residual": 2.0469383298561215e-06,
+    "residual_norm": 0.0013972033738962105
+  },
+  {
+    "case": "patch_perfect",
+    "degree": 1,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.4363098608937062e-06,
+    "residual_norm": 0.0012333000702028265
+  },
+  {
+    "case": "patch_perfect",
+    "degree": 2,
+    "spans": 10,
+    "relative_exact_patch_residual": 1.8092241624338197e-06,
+    "residual_norm": 0.0009476848112324213
+  },
+  {
+    "case": "patch_perfect",
+    "degree": 2,
+    "spans": 20,
+    "relative_exact_patch_residual": 2.3413810621765194e-06,
+    "residual_norm": 0.0009032847059468987
+  }
+]

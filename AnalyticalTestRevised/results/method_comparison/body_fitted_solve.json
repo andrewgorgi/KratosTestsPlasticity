@@ -1,0 +1,20 @@
+{
+  "mode": "body_fitted",
+  "L2_relative": 0.0010514895871998953,
+  "H1_bulk_relative": 0.004324410635530599,
+  "area": 7.999999999999998,
+  "H1_bulk_area": 7.999999999999998,
+  "time": 0.0025,
+  "iterations": [
+    {
+      "time": 0.00125,
+      "iterations": 6,
+      "converged": true
+    },
+    {
+      "time": 0.0025,
+      "iterations": 6,
+      "converged": true
+    }
+  ]
+}

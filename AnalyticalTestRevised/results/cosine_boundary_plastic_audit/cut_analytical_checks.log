@@ -1,0 +1,384 @@
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.3."0"-branch_plasticity_IGA_GAP_SBM-72d38d4d83f-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 24.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [9](-0.5,0.0875,0.675,1.2625,1.85,2.4375,3.025,3.6125,4.2)
+    KNOT_VECTOR_V : [5](-0.3,0.3,0.9,1.5,2.1)
+    KNOT_SPAN_SIZES : [2](0.5875,0.6)
+    PARAMETER_SPACE_CORNERS : [[2](-0.5,4.2), [2](-0.3,2.1)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 9
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Number of Geometries  : 17
+    Mesh 0 :
+        Number of Nodes       : 105
+        Number of Properties  : 1
+        Number of Elements    : 336
+        Number of Conditions  : 304
+        Number of Constraints : 0
+
+    -GapElements- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 288
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -GapInterfaces- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 192
+            Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 432
+            Number of Properties  : 0
+            Number of Elements    : 48
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -bottom- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+    -left- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -right- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 45
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 16
+            Number of Constraints : 0
+    -top- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+::[MechanicalSolver]:: : Finished initialization. 
+::[KSM Simulation]:: : Analysis -START-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CUT_ANALYTICAL_CHECK {"physics": "plastic", "strain": [1e-05, -4e-05, 2e-05], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 2.1243155873368726e-13, "stress_published": [0.6699999999999995, -2.680000000000001, 0.6699999999999985]}, "CutSbmSolidCondition": {"id": 33, "jacobian_relative_error": 3.7235508911367164e-13, "stress_published": [0.6699999999999999, -2.6800000000000006, 0.6700000000000005]}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 2.8184112123819723e-13}}, "stress_measured": [0.6699999999999994, -2.680000000000002, 0.6699999999999985], "stress_expected": [0.67, -2.68, 0.67], "stress_relative_error": 8.627979122649487e-16, "tangent_relative_error": 1.0183269600981043e-13}
+CUT_ANALYTICAL_CHECK {"physics": "plastic", "strain": [0.001963495408493621, -0.007853981633974483, 0.0], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 9.275907592820948e-11, "stress_published": [-43.830600494203885, -263.1395801813761, -3.875134455727904e-14]}, "CutSbmSolidCondition": {"id": 33, "jacobian_relative_error": 2.7330317058480945e-11, "stress_published": [-43.83060049420365, -263.13958018137606, 3.632938552244913e-15]}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 6.557352416049868e-12}}, "stress_measured": [-43.83060049420388, -263.13958018137606, -1.3810321035076452e-13], "stress_expected": [-43.830600494203665, -263.139580181376, 0.0], "stress_relative_error": 9.756641854431588e-16, "tangent_relative_error": 8.836129580664355e-11}
+CUT_ANALYTICAL_CHECK {"physics": "plastic", "strain": [0.003926990816987242, -0.015707963267948967, 0.0], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 3.7204254440505345e-10, "stress_published": [-175.38479286327666, -394.69377255044895, -3.875134455727904e-14]}, "CutSbmSolidCondition": {"id": 33, "jacobian_relative_error": 2.8757192784960588e-11, "stress_published": [-175.38479286327626, -394.6937725504486, 3.632938552244913e-15]}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 1.3833691813385858e-10}}, "stress_measured": [-175.38479286327666, -394.69377255044935, -4.833612362276758e-13], "stress_expected": [-175.3847928632763, -394.69377255044867, 0.0], "stress_relative_error": 2.116261202439889e-15, "tangent_relative_error": 1.7258008007977186e-10}
+CUT_ANALYTICAL_CHECK {"physics": "plastic", "strain": [0.002, -0.006, 0.0013], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 1.2265039904226333e-11, "stress_published": [2.466870482159361, -217.85361867502323, 17.901039744021084]}, "CutSbmSolidCondition": {"id": 33, "jacobian_relative_error": 4.1467877756918556e-11, "stress_published": [2.466870482159474, -217.85361867502317, 17.901039744021073]}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 1.236646100457585e-11}}, "stress_measured": [2.4668704821594076, -217.85361867502309, 17.901039744021137], "stress_expected": [2.466870482159422, -217.8536186750232, 17.901039744021087], "stress_relative_error": 5.713678222290352e-16, "tangent_relative_error": 4.194899129908705e-11}
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [9](-0.5,0.0875,0.675,1.2625,1.85,2.4375,3.025,3.6125,4.2)
+    KNOT_VECTOR_V : [5](-0.3,0.3,0.9,1.5,2.1)
+    KNOT_SPAN_SIZES : [2](0.5875,0.6)
+    PARAMETER_SPACE_CORNERS : [[2](-0.5,4.2), [2](-0.3,2.1)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 9
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Number of Geometries  : 17
+    Mesh 0 :
+        Number of Nodes       : 105
+        Number of Properties  : 1
+        Number of Elements    : 336
+        Number of Conditions  : 304
+        Number of Constraints : 0
+
+    -GapElements- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 288
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -GapInterfaces- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 192
+            Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 432
+            Number of Properties  : 0
+            Number of Elements    : 48
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -bottom- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+    -left- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -right- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 12
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 45
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 16
+            Number of Constraints : 0
+    -top- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 36
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+::[MechanicalSolver]:: : Finished initialization. 
+::[KSM Simulation]:: : Analysis -START-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CUT_ANALYTICAL_CHECK {"physics": "elastic", "strain": [1e-05, -4e-05, 2e-05], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 5.131866839757142e-13}, "CutSbmSolidCondition": {"id": 36, "jacobian_relative_error": 3.4223141040169376e-13}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 2.8184112123819723e-13}}, "stress_measured": [0.67, -2.679999999999998, 0.6699999999999997], "stress_expected": [0.67, -2.68, 0.67], "stress_relative_error": 7.898794744906853e-16, "tangent_relative_error": 1.0025612649518356e-13}
+CUT_ANALYTICAL_CHECK {"physics": "elastic", "strain": [0.001963495408493621, -0.007853981633974483, 0.0], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 5.554141941560716e-11}, "CutSbmSolidCondition": {"id": 36, "jacobian_relative_error": 3.576260291442278e-11}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 7.037884355163492e-11}}, "stress_measured": [131.55419236907244, -526.2167694762904, -4.850996763125961e-13], "stress_expected": [131.5541923690726, -526.2167694762904, 0.0], "stress_relative_error": 9.479892916940815e-16, "tangent_relative_error": 4.291609485213264e-11}
+CUT_ANALYTICAL_CHECK {"physics": "elastic", "strain": [0.003926990816987242, -0.015707963267948967, 0.0], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 1.0955767191453023e-10}, "CutSbmSolidCondition": {"id": 36, "jacobian_relative_error": 9.065345214326936e-11}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 1.7990230909195364e-10}}, "stress_measured": [263.1083847381449, -1052.4335389525809, -9.701993526251922e-13], "stress_expected": [263.1083847381452, -1052.4335389525809, 0.0], "stress_relative_error": 9.479892916940815e-16, "tangent_relative_error": 1.276106649461146e-10}
+CUT_ANALYTICAL_CHECK {"physics": "elastic", "strain": [0.002, -0.006, 0.0013], "entities": {"CutSbmSolidElement": {"id": 284, "jacobian_relative_error": 2.8582262946925572e-11}, "CutSbmSolidCondition": {"id": 36, "jacobian_relative_error": 1.0405732445437975e-10}, "CutSbmSolidInterfaceCondition": {"id": 178, "jacobian_relative_error": 4.6074589756848756e-11}}, "stress_measured": [134.0, -401.99999999999943, 43.550000000000146], "stress_expected": [134.0, -402.0, 43.55], "stress_relative_error": 1.379633119332185e-15, "tangent_relative_error": 2.0012796466601645e-11}
+Deregistering KratosMultiphysics
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering IgaApplication
+Deregistering StructuralMechanicsApplication

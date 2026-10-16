@@ -1,0 +1,296 @@
+{
+  "problem_data": {
+    "problem_name": "example_1_kratos",
+    "echo_level": 0,
+    "parallel_type": "OpenMP",
+    "start_time": 0,
+    "end_time": 0.0025
+  },
+  "solver_settings": {
+    "model_part_name": "IgaModelPart",
+    "domain_size": 2,
+    "echo_level": 1,
+    "buffer_size": 2,
+    "analysis_type": "non_linear",
+    "model_import_settings": { "input_type": "use_input_model_part" },
+    "material_import_settings": { "materials_filename": "materialsSolidSBM.json" },
+    "time_stepping": { "time_step": 0.00125},
+    "rotation_dofs": false,
+    "reform_dofs_at_each_step": false,
+    "line_search": false,
+    "compute_reactions": false,
+    "block_builder": true,
+    "clear_storage": false,
+    "move_mesh_flag": false,
+    "convergence_criterion": "and_criterion",
+    "displacement_relative_tolerance": 1e-10,
+    "displacement_absolute_tolerance": 1e-12,
+    "residual_relative_tolerance": 1e-10,
+    "residual_absolute_tolerance": 1e-12,
+    "max_iteration": 20,
+    "solver_type": "iga_static",
+    "use_old_stiffness_in_first_iteration" : true, //TODO: Important
+    "linear_solver_settings": {
+      "solver_type": "LinearSolversApplication.sparse_lu",
+
+      // "solver_type": "skyline_lu_factorization",
+      "write_system_matrix_to_file": false,
+      "max_iteration": 500,
+      "tolerance": 1E-09,
+      "scaling": false,
+      "verbosity": 0
+    },
+    "auxiliary_variables_list": [],
+    "auxiliary_dofs_list": [],
+    "auxiliary_reaction_list": []
+  },
+  "modelers": [
+    // {
+    //   "modeler_name" : "ImportNurbsSbmModeler",
+    //   "Parameters" : {
+    //     "input_filename" : "../nurbs_files/specimen.nurbs.json",
+    //     "model_part_name" : "initial_skin_model_part_out",
+    //     "link_layer_to_condition_name": [
+    //       {
+    //         "layer_name" : "Layer0",
+    //         "condition_name" : "SbmSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "innerCurve",
+    //         "condition_name" : "SbmSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "left",
+    //         "condition_name" : "SbmSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "right",
+    //         "condition_name" : "SbmSolidCondition"
+    //       }
+    //     ]
+    //     }
+    // },
+    // {
+    //   "modeler_name" : "ImportNurbsSbmModeler",
+    //   "Parameters" : {
+    //     // "input_filename" : "../nurbs_files/testBigRectangle.json",
+    //     "input_filename" : "../nurbs_files/simplestBox.json",
+    //     "model_part_name" : "initial_skin_model_part_out",
+    //     "link_layer_to_condition_name": [
+    //       {
+    //         "layer_name" : "Layer0",
+    //         "condition_name" : "SbmSolidCondition"
+    //       }
+    //       // ,
+    //     ]
+    //     }
+    // },
+    // {
+    //   "modeler_name" : "ImportNurbsSbmModeler",
+    //   "Parameters" : {
+    //     "input_filename" : "../nurbs_files/bottom_box.json",
+    //     "model_part_name" : "initial_skin_model_part_out",
+    //     "link_layer_to_condition_name": [
+    //       {
+    //         "layer_name" : "bottom",
+    //         "condition_name" : "SbmLoadSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "left",
+    //         "condition_name" : "SbmSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "right",
+    //         "condition_name" : "SbmSolidCondition"
+    //       },
+    //       {
+    //         "layer_name" : "top",
+    //         "condition_name" : "SbmLoadSolidCondition"
+    //       }
+
+    //       // {
+    //       //   "layer_name" : "Layer0",
+    //       //   "condition_name" : "SbmSolidCondition"
+    //       // }
+    //     ]
+    //     }
+    // },
+    {
+      "modeler_name": "NurbsGeometryModelerSbm",
+      "Parameters": {
+          "echo_level": 4,
+          "model_part_name" : "IgaModelPart",
+          // "lower_point_xyz": [-90.0,-25.0,0.0], 
+          // "upper_point_xyz": [90,25.0,0.0],     
+          // "lower_point_uvw": [-90.0,-25.0,0.0], 
+          // "upper_point_uvw": [90,25.0,0.0], 
+
+
+          // "lower_point_xyz": [0.0,0.0,0.0], 
+          // "upper_point_xyz": [172, 40.0,0.0],     
+          // "lower_point_uvw": [0.0,0.0,0.0], 
+          // "upper_point_uvw": [172, 40.0,0.0], 
+
+          // "lower_point_xyz": [-0.2,-0.1,0.0],
+          // "upper_point_xyz": [1.6, 1.2,0.0],
+          // "lower_point_uvw": [-0.2,-0.1,0.0],
+          // "upper_point_uvw": [1.6,1.2,0.0],     
+
+          // "lower_point_xyz": [-3,-3,0.0],
+          // "upper_point_xyz": [3,3, 0.0],
+          // "lower_point_uvw": [-3,-3,0.0],
+          // "upper_point_uvw": [3,3,0.0],
+
+          "lower_point_xyz": [0, 0,0.0],
+          "upper_point_xyz": [4, 2, 0.0],
+          "lower_point_uvw": [0, 0,0.0],
+          "upper_point_uvw": [4, 2,0.0],
+
+
+          "polynomial_order" : [2, 2],
+          "number_of_knot_spans" : [40, 40] //,
+          // "lambda_outer": 1.0,
+          // "number_of_inner_loops": 0,
+          // "number_initial_points_if_importing_nurbs": 1000,
+          // "skin_model_part_outer_initial_name": "initial_skin_model_part_out",    
+          // "skin_model_part_name": "skin_model_part"
+      }
+    },
+    {
+      "modeler_name": "IgaModelerSbm",
+      "Parameters": {
+      "echo_level": 0,
+      // "integrate_on_true_boundary": true,
+      "skin_model_part_name": "skin_model_part",
+      "analysis_model_part_name": "IgaModelPart",
+      "element_condition_list": [
+          {
+              "geometry_type": "GeometrySurface",
+              "iga_model_part": "StructuralAnalysisDomain",
+              "type": "element",
+              "name": "SolidElement",
+              "shape_function_derivatives_order": 2
+          },
+          // {
+          //   "geometry_type": "SurfaceEdge",
+          //   // "brep_ids" : [2],
+          //   "iga_model_part": "SBM_Support_outer",
+          //   "type": "condition",
+          //   "name": "SbmCondition",
+          //   // "number_of_integration_points_per_span": 3,
+          //   "shape_function_derivatives_order": 7,
+          //   "sbm_parameters": {
+          //       "is_inner" : false
+          //   }
+          // }
+
+          {
+            "geometry_type": "SurfaceEdge",
+            "brep_ids" : [2,3,4,5],
+            "iga_model_part": "SBM_Support_outer",
+            "type": "condition",
+            "name": "SupportSolidCondition",
+            // "number_of_integration_points_per_span": 3,
+            "shape_function_derivatives_order": 7
+          }
+      ]
+      }
+  }
+  ],
+  "processes": {
+    "additional_processes": [
+      {
+        "python_module": "assign_iga_external_conditions_process",
+        "kratos_module" : "KratosMultiphysics.IgaApplication",
+        "process_name"  : "AssignIgaExternalConditionsProcess",
+        "Parameters": {
+          "echo_level": 4,
+          "element_condition_list": [
+            {
+                "iga_model_part": "IgaModelPart.StructuralAnalysisDomain",
+                "variables": [
+                {
+                    "variable_name": "BODY_FORCE",
+                    // "value": ["151283.197630047*sin(y)*cos(x)",
+                    //           "151283.197630047*sin(x)*cos(y)",
+                    //           "0.0"]
+
+                    // "value": ["106.040066338811*sin(y/20)*cos(x/80)",
+                    //           "224.643729480805*sin(x/80)*cos(y/20)",
+                    //           "0.0"]
+
+                    // "value"           : [
+                    //   "(106.040066338811*sin((1/20)*y)*cos((1/80)*x)) if (3556.35846689671*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)) <= 1e6*201.0 else (((sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*(0.0814950225511409*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2) + sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*(0.0644148107340564*cos((1/10)*y) - 0.0170802118170845)*sin((1/80)*x)**2 + 26.3563695871098*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2) - 2.21105348069079*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2*(cos((1/40)*x) - 1))*sin((1/20)*y)*cos((1/80)*x)/(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(7/2))",
+                    //   "(224.643729480805*sin((1/80)*x)*cos((1/20)*y)) if (3556.35846689671*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)) <= 1e6*201.0 else (((sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*(5.63250844386247*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2) + sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*(4.45201380417676*cos((1/40)*x) - 1.18049463968571)*sin((1/20)*y)**2 + 105.425478348439*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2) - 0.552763370172698*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2*(cos((1/10)*y) - 1))*sin((1/80)*x)*cos((1/20)*y)/(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(7/2))",
+                    //   "0.0"
+                    // ]
+
+                    // "value": ["0.0",
+                    //           "0.0",
+                    //           "0.0"]
+
+
+                    // cos(x/80)
+                    // "value"           : [
+                    //   "(106.040066338811*t*sin((1/20)*y)*cos((1/80)*x)) if (3556.35846689671*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*abs(t)) <= 201.0 else (((sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*(26.3563695871098*t**2*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2 + 0.0814950225511409*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*abs(t) + 0.0814950225511409*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*(0.790414048828981*cos((1/10)*y) - 0.209585951171019)*sin((1/80)*x)**2*abs(t)) - 2.21105348069079*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2*(cos((1/40)*x) - 1)*abs(t))*sin((1/20)*y)*cos((1/80)*x)/(t*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(7/2)))",
+                    //   "(224.643729480805*t*sin((1/80)*x)*cos((1/20)*y)) if (3556.35846689671*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*abs(t)) <= 201.0 else (((sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*(105.425478348439*t**2*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2 + 5.63250844386247*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(3/2)*abs(t) + 5.63250844386247*sqrt(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)*(0.790414048828981*cos((1/40)*x) - 0.209585951171019)*sin((1/20)*y)**2*abs(t)) - 0.552763370172698*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**2*(cos((1/10)*y) - 1)*abs(t))*sin((1/80)*x)*cos((1/20)*y)/(t*(sin((1/80)*x)**2*sin((1/20)*y)**2 + 0.580828097657963*cos((1/80)*x)**2*cos((1/20)*y)**2)**(7/2)))",
+                    //   "0.0"
+                    // ]
+
+                    // cos(x)
+                    // "value"           : ["((33500000000/221439)*t*sin(y)*cos(x)) if (sqrt(447561*sin(x)**2*sin(y)**2 + 328683*cos(x)**2*cos(y)**2)*abs(t)) <= 664317/500000 else ((67/993)*(149187000000*t**2*sqrt(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)*sin(x)**2*sin(y)**2 + 109561000000*t**2*sqrt(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)*cos(x)**2*cos(y)**2 - 24261078279*sqrt(3)*sin(x)**2*sin(y)**2*abs(t) + 73296309000*sqrt(3)*sin(x)**2*abs(t) + 24261078279*sqrt(3)*cos(x)**2*cos(y)**2*abs(t))*sin(y)*cos(x)/(t*(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)**(3/2)))",
+                    //                      "((33500000000/221439)*t*sin(x)*cos(y)) if (sqrt(447561*sin(x)**2*sin(y)**2 + 328683*cos(x)**2*cos(y)**2)*abs(t)) <= 664317/500000 else ((67/993)*(149187000000*t**2*sqrt(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)*sin(x)**2*sin(y)**2 + 109561000000*t**2*sqrt(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)*cos(x)**2*cos(y)**2 - 24261078279*sqrt(3)*sin(x)**2*sin(y)**2*abs(t) + 73296309000*sqrt(3)*sin(y)**2*abs(t) + 24261078279*sqrt(3)*cos(x)**2*cos(y)**2*abs(t))*sin(x)*cos(y)/(t*(149187*sin(x)**2*sin(y)**2 + 109561*cos(x)**2*cos(y)**2)**(3/2)))",
+                    //                      "0.0"]
+
+                    "value"           : ["(134000*t*sin(y)*cos(x)) if (sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*abs(t)) <= 3/1000 else ((67/3)*(2000*t**2*sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*sin(x)**2*sin(y)**2 + 6000*t**2*sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*cos(x)**2*cos(y)**2 - 9*sin(x)**2*sin(y)**2*abs(t) + 18*sin(x)**2*abs(t) + 9*cos(x)**2*cos(y)**2*abs(t))*sin(y)*cos(x)/(t*(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)**(3/2)))",
+                                         "(134000*t*sin(x)*cos(y)) if (sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*abs(t)) <= 3/1000 else ((67/3)*(2000*t**2*sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*sin(x)**2*sin(y)**2 + 6000*t**2*sqrt(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)*cos(x)**2*cos(y)**2 - 9*sin(x)**2*sin(y)**2*abs(t) + 18*sin(y)**2*abs(t) + 9*cos(x)**2*cos(y)**2*abs(t))*sin(x)*cos(y)/(t*(sin(x)**2*sin(y)**2 + 3*cos(x)**2*cos(y)**2)**(3/2)))",
+                                         "0.0"]
+
+                }]
+            },
+            {
+                "iga_model_part": "IgaModelPart.SBM_Support_outer",
+                "variables": [
+                {
+                    "variable_name": "DISPLACEMENT",
+                    // "value"           : ["x+y","y-x", "0.0"]
+                    "value"           : ["cos(x)*sin(y)*t","cos(y)*sin(x)*t", "0.0"]
+                }]
+            }
+          ]
+        }
+      }
+    ],
+    "dirichlet_process_list": [
+      // {
+      //   "kratos_module": "KratosMultiphysics",
+      //   "python_module": "assign_vector_variable_to_nodes_process",
+      //   "Parameters": {
+      //     "model_part_name": "skin_model_part.outer",
+      //     // "variable_name": "FORCE",
+      //     // "value"           : ["0.0","0.0", "0.0"]
+      //     "variable_name": "DISPLACEMENT",
+      //     "value"           : ["cos(x)*sin(y)*t","cos(y)*sin(x)*t", "0.0"]
+      //     // "value"           : ["cos(x/80)*sin(y/20)*t","cos(y/20)*sin(x/80)*t", "0.0"]
+      //     // "value"           : ["x+y","y-x", "0.0"]
+      //   }
+      // }//,
+      // {
+      //   "kratos_module": "KratosMultiphysics",
+      //   "python_module": "assign_vector_variable_to_nodes_process",
+      //   "Parameters": {
+      //     "model_part_name": "skin_model_part.outer.right",
+      //     "variable_name": "DISPLACEMENT",
+      //     "value"           : ["cos(x)*sin(y)","cos(y)*sin(x)", "0.0"]
+      //   }
+      // }
+
+    ],
+    "constraints_process_list"        : []
+},
+  "output_processes": {
+    "output_process_list": []
+  }
+}
+
+

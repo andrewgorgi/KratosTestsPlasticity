@@ -1,0 +1,138 @@
+--- a/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
++++ b/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
+@@ -82,7 +82,8 @@
+         mBasisFunctionsOrder = std::sqrt(r_DN_De[0].size1()) - 1;
+     }
+ 
+-    // mBasisFunctionsOrder *= 2;
++    // Tensor-product Qp has mixed derivatives up to total order 2p.
++    mBasisFunctionsOrder *= 2;
+ 
+     // Compute the normals
+     mNormalParameterSpace = - r_geometry.Normal(0, GetIntegrationMethod());
+@@ -343,118 +344,13 @@
+     Vector r_stress_vector_on_true = ZeroVector(3);
+     AnalyticalStress(r_stress_vector_on_true, old_strain_on_true);
+ 
+-    // Assembly
+-    double nu = this->GetProperties().GetValue(POISSON_RATIO);
+-    double E = this->GetProperties().GetValue(YOUNG_MODULUS);
+-    Vector g_N = ZeroVector(3);
+-    const double x = mpProjectionNode->X();
+-    const double y = mpProjectionNode->Y();
+-
+-    // g_N[0] = -E*(1+4*nu)/(1-nu*nu)*(sin(x/80)*sin(y/20))/80 * mTrueNormal[0] + E/32/(1+nu) *cos(x/80)*cos(y/20) * mTrueNormal[1]; 
+-    // g_N[1] = -E*(4+nu)/(1-nu*nu)*(sin(x/80)*sin(y/20))/80 * mTrueNormal[1]   + E/32/(1+nu) *cos(x/80)*cos(y/20) * mTrueNormal[0];
+-
+-
+-    double t = rCurrentProcessInfo[TIME];
+-
+-    Vector rStressVector = ZeroVector(3);
+-    // rStressVector[0] = ((std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t) <= 3.0/500.0) ? (
+-    //     67000*t*(2*x + y)
+-    //  )
+-    //  : (
+-    //     (268.0/3.0)*t*(2*x + y)*(250*std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t) + 3)/(std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t))
+-    //  ));
+-    //  rStressVector[1] = ((std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t) <= 3.0/500.0) ? (
+-    //     0
+-    //  )
+-    //  : (
+-    //     (134.0/3.0)*t*(2*x + y)*(500*std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t) - 3)/(std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t))
+-    //  ));
+-    //  rStressVector[2] = ((std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t) <= 3.0/500.0) ? (
+-    //     33500*t*x
+-    //  )
+-    //  : (
+-    //     201*t*x/(std::sqrt(3*std::pow(x, 2) + 4*std::pow(2*x + y, 2))*std::fabs(t))
+-    //  ));
+-
+-    // rStressVector[0] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t*x*y*(x - 4)*(y - 2)) <= 3.0/2000.0) ? (
+-    //     268000*t*x*std::pow(y, 2)*(2 - x)*(x - 4)*std::pow(y - 2, 2)
+-    //  )
+-    //  : (
+-    //     (268.0/3.0)*t*x*std::pow(y, 2)*(2 - x)*(x - 4)*std::pow(y - 2, 2)*(1000*std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t*x*y*(x - 4)*(y - 2)) + 3)*std::fabs(1/(t*x*y*(x - 4)*(y - 2)))/std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))
+-    //  ));
+-    //  rStressVector[1] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t*x*y*(x - 4)*(y - 2)) <= 3.0/2000.0) ? (
+-    //     0
+-    //  )
+-    //  : (
+-    //     (134.0/3.0)*t*x*std::pow(y, 2)*(x - 4)*std::pow(y - 2, 2)*(3*x + 2000*(2 - x)*std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t*x*y*(x - 4)*(y - 2)) - 6)*std::fabs(1/(t*x*y*(x - 4)*(y - 2)))/std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))
+-    //  ));
+-    //  rStressVector[2] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t*x*y*(x - 4)*(y - 2)) <= 3.0/2000.0) ? (
+-    //     134000*t*std::pow(x, 2)*y*(1 - y)*std::pow(x - 4, 2)*(y - 2)
+-    //  )
+-    //  : (
+-    //     201*t*std::pow(x, 2)*y*(1 - y)*std::pow(x - 4, 2)*(y - 2)*std::fabs(1/(t*x*y*(x - 4)*(y - 2)))/std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))
+-    //  ));
+-
+-    // // MIDDLE PLASTICITY    
+-    // rStressVector[0] = ((std::sqrt(21)*M_PI*std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)) <= 3.0/500.0) ? (
+-    //     33500*M_PI*t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)
+-    //  )
+-    //  : (
+-    //     (134.0/7.0)*t*(-1750*M_PI + std::sqrt(21)/std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)))*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)
+-    //  ));
+-    //  rStressVector[1] = ((std::sqrt(21)*M_PI*std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)) <= 3.0/500.0) ? (
+-    //     -134000*M_PI*t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)
+-    //  )
+-    //  : (
+-    //     -67.0/7.0*t*(3500*M_PI + 3*std::sqrt(21)/std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)))*std::sin((1.0/4.0)*M_PI*x)*std::sin((1.0/2.0)*M_PI*y)
+-    //  ));
+-    //  rStressVector[2] = 0;
+-
+-
+-     //PLASTICITY AT THE BOUNDARY
+-     rStressVector[0] = ((std::sqrt(21)*M_PI*std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))) <= 3.0/500.0) ? (
+-        33500*M_PI*t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))
+-     )
+-     : (
+-        (134.0/7.0)*t*(-1750*M_PI + std::sqrt(21)/std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))))*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))
+-     ));
+-     rStressVector[1] = ((std::sqrt(21)*M_PI*std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))) <= 3.0/500.0) ? (
+-        -134000*M_PI*t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))
+-     )
+-     : (
+-        -67.0/7.0*t*(3500*M_PI + 3*std::sqrt(21)/std::fabs(t*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))))*std::sin((1.0/4.0)*M_PI*x)*std::sin(M_PI*((1.0/2.0)*y + 0.75))
+-     ));
+-     rStressVector[2] = 0;
+-
+-    // POLYNOMIAL
+-    // rStressVector[0] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t) <= 3.0/1000.0) ? (
+-    //     134000*t*y*(x - 2)*(y - 2)
+-    //  )
+-    //  : (
+-    //     (268.0/3.0)*t*y*(x - 2)*(y - 2)*(500*std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t) + 3)/(std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t))
+-    //  ));
+-    //  rStressVector[1] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t) <= 3.0/1000.0) ? (
+-    //     0
+-    //  )
+-    //  : (
+-    //     (134.0/3.0)*t*y*(y - 2)*(-3*x + 1000*(x - 2)*std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t) + 6)/(std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t))
+-    //  ));
+-    //  rStressVector[2] = ((std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t) <= 3.0/1000.0) ? (
+-    //     67000*t*x*(x - 4)*(y - 1)
+-    //  )
+-    //  : (
+-    //     201*t*x*(x - 4)*(y - 1)/(std::sqrt(3*std::pow(x, 2)*std::pow(x - 4, 2)*std::pow(y - 1, 2) + 4*std::pow(y, 2)*std::pow(x - 2, 2)*std::pow(y - 2, 2))*std::fabs(t))
+-    //  ));
+-     
+-    g_N[0] = rStressVector[0]*mTrueNormal[0] + rStressVector[2]*mTrueNormal[1];
+-    g_N[1] = rStressVector[2]*mTrueNormal[0] + rStressVector[1]*mTrueNormal[1];
+-
+-    // // // cosinusoidal
+-    // g_N[0] = E/(1-nu)*(sin(x)*sinh(y)) * mTrueNormal[0]; 
+-    // g_N[1] = E/(1-nu)*(sin(x)*sinh(y)) * mTrueNormal[1]; 
+-
+-
+-    // g_N = mpProjectionNode->GetValue(FORCE);
++    // Prescribed traction at the projected point on the true boundary.
++    // Manufactured fields belong in the input process, not in the condition.
++    KRATOS_ERROR_IF_NOT(mpProjectionNode->Has(FORCE))
++        << "Missing prescribed FORCE at skin node " << mpProjectionNode->Id()
++        << " for SbmLoadSolidCondition " << Id() << std::endl;
++    const auto& g_N = mpProjectionNode->GetValue(FORCE);
++
+     Vector normal_stress_old = ZeroVector(3);
+     normal_stress_old[0] = (r_stress_vector[0] * mNormalPhysicalSpace[0] + r_stress_vector[2] * mNormalPhysicalSpace[1]);
+     normal_stress_old[1] = (r_stress_vector[2] * mNormalPhysicalSpace[0] + r_stress_vector[1] * mNormalPhysicalSpace[1]);

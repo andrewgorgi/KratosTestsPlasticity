@@ -1,0 +1,163 @@
+// body_fitted; campo=cosine_boundary; materiale=plastic_hardening
+// Stesso campo con y sostituito da y+1. Massimo stress trial a y=0,2: snervamento al boundary.
+// Materiale distinto dal campo: "linear" indica u(x), non la legge costitutiva.
+// Dominio fisico [0,4] x [0,2]. Dirichlet esatto su TUTTO il contorno.
+// BODY_FORCE=-div(sigma), densita=1; stessi campi per bulk e GapElements.
+// plastic: J2 perfettamente plastico, E=67000, nu=0, sigma_y=201; t>=0 monotono.
+// elastic: plane strain lineare, E=67000, nu=0; nessuno snervamento.
+// plastic_hardening: J2 isotropo lineare, H=10000, sigma_y=201; t>=0 monotono.
+// Per cambiare campo/materiale scegliere un altro file completo; non decommentare formule isolate.
+{
+  "problem_data": {
+    "problem_name": "body_fitted_cosine_boundary_plastic_hardening",
+    "echo_level": 0,
+    "parallel_type": "OpenMP",
+    "start_time": 0.0,
+    "end_time": 0.002
+  },
+  "solver_settings": {
+    "model_part_name": "IgaModelPart",
+    "domain_size": 2,
+    "echo_level": 0,
+    "buffer_size": 2,
+    "analysis_type": "non_linear",
+    "model_import_settings": {
+      "input_type": "use_input_model_part"
+    },
+    "material_import_settings": {
+      "materials_filename": "../materials_plastic_hardening.json"
+    },
+    "time_stepping": {
+      "time_step": 0.001
+    },
+    "rotation_dofs": false,
+    "reform_dofs_at_each_step": false,
+    "compute_reactions": false,
+    "clear_storage": false,
+    "move_mesh_flag": false,
+    "solving_strategy_settings": {
+      "type": "newton_raphson",
+      "advanced_settings": {}
+    },
+    "builder_and_solver_settings": {
+      "type": "block",
+      "advanced_settings": {}
+    },
+    "convergence_criterion": "and_criterion",
+    "displacement_relative_tolerance": 1e-10,
+    "displacement_absolute_tolerance": 1e-12,
+    "residual_relative_tolerance": 1e-09,
+    "residual_absolute_tolerance": 1e-10,
+    "max_iteration": 100,
+    "solver_type": "Static",
+    "linear_solver_settings": {
+      "solver_type": "LinearSolversApplication.sparse_lu"
+    },
+    "auxiliary_variables_list": [],
+    "auxiliary_dofs_list": [],
+    "auxiliary_reaction_list": []
+  },
+  "modelers": [
+    {
+      "modeler_name": "NurbsGeometryModelerSbm",
+      "Parameters": {
+        "echo_level": 0,
+        "model_part_name": "IgaModelPart",
+        "lower_point_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "upper_point_xyz": [
+          4.0,
+          2.0,
+          0.0
+        ],
+        "polynomial_order": [
+          2,
+          2
+        ],
+        "number_of_knot_spans": [
+          20,
+          10
+        ]
+      }
+    },
+    {
+      "modeler_name": "IgaModelerSbm",
+      "Parameters": {
+        "echo_level": 0,
+        "skin_model_part_name": "skin_model_part",
+        "analysis_model_part_name": "IgaModelPart",
+        "element_condition_list": [
+          {
+            "geometry_type": "GeometrySurface",
+            "iga_model_part": "StructuralAnalysisDomain",
+            "type": "element",
+            "name": "SolidElement",
+            "shape_function_derivatives_order": 2,
+            "number_of_integration_points_per_span": 30
+          },
+          {
+            "geometry_type": "SurfaceEdge",
+            "iga_model_part": "SBM_Support_outer",
+            "type": "condition",
+            "name": "SupportSolidCondition",
+            "shape_function_derivatives_order": 7,
+            "brep_ids": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "processes": {
+    "additional_processes": [
+      {
+        "python_module": "assign_iga_external_conditions_process",
+        "kratos_module": "KratosMultiphysics.IgaApplication",
+        "process_name": "AssignIgaExternalConditionsProcess",
+        "Parameters": {
+          "echo_level": 0,
+          "element_condition_list": [
+            {
+              "iga_model_part": "IgaModelPart.StructuralAnalysisDomain",
+              "variables": [
+                {
+                  "variable_name": "BODY_FORCE",
+                  "value": [
+                    "(-8375*pi**2*t*cos((1/4)*pi*x)*cos((1/2)*pi*y)) if (sqrt(21)*pi*t*abs(sin((1/4)*pi*x)*cos((1/2)*pi*y))) <= (3/500) else ((1515875/221)*pi**2*t*cos((1/4)*pi*x)*cos((1/2)*pi*y))",
+                    "(-67000*pi**2*t*sin((1/4)*pi*x)*sin((1/2)*pi*y)) if (sqrt(21)*pi*t*abs(sin((1/4)*pi*x)*cos((1/2)*pi*y))) <= (3/500) else (-4706750/221*pi**2*t*sin((1/4)*pi*x)*sin((1/2)*pi*y))",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "iga_model_part": "IgaModelPart.SBM_Support_outer",
+              "variables": [
+                {
+                  "variable_name": "DISPLACEMENT",
+                  "value": [
+                    "-2*t*sin(pi*((1/2)*y + 1/2))*cos((1/4)*pi*x)",
+                    "4*t*sin((1/4)*pi*x)*cos(pi*((1/2)*y + 1/2))",
+                    "0.0"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "dirichlet_process_list": [],
+    "constraints_process_list": []
+  },
+  "output_processes": {
+    "output_process_list": []
+  }
+}

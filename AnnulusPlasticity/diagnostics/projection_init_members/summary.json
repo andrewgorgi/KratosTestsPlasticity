@@ -1,0 +1,44 @@
+[
+  {
+    "case": "annulus_hardening",
+    "degree": 2,
+    "spans": 20,
+    "dt": 0.001,
+    "material": {
+      "DENSITY": 1.0,
+      "EXPONENTIAL_SATURATION_YIELD_STRESS": 201.0,
+      "HARDENING_EXPONENT": 0.0,
+      "ISOTROPIC_HARDENING_MODULUS": 10000.0,
+      "PENALTY_FACTOR": -1,
+      "POISSON_RATIO": 0.0,
+      "THICKNESS": 1.0,
+      "YIELD_STRESS": 201.0,
+      "YOUNG_MODULUS": 67000.0
+    },
+    "status": "converged",
+    "time": 0.002,
+    "L2_relative": 67.23052999321702,
+    "H1_bulk_relative": 82.39394250184768,
+    "max_equivalent_plastic_strain": 2.7933009091642993
+  },
+  {
+    "case": "cosine_perfect",
+    "degree": 2,
+    "spans": 20,
+    "dt": 0.001,
+    "material": {
+      "DENSITY": 1.0,
+      "EXPONENTIAL_SATURATION_YIELD_STRESS": 201.0,
+      "HARDENING_EXPONENT": 0.0,
+      "ISOTROPIC_HARDENING_MODULUS": 0.0,
+      "PENALTY_FACTOR": -1,
+      "POISSON_RATIO": 0.0,
+      "THICKNESS": 1.0,
+      "YIELD_STRESS": 201.0,
+      "YOUNG_MODULUS": 67000.0
+    },
+    "status": "failed",
+    "error": "Newton non convergente al tempo 0.001; nessuna norma di errore viene calcolata.",
+    "time": 0.001
+  }
+]

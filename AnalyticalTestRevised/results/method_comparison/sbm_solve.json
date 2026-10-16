@@ -1,0 +1,20 @@
+{
+  "mode": "sbm",
+  "L2_relative": 0.003760024151741319,
+  "H1_bulk_relative": 0.008574427220314106,
+  "area": 5.527199999999999,
+  "H1_bulk_area": 5.527199999999999,
+  "time": 0.0025,
+  "iterations": [
+    {
+      "time": 0.00125,
+      "iterations": 7,
+      "converged": true
+    },
+    {
+      "time": 0.0025,
+      "iterations": 7,
+      "converged": true
+    }
+  ]
+}

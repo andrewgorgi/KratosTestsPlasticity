@@ -1,0 +1,13 @@
+--- a/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
++++ b/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
+@@ -82,7 +82,9 @@
+         mBasisFunctionsOrder = std::sqrt(r_DN_De[0].size1()) - 1;
+     }
+ 
+-    // mBasisFunctionsOrder *= 2;
++    // Tensor-product Qp includes mixed derivatives up to total order 2p.
++    // In particular Q1 has a nonzero mixed second derivative.
++    mBasisFunctionsOrder *= 2;
+ 
+     // Compute the normals
+     mNormalParameterSpace = - r_geometry.Normal(0, GetIntegrationMethod());

@@ -1,0 +1,3653 @@
+{
+  "methods": {
+    "body_fitted": {
+      "geometry": {
+        "echo_level": 0,
+        "lower_point_uvw": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "lower_point_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model_part_name": "IgaModelPart",
+        "number_of_knot_spans": [
+          20,
+          10
+        ],
+        "polynomial_order": [
+          2,
+          2
+        ],
+        "upper_point_uvw": [
+          4.0,
+          2.0,
+          0.0
+        ],
+        "upper_point_xyz": [
+          4.0,
+          2.0,
+          0.0
+        ]
+      },
+      "bulk_quadrature_per_direction": 10,
+      "solver_settings_equal": true,
+      "formula_strings_equal": true,
+      "runtime_mesh": [
+        8,
+        4
+      ],
+      "condition_counts": {
+        "SupportSolidCondition": 80,
+        "LoadSolidCondition": 160
+      },
+      "neumann_checks": 160,
+      "maximum_traction_absolute_difference": 8.526512829121202e-14,
+      "neumann_checks_details": [
+        {
+          "point": [
+            0.006523367870707064,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            2.6960288528239835
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.033734158327753866,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            13.94034855695984
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.0801476079252439,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            33.102308571999764
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.1416511514676882,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            58.42226873973494
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            0.2127814152545922,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            87.5315951929458
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.2872185847454078,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            117.70028881362929
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.3583488485323118,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            146.15436714351694
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.4198523920747561,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            170.39306045687906
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.46626584167224616,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            178.69152815546332
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.49347663212929294,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            181.30563547146832
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.5065233678707071,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            182.55103840956028
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.5337341583277538,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            185.13112950938756
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.5801476079252439,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            189.4749256107949
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.6416511514676881,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            195.11154876394014
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.7127814152545922,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            201.4447846391237
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.7872185847454078,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            207.83873051332952
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.8583488485323119,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            213.70546919275486
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.9198523920747561,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            218.57229547433775
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.966265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            222.11127278884263
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.9934766321292929,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            224.13043335289873
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.006523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            225.08362349495198
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.033734158327754,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            227.03993028720782
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.080147607925244,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            230.27572890643305
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.1416511514676881,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            234.3608603918395
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.2127814152545922,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            238.78582277783335
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.2872185847454078,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            243.05812082298996
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.3583488485323119,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            246.78492081754482
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.4198523920747559,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            249.71796986888918
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.466265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            251.74927205373467
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.493476632129293,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            252.86608697370033
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.506523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            253.38194976127738
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.533734158327754,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.4166422708063
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.580147607925244,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            256.0518224006598
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.6416511514676881,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            257.9635379814835
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.7127814152545922,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            259.8065664674039
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.787218584745408,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.3067980346144
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.8583488485323119,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.32628782865385
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.919852392074756,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.8790295198484
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.966265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.09340923119197
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.9934766321292927,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.137853559455
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.006523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.137853559455
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.033734158327754,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.09340923119197
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.0801476079252437,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.8790295198485
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.141651151467688,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.32628782865385
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.212781415254592,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.3067980346145
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.287218584745408,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            259.80656646740397
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.358348848532312,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            257.9635379814835
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.4198523920747563,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            256.0518224006598
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.466265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.41664227080622
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.493476632129293,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            253.38194976127744
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.506523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            252.8660869737004
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.533734158327754,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            251.74927205373473
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.5801476079252437,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            249.7179698688892
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.641651151467688,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            246.78492081754482
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            2.712781415254592,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            243.0581208229899
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.787218584745408,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            238.7858227778334
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.8583488485323123,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            234.36086039183954
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.9198523920747563,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            230.27572890643305
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.966265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            227.03993028720785
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.993476632129293,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            225.08362349495195
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.006523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            224.13043335289873
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.033734158327754,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            222.11127278884268
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.0801476079252437,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            218.5722954743378
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.141651151467688,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            213.70546919275486
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.212781415254592,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            207.83873051332952
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.287218584745408,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            201.4447846391237
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.358348848532312,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            195.11154876394025
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            3.4198523920747563,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            189.4749256107949
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.466265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            185.13112950938753
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.493476632129293,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            182.55103840956025
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.506523367870707,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            181.3056354714683
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.5337341583277544,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            178.6915281554633
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.5801476079252437,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            170.39306045687928
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.641651151467688,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            146.1543671435169
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.7127814152545917,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            117.70028881362963
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-14
+        },
+        {
+          "point": [
+            3.7872185847454074,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            87.53159519294606
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.858348848532312,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            58.42226873973509
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            3.9198523920747563,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            33.10230857199969
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            3.966265841672246,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            13.940348556959844
+          ],
+          "maximum_absolute_difference": 1.7763568394002505e-15
+        },
+        {
+          "point": [
+            3.993476632129293,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            2.6960288528239733
+          ],
+          "maximum_absolute_difference": 4.440892098500626e-16
+        },
+        {
+          "point": [
+            3.993476632129293,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            2.6960288528239733
+          ],
+          "maximum_absolute_difference": 4.440892098500626e-16
+        },
+        {
+          "point": [
+            3.966265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            13.940348556959844
+          ],
+          "maximum_absolute_difference": 1.7763568394002505e-15
+        },
+        {
+          "point": [
+            3.9198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            33.10230857199969
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            3.858348848532312,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            58.42226873973509
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            3.7872185847454074,
+            1.9999999999999998
+          ],
+          "traction": [
+            0.0,
+            87.53159519294606
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.7127814152545917,
+            1.9999999999999998
+          ],
+          "traction": [
+            0.0,
+            117.70028881362963
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-14
+        },
+        {
+          "point": [
+            3.641651151467688,
+            1.9999999999999998
+          ],
+          "traction": [
+            0.0,
+            146.1543671435169
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.5801476079252437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            170.39306045687928
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.5337341583277544,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            178.6915281554633
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.506523367870707,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            181.3056354714683
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.493476632129293,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            182.55103840956025
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.466265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            185.13112950938753
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.4198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            189.4749256107949
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.358348848532312,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            195.11154876394025
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            3.287218584745408,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            201.4447846391237
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.212781415254592,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            207.83873051332952
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.141651151467688,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            213.70546919275486
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.0801476079252437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            218.5722954743378
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.033734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            222.11127278884268
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.006523367870707,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            224.13043335289873
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.993476632129293,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            225.08362349495195
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.966265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            227.03993028720785
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.9198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            230.27572890643305
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.8583488485323123,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            234.36086039183954
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.787218584745408,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            238.7858227778334
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.712781415254592,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            243.0581208229899
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.641651151467688,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            246.78492081754482
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            2.5801476079252437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            249.7179698688892
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.533734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            251.74927205373473
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.506523367870707,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            252.8660869737004
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.493476632129293,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            253.38194976127744
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.466265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.41664227080622
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.4198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            256.0518224006598
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.358348848532312,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            257.9635379814835
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.287218584745408,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            259.80656646740397
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.212781415254592,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            261.3067980346145
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.141651151467688,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.32628782865385
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.0801476079252437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.8790295198485
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.033734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.09340923119197
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.006523367870707,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.137853559455
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.9934766321292932,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.137853559455
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.966265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.09340923119197
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.9198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.8790295198485
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.8583488485323119,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.32628782865385
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.787218584745408,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            261.3067980346144
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.7127814152545922,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            259.8065664674039
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.6416511514676881,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            257.9635379814835
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.5801476079252434,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            256.0518224006597
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.533734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.4166422708063
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.506523367870707,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            253.38194976127744
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.4934766321292932,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            252.86608697370033
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            1.466265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            251.74927205373467
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.4198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            249.71796986888918
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.3583488485323119,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            246.78492081754482
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.2872185847454078,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            243.05812082298996
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.2127814152545922,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            238.78582277783335
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.1416511514676881,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            234.3608603918395
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.080147607925244,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            230.27572890643307
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.033734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            227.03993028720782
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.0065233678707066,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            225.08362349495192
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.9934766321292932,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            224.13043335289873
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.966265841672246,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            222.11127278884263
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.9198523920747563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            218.57229547433778
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.8583488485323119,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            213.70546919275486
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.7872185847454078,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            207.83873051332952
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.7127814152545922,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            201.4447846391237
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.6416511514676881,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            195.11154876394014
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.5801476079252437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            189.47492561079483
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.533734158327754,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            185.13112950938756
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.5065233678707068,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            182.55103840956025
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.49347663212929316,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            181.3056354714683
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.46626584167224605,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            178.69152815546332
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.41985239207475633,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            170.39306045687917
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.35834884853231186,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            146.154367143517
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.28721858474540785,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            117.70028881362934
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.21278141525459215,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            87.53159519294577
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.14165115146768814,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            58.422268739734925
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.08014760792524367,
+            1.9999999999999998
+          ],
+          "traction": [
+            0.0,
+            33.102308571999664
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.03373415832775395,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            13.940348556959874
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.006523367870706842,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            2.696028852823892
+          ],
+          "maximum_absolute_difference": 0.0
+        }
+      ]
+    },
+    "sbm": {
+      "geometry": {
+        "echo_level": 0,
+        "lambda_outer": 1.0,
+        "lower_point_uvw": [
+          -0.2,
+          -0.3,
+          0.0
+        ],
+        "lower_point_xyz": [
+          -0.2,
+          -0.3,
+          0.0
+        ],
+        "model_part_name": "IgaModelPart",
+        "number_initial_points_if_importing_nurbs": 1000,
+        "number_of_inner_loops": 0,
+        "number_of_knot_spans": [
+          20,
+          10
+        ],
+        "polynomial_order": [
+          2,
+          2
+        ],
+        "skin_model_part_name": "skin_model_part",
+        "skin_model_part_outer_initial_name": "initial_skin_model_part_out",
+        "upper_point_uvw": [
+          4.11,
+          2.1,
+          0.0
+        ],
+        "upper_point_xyz": [
+          4.11,
+          2.1,
+          0.0
+        ]
+      },
+      "bulk_quadrature_per_direction": 20,
+      "solver_settings_equal": true,
+      "formula_strings_equal": true,
+      "runtime_mesh": [
+        8,
+        4
+      ],
+      "condition_counts": {
+        "Geometrical Condition": 16,
+        "SbmSolidCondition": 20,
+        "SbmLoadSolidCondition": 60
+      },
+      "neumann_checks": 60,
+      "maximum_traction_absolute_difference": 1.4210854715202004e-13,
+      "neumann_checks_details": [
+        {
+          "point": [
+            0.36036036036036034,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            146.95281228098733
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.46046046046046046,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            178.13098694855134
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.6046046046046046,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            191.7332541469727
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.7527527527527528,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            204.9092976059188
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.8488488488488488,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            212.93635366100466
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            0.8528528528528527,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            213.26107057463395
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.7567567567567566,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            205.25241854967885
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.6086086086086087,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            192.10088690504813
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            0.46446446446446465,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            178.51769961213307
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.36436436436436415,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            148.5410592999608
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.9009009009009009,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            217.09376097089208
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.001001001001001,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            224.68135369211342
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.145145145145145,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            234.58582510801747
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            1.2892892892892893,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            243.1715876149075
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-13
+        },
+        {
+          "point": [
+            1.3893893893893894,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            248.29925094820794
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.3933933933933935,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            248.48955622252205
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.2932932932932935,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            243.39015454930424
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.149149149149149,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            234.8426735756977
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.005005005005005,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            224.9731952763335
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.9049049049049049,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            217.40772997819093
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.4414414414414414,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            250.68251631974874
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.5375375375375375,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.55680795014973
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            1.6816816816816818,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            259.0496633786206
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.82982982982983,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.96637287791464
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            1.9259259259259258,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.91701130913646
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            1.92992992992993,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.94041658899766
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.8338338338338338,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.02085564259784
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.6856856856856859,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            259.15138745021665
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.5415415415415414,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.70318157582471
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.4454454454454453,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            250.85764957410467
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.977977977977978,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.11990322067504
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.078078078078078,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.8923072429001
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            2.2222222222222223,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.1409763986256
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.3663663663663663,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            257.7309525102541
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.4664664664664664,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.40921821520305
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.4704704704704703,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.26041383055352
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.3703703703703702,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            257.6129244030093
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.2262262262262262,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            261.0684970664078
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.0820820820820822,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.86630463459613
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.9819819819819822,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.12640789251725
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.5185185185185186,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            252.38056617321186
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.6146146146146148,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            248.10779144788805
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.7627627627627627,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            240.23059906370764
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.906906906906907,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            231.1550398742851
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.007007007007007,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            224.09491143891566
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.011011011011011,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            223.8003165694797
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.9109109109109106,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            230.88416657646113
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.766766766766767,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            239.99678452714932
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.6186186186186187,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            247.91517961497536
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.5225225225225225,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            252.2161096084755
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.055055055055055,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            220.50023184646093
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.155155155155155,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            212.61083223797206
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.299299299299299,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            200.38398361728008
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.4434434434434436,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            187.27631037489044
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.5435435435435436,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            177.74381397854563
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            3.5475475475475475,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            177.35618453101068
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.4474474474474475,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            186.9012305881756
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.3033033033033035,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            200.03102289901557
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.159159159159159,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            212.2845095247366
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.059059059059059,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            220.19488845188428
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        }
+      ]
+    },
+    "gap_sbm": {
+      "geometry": {
+        "echo_level": 0,
+        "gap_approximation_order": 1,
+        "gap_element_name": "CutSbmSolidElement",
+        "gap_interface_condition_name": "CutSbmSolidInterfaceCondition",
+        "gap_sbm_type": "interpolation",
+        "lambda_outer": 1.0,
+        "lower_point_uvw": [
+          -0.5,
+          -0.3,
+          0.0
+        ],
+        "lower_point_xyz": [
+          -0.5,
+          -0.3,
+          0.0
+        ],
+        "model_part_name": "IgaModelPart",
+        "number_initial_points_if_importing_nurbs": 10000,
+        "number_internal_divisions": 1,
+        "number_of_inner_loops": 0,
+        "number_of_knot_spans": [
+          20,
+          10
+        ],
+        "polynomial_order": [
+          2,
+          2
+        ],
+        "skin_model_part_name": "skin_model_part",
+        "skin_model_part_outer_initial_name": "initial_skin_model_part_out",
+        "upper_point_uvw": [
+          4.2,
+          2.1,
+          0.0
+        ],
+        "upper_point_xyz": [
+          4.2,
+          2.1,
+          0.0
+        ]
+      },
+      "bulk_quadrature_per_direction": 20,
+      "solver_settings_equal": true,
+      "formula_strings_equal": true,
+      "runtime_mesh": [
+        8,
+        4
+      ],
+      "condition_counts": {
+        "Geometrical Condition": 16,
+        "CutSbmSolidCondition": 24,
+        "CutSbmLoadSolidCondition": 72,
+        "CutSbmSolidInterfaceCondition": 48
+      },
+      "neumann_checks": 72,
+      "maximum_traction_absolute_difference": 1.4210854715202004e-13,
+      "neumann_checks_details": [
+        {
+          "point": [
+            0.03800680224611051,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            15.705486661360663
+          ],
+          "maximum_absolute_difference": 7.105427357601002e-15
+        },
+        {
+          "point": [
+            0.16861686168616863,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            69.48409040142356
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.29922692112622673,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            122.53216503224078
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.37528561079311695,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            152.86561848119402
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.506050605060506,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            182.5060025195445
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.6368155993278952,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            194.67358300343307
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            0.6368606845025645,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            194.67767067144226
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            0.5062506250625063,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            182.52505749561513
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.3756405656224481,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            153.00598533546972
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.29958187595555785,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            122.67482689565139
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-14
+        },
+        {
+          "point": [
+            0.16881688168816877,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            69.56603190322203
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-14
+        },
+        {
+          "point": [
+            0.03805188742077967,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            15.724111588152518
+          ],
+          "maximum_absolute_difference": 5.329070518200751e-15
+        },
+        {
+          "point": [
+            0.7079600049558459,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            201.0221679962638
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.8216821682168217,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            210.7121064063817
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.9354043314777976,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            219.77122633790606
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.0016344530668086,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            224.72758576798668
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.1155115511551155,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            232.65339585962604
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            1.2293886492434223,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            239.7712703823663
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.2294337344180917,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            239.77392069125412
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.1157115711571157,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            232.6666240208556
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.0019894078961398,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            224.75348183111316
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            0.9357592863071287,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            219.79843764071714
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            0.8218821882188219,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            210.72861574527462
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            0.708005090130515,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            201.0261245203388
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.2956187708324334,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            243.516588180494
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.4093409340934093,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            249.23603209631017
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.5230630973543853,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.01753492532973
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            1.5892932189433964,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            256.3545899203507
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.7031703170317032,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            259.5807992426321
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.81704741512001,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.7838158895224
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.817092500294679,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            261.7844828622965
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            1.7033703370337032,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            259.58557212170444
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.5896481737727275,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            256.36621110893634
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.5234180521837164,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.0309489854826
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.4095409540954096,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            249.2452777191778
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-13
+        },
+        {
+          "point": [
+            1.2956638560071028,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            243.51903572307347
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.883277536709021,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.58717318003835
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            1.9969996999699968,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            263.13921493692084
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.1107218632309728,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            262.6424758704052
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.1769068996453145,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            261.87179631782624
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.2906290629062904,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            259.72728907420316
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.4043512261672664,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            256.5612017545404
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.404351226167267,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            256.5612017545404
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.290629062906291,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            259.72728907420304
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.176906899645315,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            261.8717963178262
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.110721863230973,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.64247587040524
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            1.996999699969997,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            263.13921493692084
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            1.8832775367090209,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            262.58717318003823
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.470536262581608,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            254.25795860439985
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.5842584258425845,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            249.53045065310502
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.6979805891035604,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            243.86265443482773
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.7642107106925713,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            240.14616977967287
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-13
+        },
+        {
+          "point": [
+            2.878087808780878,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            233.07545809137213
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.991964906869185,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            225.19343687740906
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            2.992009992043854,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            225.19016374912138
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            2.878287828782878,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            233.0623074135703
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            2.764565665521902,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            240.1254510692661
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            2.6983355439328913,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            243.8435371659298
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            2.5844584458445845,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            249.52129515136772
+          ],
+          "maximum_absolute_difference": 1.1368683772161603e-13
+        },
+        {
+          "point": [
+            2.4705813477562777,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            254.2562759293535
+          ],
+          "maximum_absolute_difference": 5.684341886080802e-14
+        },
+        {
+          "point": [
+            3.0800162529980746,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            218.5824764911011
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.2687268726872687,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            203.05631847031123
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.457437492376463,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            185.96302432907567
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.567310063045231,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            175.40408774142355
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.756175617561756,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            100.15532432080894
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.9450411720782816,
+            0.0
+          ],
+          "traction": [
+            0.0,
+            22.706863947599555
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.945086257252951,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            22.68824805160004
+          ],
+          "maximum_absolute_difference": 2.1316282072803006e-14
+        },
+        {
+          "point": [
+            3.7563756375637563,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            100.07416802081136
+          ],
+          "maximum_absolute_difference": 1.4210854715202004e-14
+        },
+        {
+          "point": [
+            3.5676650178745617,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            175.2657714758103
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        },
+        {
+          "point": [
+            3.4577924472057937,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            185.92962713259402
+          ],
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "point": [
+            3.2689268926892687,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            203.03896697038698
+          ],
+          "maximum_absolute_difference": 8.526512829121202e-14
+        },
+        {
+          "point": [
+            3.0800613381727437,
+            2.0
+          ],
+          "traction": [
+            0.0,
+            218.57898214778945
+          ],
+          "maximum_absolute_difference": 2.842170943040401e-14
+        }
+      ]
+    }
+  },
+  "formula_checks": [
+    {
+      "variable": "BODY_FORCE",
+      "time": 1e-05,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 1e-05,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 1e-05,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 1e-05,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 1e-05,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.00125,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.00125,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.00125,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.00125,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.00125,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.0025,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.0025,
+      "point": [
+        0.4,
+        0.2
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        0.7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.0025,
+      "point": [
+        2.0,
+        1.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "BODY_FORCE",
+      "time": 0.0025,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "variable": "DISPLACEMENT",
+      "time": 0.0025,
+      "point": [
+        3.4,
+        2.0
+      ],
+      "maximum_absolute_difference": 0.0
+    }
+  ]
+}

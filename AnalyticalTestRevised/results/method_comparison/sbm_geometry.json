@@ -1,0 +1,29 @@
+{
+  "method": "sbm",
+  "spans": [
+    20.0,
+    10.0
+  ],
+  "hx": 0.23500000000000001,
+  "hy": 0.24,
+  "active_cells": 112,
+  "active_points": 1008,
+  "points_per_cell": [
+    9
+  ],
+  "area": 6.316799999999998,
+  "gauss_min": [
+    0.23148489136412567,
+    0.20704839969102187
+  ],
+  "gauss_max": [
+    3.9385151086358747,
+    1.8329516003089776
+  ],
+  "conditions": 230,
+  "condition_types": [
+    "\"SbmSolidCondition\""
+  ],
+  "exact_trial_yielded_boundary_points": 88,
+  "exact_trial_boundary_max": 336.2852821909076
+}
