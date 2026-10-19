@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "variant": "free",
+      "spans": 20,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 112,
+        "\"SbmSolidCondition\"": 784
+      }
+    },
+    {
+      "variant": "free_dt125",
+      "spans": 20,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 112,
+        "\"SbmSolidCondition\"": 784
+      }
+    },
+    {
+      "variant": "penalty_100E",
+      "spans": 20,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 112,
+        "\"SbmSolidCondition\"": 784
+      }
+    },
+    {
+      "variant": "free",
+      "spans": 40,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 224,
+        "\"SbmSolidCondition\"": 1568
+      }
+    },
+    {
+      "variant": "free_dt125",
+      "spans": 40,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 224,
+        "\"SbmSolidCondition\"": 1568
+      }
+    },
+    {
+      "variant": "penalty_100E",
+      "spans": 40,
+      "parameters_match_expected": true,
+      "materials_match_expected": true,
+      "no_neumann_conditions": true,
+      "same_sampling_points": true,
+      "same_sampling_weights": true,
+      "conditions": {
+        "LineCondition2D2N": 224,
+        "\"SbmSolidCondition\"": 1568
+      }
+    }
+  ],
+  "hashes": {
+    "source_current": "2db3a9d89c5615840af08f6c71491e9980842f4365ef3f14042906d0994340b1",
+    "source_frozen": "43a06dabfde121d98afbd31f049c9717bcd5a37dd84962be2c4084d10b7c5c49",
+    "installed_library_current": "5d6f5ed9b8a117df51046135610a7ebd93596020b833d1e2b449c9880113f5ec",
+    "installed_library_frozen": "92af9c0a915f0e5e4e3491628ac276f2318e55e55abdc00ab308fc1bbb714cf1",
+    "diagnostic_library": {
+      "path": "/tmp/sbm_cyclic_old_vs_new_p3/new/libKratosIgaCore.so",
+      "sha256": "4a3140e1402883e2a45644d3217fe1692bd16ad36a23a18301e0a5a8ebbbffe7"
+    }
+  },
+  "source_matches_frozen": false,
+  "installed_library_matches_frozen": false,
+  "diagnostic_library_matches_frozen": true
+}

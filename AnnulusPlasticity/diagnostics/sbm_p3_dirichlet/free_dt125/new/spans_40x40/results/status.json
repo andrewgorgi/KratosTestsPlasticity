@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "time": 0.005000000000000004,
+  "error": "Newton non convergente al tempo 0.005; nessuna norma di errore viene calcolata.",
+  "completed_steps": 39,
+  "spans": [
+    40,
+    40
+  ],
+  "degree": 3
+}

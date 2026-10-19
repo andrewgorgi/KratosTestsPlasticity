@@ -1,0 +1,322 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-awvczzhz because the default path (/home/agorgi/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.4."2"-GapSbmPlasticityActualized-b34462dddd8-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 1.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [21](-2.2,-1.98,-1.76,-1.54,-1.32,-1.1,-0.88,-0.66,-0.44,-0.22,-2.77556e-16,0.22,0.44,0.66,0.88,1.1,1.32,1.54,1.76,1.98,2.2)
+    KNOT_VECTOR_V : [21](-2.2,-1.98,-1.76,-1.54,-1.32,-1.1,-0.88,-0.66,-0.44,-0.22,-2.77556e-16,0.22,0.44,0.66,0.88,1.1,1.32,1.54,1.76,1.98,2.2)
+    KNOT_VECTOR_W : [0]()
+    KNOT_SPAN_SIZES : [2](0.22,0.22)
+    PARAMETER_SPACE_CORNERS : [[2](-2.2,2.2), [2](-2.2,2.2)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 5
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Mesh 0 :
+        Number of Nodes       : 282
+        Number of Properties  : 1
+        Number of Elements    : 1513
+        Number of Conditions  : 672
+        Number of Geometries  : 113
+        Number of Constraints : 0
+
+    -SBM_Inner- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 200
+            Number of Geometries  : 0
+            Number of Constraints : 0
+        -Layer0- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+                Number of Elements    : 0
+                Number of Conditions  : 200
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -SBM_Support_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 360
+            Number of Geometries  : 0
+            Number of Constraints : 0
+        -Layer0- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+     CYCLIC_STEP {"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.019492737979561803, "H1_bulk_amplitude_relative": 0.011705799428921951, "step": 1, "iterations": 2}
+CYCLIC_STEP {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.10869622590115512, "H1_bulk_amplitude_relative": 0.06691539595434949, "step": 2, "iterations": 6}
+CYCLIC_STEP {"time": 0.00075, "load_factor": 0.75, "L2_amplitude_relative": 0.16628558941684352, "H1_bulk_amplitude_relative": 0.2011575666381338, "step": 3, "iterations": 7}
+           Number of Elements    : 0
+                Number of Conditions  : 360
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 1512
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 2
+            Number of Properties  : 1
+            Number of Elements    : 1
+            Number of Conditions  : 40
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 72
+            Number of Geometries  : 0
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+[WARNING] LineSearchStrategy: Using deprecated constructor. Please use constructor without linear solver.::[MechanicalSolver]:: : Finished initialization. 
+[WARNING] DEPRECATION-Warning; AnalysisStage: ModifyAfterSolverInitialize is deprecated. Please, use ModifyBeforeSolutionLoop instead. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.00025 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.073901 r2 = -5.75672e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.74159e-31 r2 = -3.5595e-32
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.0005 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.33992 r1 = 0.073901 r2 = 0.0299079
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.935801 r1 = 0.000725588 r2 = -0.000106888
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.992555 r1 = 7.5645e-05 r2 = -1.1433e-06
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00095 r1 = 9.12895e-08 r2 = 1.72665e-10
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.90392e-14 r2 = 1.67958e-20
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 3.06728e-27 r2 = -3.09006e-30
+::[KSM Simulation]:: : STEP:  3 
+::[KSM Simulation]:: : TIME:  0.00075 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.01527 r1 = 0.0664279 r2 = 0.00196911
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04217 r1 = 0.0991745 r2 = 0.00771432
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.09686 r1 = 0.0102731 r2 = 0.00166718
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.10307 r1 = 0.000157378 r2 = 2.68968e-05
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00075 r1 = 2.03868e-06 r2 = 3.06326e-09
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.84713e-12 r2 = 1.27551e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 3.13304e-23 r2 = -1.34795e-28
+::[KSM Simulation]:: : STEP:  4 
+::[KSM Simulation]:: : TIME:  0.001 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -0.63249 r2 = -1.27164
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.29442 r1 = 0.344968 r2 = 0.127849
+LineSearchStrateCYCLIC_STEP {"time": 0.001, "load_factor": 1.0, "L2_amplitude_relative": 0.47027695336480746, "H1_bulk_amplitude_relative": 0.4163737437047156, "step": 4, "iterations": 8}
+CYCLIC_STEP {"time": 0.00125, "load_factor": 0.75, "L2_amplitude_relative": 0.45312455732890317, "H1_bulk_amplitude_relative": 0.4074766046473699, "step": 5, "iterations": 7}
+CYCLIC_STEP {"time": 0.0015, "load_factor": 0.5, "L2_amplitude_relative": 0.4361688316590531, "H1_bulk_amplitude_relative": 0.39872462139145376, "step": 6, "iterations": 2}
+CYCLIC_STEP {"time": 0.00175, "load_factor": 0.25, "L2_amplitude_relative": 0.4194336284026497, "H1_bulk_amplitude_relative": 0.39012756318043923, "step": 7, "iterations": 2}
+CYCLIC_STEP {"time": 0.002, "load_factor": 0.0, "L2_amplitude_relative": 0.4029464247602656, "H1_bulk_amplitude_relative": 0.381695898436173, "step": 8, "iterations": 2}
+CYCLIC_STEP {"time": 0.0022500000000000003, "load_factor": -0.30000000000000027, "L2_amplitude_relative": 0.3835341403045673, "H1_bulk_amplitude_relative": 0.3718120477246241, "step": 9, "iterations": 2}
+CYCLIC_STEP {"time": 0.0025000000000000005, "load_factor": -0.6000000000000005, "L2_amplitude_relative": 0.36458929881853835, "H1_bulk_amplitude_relative": 0.3622033585091904, "step": 10, "iterations": 2}
+CYCLIC_STEP {"time": 0.0027500000000000007, "load_factor": -0.9000000000000008, "L2_amplitude_relative": 0.34618864991297754, "H1_bulk_amplitude_relative": 0.3528923081188849, "step": 11, "iterations": 2}
+CYCLIC_STEP {"time": 0.003000000000000001, "load_factor": -1.1999999999999988, "L2_amplitude_relative": 0.2436253343467364, "H1_bulk_amplitude_relative": 0.3632670810756239, "step": 12, "iterations": 7}
+gy: LINE SEARCH it 0 coeff = 1.00353 r1 = 0.125688 r2 = 0.000881263
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.08749 r1 = 0.0175605 r2 = 0.00261503
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.03407 r1 = 0.00039697 r2 = 2.53212e-05
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00012 r1 = 1.25151e-06 r2 = 3.01371e-10
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.79192e-13 r2 = 1.67883e-19
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 5.58781e-26 r2 = -1.25452e-29
+::[KSM Simulation]:: : STEP:  5 
+::[KSM Simulation]:: : TIME:  0.00125 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.385299 r1 = -1.54628 r2 = -2.52842
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.636986 r1 = -0.325185 r2 = -0.50888
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.384009 rf = 0.0751266 r1 = 0.636986 r2 = -0.260148
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.321404 r1 = -0.579842 r2 = -2.20318
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.28268 r1 = -0.234626 r2 = -0.774442
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 1.2604 r1 = -3.41002 r2 = -5.09768
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.0379933 r2 = 4.24735e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 9.78262e-32 r2 = -6.001e-31
+::[KSM Simulation]:: : STEP:  6 
+::[KSM Simulation]:: : TIME:  0.0015 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.073901 r2 = 2.47732e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 4.66225e-31 r2 = -1.93706e-31
+::[KSM Simulation]:: : STEP:  7 
+::[KSM Simulation]:: : TIME:  0.00175 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.073901 r2 = 9.77402e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 4.13385e-31 r2 = 5.26782e-32
+::[KSM Simulation]:: : STEP:  8 
+::[KSM Simulation]:: : TIME:  0.002 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.073901 r2 = 6.79818e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 rf = 0 r1 = 3.58686e-31 r2 = -1.83378e-31
+::[KSM Simulation]:: : STEP:  9 
+::[KSM Simulation]:: : TIME:  0.0022500000000000003 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -1.24403e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 5.77682e-31 r2 = -1.77357e-31
+::[KSM Simulation]:: : STEP:  10 
+::[KSM Simulation]:: : TIME:  0.0025000000000000005 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -6.90309e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.57318e-31 r2 = 1.44824e-33
+::[KSM Simulation]:: : STEP:  11 
+::[KSM Simulation]:: : TIME:  0.0027500000000000007 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -1.25637e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 3.43784e-31 r2 = -1.09858e-31
+::[KSM Simulation]:: : STEP:  12 
+::[KSM Simulation]:: : TIME:  0.003000000000000001 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = 0.122963 r1 = 0.122436 r2 = 0.0936043
+LineSearchStrategy: LINE SEARCH it 1 coeff = 1.60357 rf = 0.0867325 r1 = 0.122963 r2 = -0.187209
+LineSearchStrategy: LINE SEARCH it 2 coeff = 2 r1 = 0.0867325 r2 = 0.0487466
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.806205 rf = 1.52129e-05 r1 = 0.158583 r2 = -0.100366
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.05718 r1 = 0.0243419 r2 = 0.00249803
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.01666 r1 = 0.000183348 r2 = 5.91048e-06
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00011 r1 = 2.1898e-07 r2 = 4.63082e-11
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 5.26064e-15 r2 = 4.12622e-22
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.15227e-29 r2 = -1.64357e-31
+::[KSM Simulation]:: : STEP:  13 
+::[KSM Simulation]:: : TIME:  0.003250000000000001 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.37851 r1 = -0.149259 r2 = -0.763542
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.0505631 r1 = 0.0377752 r2 = 0.0390403
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.350364 rf = -0.0102264 r1 = -0.0505631 r2 = 0.0302201
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.00491273 r2 = -1.2138e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 rf = 0 r1 = 1.4563e-31 r2 = -8.81089eCYCLIC_STEP {"time": 0.003250000000000001, "load_factor": -0.8999999999999986, "L2_amplitude_relative": 0.25218714422816013, "H1_bulk_amplitude_relative": 0.3688471250911777, "step": 13, "iterations": 4}
+CYCLIC_STEP {"time": 0.0035000000000000014, "load_factor": -0.5999999999999984, "L2_amplitude_relative": 0.2625599214924012, "H1_bulk_amplitude_relative": 0.37487073147263195, "step": 14, "iterations": 2}
+CYCLIC_STEP {"time": 0.0037500000000000016, "load_factor": -0.29999999999999816, "L2_amplitude_relative": 0.2745384736534822, "H1_bulk_amplitude_relative": 0.3813168801320018, "step": 15, "iterations": 2}
+CYCLIC_STEP {"time": 0.004000000000000002, "load_factor": 2.4286128663675295e-15, "L2_amplitude_relative": 0.28792245334398353, "H1_bulk_amplitude_relative": 0.3881645204862994, "step": 16, "iterations": 2}
+CYCLIC_STEP {"time": 0.004250000000000002, "load_factor": 0.3500000000000027, "L2_amplitude_relative": 0.3050656404383596, "H1_bulk_amplitude_relative": 0.39663306619362515, "step": 17, "iterations": 2}
+CYCLIC_STEP {"time": 0.004500000000000002, "load_factor": 0.700000000000003, "L2_amplitude_relative": 0.3236050382820991, "H1_bulk_amplitude_relative": 0.40558725859402134, "step": 18, "iterations": 2}
+CYCLIC_STEP {"time": 0.0047500000000000025, "load_factor": 1.0500000000000032, "L2_amplitude_relative": 0.3433145301557965, "H1_bulk_amplitude_relative": 0.41499566307532587, "step": 19, "iterations": 2}
+CYCLIC_STEP {"time": 0.005000000000000003, "load_factor": 1.3999999999999964, "L2_amplitude_relative": 0.7396161753739984, "H1_bulk_amplitude_relative": 0.5590679700527487, "step": 20, "iterations": 8}
+CYCLIC_STEP {"time": 0.005250000000000003, "load_factor": 1.049999999999996, "L2_amplitude_relative": 0.7140001207822061, "H1_bulk_amplitude_relative": 0.5456988867128026, "step": 21, "iterations": 4}
+CYCLIC_STEP {"time": 0.005500000000000003, "load_factor": 0.6999999999999957, "L2_amplitude_relative": 0.6885760393146158, "H1_bulk_amplitude_relative": 0.5324929211351005, "step": 22, "iterations": 2}
+CYCLIC_STEP {"time": 0.005750000000000003, "load_factor": 0.3499999999999954, "L2_amplitude_relative": 0.6632673702387697, "H1_bulk_amplitude_relative": 0.5194711545137347, "step": 23, "iterations": 2}
+CYCLIC_STEP {"time": 0.006000000000000004, "load_factor": 0.0, "L2_amplitude_relative": 0.6381220235329196, "H1_bulk_amplitude_relative": 0.5066448367313454, "step": 24, "iterations": 2}
+CYCLIC_RESULT {"status": "converged", "time": 0.006000000000000004, "completed_steps": 24, "spans": [20, 20], "degree": 2}
+COMPARISON_CASE {"mode": "new", "spans": 20, "seconds": 11.534827062860131, "status": {"status": "converged", "time": 0.006000000000000004, "completed_steps": 24, "spans": [20, 20], "degree": 2}, "metrics": [{"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.019492737979561803, "H1_bulk_amplitude_relative": 0.011705799428921951, "step": 1, "iterations": 2}, {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.10869622590115512, "H1_bulk_amplitude_relative": 0.06691539595434949, "step": 2, "iterations": 6}, {"time": 0.00075, "load_factor": 0.75, "L2_amplitude_relative": 0.16628558941684352, "H1_bulk_amplitude_relative": 0.2011575666381338, "step": 3, "iterations": 7}, {"time": 0.001, "load_factor": 1.0, "L2_amplitude_relative": 0.47027695336480746, "H1_bulk_amplitude_relative": 0.4163737437047156, "step": 4, "iterations": 8}, {"time": 0.00125, "load_factor": 0.75, "L2_amplitude_relative": 0.45312455732890317, "H1_bulk_amplitude_relative": 0.4074766046473699, "step": 5, "iterations": 7}, {"time": 0.0015, "load_factor": 0.5, "L2_amplitude_relative": 0.4361688316590531, "H1_bulk_amplitude_relative": 0.39872462139145376, "step": 6, "iterations": 2}, {"time": 0.00175, "load_factor": 0.25, "L2_amplitude_relative": 0.4194336284026497, "H1_bulk_amplitude_relative": 0.39012756318043923, "step": 7, "iterations": 2}, {"time": 0.002, "load_factor": 0.0, "L2_amplitude_relative": 0.4029464247602656, "H1_bulk_amplitude_relative": 0.381695898436173, "step": 8, "iterations": 2}, {"time": 0.0022500000000000003, "load_factor": -0.30000000000000027, "L2_amplitude_relative": 0.3835341403045673, "H1_bulk_amplitude_relative": 0.3718120477246241, "step": 9, "iterations": 2}, {"time": 0.0025000000000000005, "load_factor": -0.6000000000000005, "L2_amplitude_relative": 0.36458929881853835, "H1_bulk_amplitude_relative": 0.3622033585091904, "step": 10, "iterations": 2}, {"time": 0.0027500000000000007, "load_factor": -0.9000000000000008, "L2_amplitude_relative": 0.34618864991297754, "H1_bulk_amplitude_relative": 0.3528923081188849, "step": 11, "iterations": 2}, {"time": 0.003000000000000001, "load_factor": -1.1999999999999988, "L2_amplitude_relative": 0.2436253343467364, "H1_bulk_amplitude_relative": 0.3632670810756239, "step": 12, "iterations": 7}, {"time": 0.003250000000000001, "load_factor": -0.8999999999999986, "L2_amplitude_relative": 0.25218714422816013, "H1_bulk_amplitude_relative": 0.3688471250911777, "step": 13, "iterations": 4}, {"time": 0.0035000000000000014, "load_factor": -0.5999999999999984, "L2_amplitude_relative": 0.2625599214924012, "H1_bulk_amplitude_relative": 0.37487073147263195, "step": 14, "iterations": 2}, {"time": 0.0037500000000000016, "load_factor": -0.29999999999999816, "L2_amplitude_relative": 0.2745384736534822, "H1_bulk_amplitude_relative": 0.3813168801320018, "step": 15, "iterations": 2}, {"time": 0.004000000000000002, "load_factor": 2.4286128663675295e-15, "L2_amplitude_relative": 0.28792245334398353, "H1_bulk_amplitude_relative": 0.3881645204862994, "step": 16, "iterations": 2}, {"time": 0.004250000000000002, "load_factor": 0.3500000000000027, "L2_amplitude_relative": 0.3050656404383596, "H1_bulk_amplitude_relative": 0.39663306619362515, "step": 17, "iterations": 2}, {"time": 0.004500000000000002, "load_factor": 0.700000000000003, "L2_amplitude_relative": 0.3236050382820991, "H1_bulk_amplitude_relative": 0.40558725859402134, "step": 18, "iterations": 2}, {"time": 0.0047500000000000025, "load_factor": 1.0500000000000032, "L2_amplitude_relative": 0.3433145301557965, "H1_bulk_amplitude_relative": 0.41499566307532587, "step": 19, "iterations": 2}, {"time": 0.005000000000000003, "load_factor": 1.3999999999999964, "L2_amplitude_relative": 0.7396161753739984, "H1_bulk_amplitude_relative": 0.5590679700527487, "step": 20, "iterations": 8}, {"time": 0.005250000000000003, "load_factor": 1.049999999999996, "L2_amplitude_relative": 0.7140001207822061, "H1_bulk_amplitude_relative": 0.5456988867128026, "step": 21, "iterations": 4}, {"time": 0.005500000000000003, "load_factor": 0.6999999999999957, "L2_amplitude_relative": 0.6885760393146158, "H1_bulk_amplitude_relative": 0.5324929211351005, "step": 22, "iterations": 2}, {"time": 0.005750000000000003, "load_factor": 0.3499999999999954, "L2_amplitude_relative": 0.6632673702387697, "H1_bulk_amplitude_relative": 0.5194711545137347, "step": 23, "iterations": 2}, {"time": 0.006000000000000004, "load_factor": 0.0, "L2_amplitude_relative": 0.6381220235329196, "H1_bulk_amplitude_relative": 0.5066448367313454, "step": 24, "iterations": 2}]}
+-32
+::[KSM Simulation]:: : STEP:  14 
+::[KSM Simulation]:: : TIME:  0.0035000000000000014 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -4.7951e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.92898e-31 r2 = -9.51835e-32
+::[KSM Simulation]:: : STEP:  15 
+::[KSM Simulation]:: : TIME:  0.0037500000000000016 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -3.39931e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.65526e-31 r2 = -4.90332e-32
+::[KSM Simulation]:: : STEP:  16 
+::[KSM Simulation]:: : TIME:  0.004000000000000002 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.106417 r2 = -6.40945e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.54157e-31 r2 = -1.09484e-32
+::[KSM Simulation]:: : STEP:  17 
+::[KSM Simulation]:: : TIME:  0.004250000000000002 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144846 r2 = -1.59463e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 rf = 0 r1 = 1.34616e-31 r2 = -2.07884e-31
+::[KSM Simulation]:: : STEP:  18 
+::[KSM Simulation]:: : TIME:  0.004500000000000002 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144846 r2 = -1.71459e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.18091e-32 r2 = -3.22979e-31
+::[KSM Simulation]:: : STEP:  19 
+::[KSM Simulation]:: : TIME:  0.0047500000000000025 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144846 r2 = -1.11753e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.4553e-31 r2 = -4.95823e-31
+::[KSM Simulation]:: : STEP:  20 
+::[KSM Simulation]:: : TIME:  0.005000000000000003 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = 0.260398 r1 = 0.185697 r2 = 0.158881
+LineSearchStrategy: LINE SEARCH it 1 coeff = 1.54961 rf = 0.155978 r1 = 0.260398 r2 = -0.317761
+LineSearchStrategy: LINE SEARCH it 2 coeff = 2 rf = 0 r1 = 0.155978 r2 = 0.117281
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.553951 r1 = 0.066389 r2 = -0.548879
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04925 r1 = 0.153239 r2 = 0.0137413
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.616718 r1 = 0.00532945 r2 = -0.017501
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04809 r1 = 0.00175481 r2 = 0.000153961
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00097 r1 = 3.96234e-06 r2 = 7.65664e-09
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 5.80823e-12 r2 = 2.05901e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.1071e-23 r2 = 2.48008e-29
+::[KSM Simulation]:: : STEP:  21 
+::[KSM Simulation]:: : TIME:  0.005250000000000003 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.259916 r1 = -0.488072 r2 = -1.50453
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.986625 r1 = 0.0350175 r2 = -0.000962429
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 9.26519e-05 r2 = 1.74951e-18
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 rf = 0 r1 = -1.64203e-31 r2 = -1.84445e-31
+::[KSM Simulation]:: : STEP:  22 
+::[KSM Simulation]:: : TIME:  0.005500000000000003 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144841 r2 = -2.22517e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.35531e-31 r2 = -1.72754e-30
+::[KSM Simulation]:: : STEP:  23 
+::[KSM Simulation]:: : TIME:  0.005750000000000003 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144846 r2 = -3.36218e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.25028e-31 r2 = -1.82073e-30
+::[KSM Simulation]:: : STEP:  24 
+::[KSM Simulation]:: : TIME:  0.006000000000000004 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.144846 r2 = -2.66964e-16
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.18822e-30 r2 = -3.51748e-32
+::[KSM Simulation]:: : Analysis -END-  
+Deregistering KratosMultiphysics
+Deregistering IgaApplication
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering StructuralMechanicsApplication

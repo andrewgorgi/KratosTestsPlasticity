@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "variant": "baseline",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "baseline",
+      "spans": 40,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "free_dt025",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "free_dt0625",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "free_dt125",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "free_dt125",
+      "spans": 40,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_001E",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_01E",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_100E",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_100E",
+      "spans": 40,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_100E_dt0625",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_10E",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_1E",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_1E_dt0625",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    },
+    {
+      "variant": "penalty_1E_dt125",
+      "spans": 20,
+      "parameters_only_dt_changed": true,
+      "material_only_penalty_changed": true
+    }
+  ],
+  "source_unchanged": true,
+  "installed_library_unchanged": true
+}

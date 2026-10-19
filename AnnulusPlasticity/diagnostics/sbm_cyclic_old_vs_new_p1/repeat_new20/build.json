@@ -1,0 +1,15 @@
+{
+  "source": "/home/agorgi/Documents/GECKO/Kratos/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp",
+  "sha256": "43a06dabfde121d98afbd31f049c9717bcd5a37dd84962be2c4084d10b7c5c49",
+  "libraries": {
+    "old": {
+      "path": "/tmp/sbm_cyclic_old_vs_new_p1/old/libKratosIgaCore.so",
+      "sha256": "8ee5fef01141a29559d6bbde5ee7f5a133c32326ba955c23202523c283922061"
+    },
+    "new": {
+      "path": "/tmp/sbm_cyclic_old_vs_new_p1/new/libKratosIgaCore.so",
+      "sha256": "e5be4f982381a623c8a3424939b431cc36f41a2dde3511c79f29f569b058e139"
+    }
+  },
+  "installed_library_sha256": "92af9c0a915f0e5e4e3491628ac276f2318e55e55abdc00ab308fc1bbb714cf1"
+}

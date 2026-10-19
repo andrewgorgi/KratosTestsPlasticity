@@ -1,0 +1,549 @@
+//  KRATOS  _____________
+//         /  _/ ____/   |
+//         / // / __/ /| |
+//       _/ // /_/ / ___ |
+//      /___/\____/_/  |_| Application
+//
+//  License:         BSD License
+//                   Kratos default license: kratos/license.txt
+//
+//  Main authors:    Andrea Gorgi
+//
+
+#pragma once
+
+
+// System includes
+#include "includes/define.h"
+#include "includes/condition.h"
+
+// External includes
+
+// Project includes
+#include "iga_application_variables.h"
+#include "includes/constitutive_law.h"
+
+namespace Kratos
+{
+/// Condition for penalty support condition
+class KRATOS_API(IGA_APPLICATION) GapSbmSolidInterfaceCondition
+    : public Condition
+{
+public:
+    ///@name Type Definitions
+    ///@{
+
+    /// Counted pointer definition of GapSbmSolidInterfaceCondition
+    KRATOS_CLASS_INTRUSIVE_POINTER_DEFINITION(GapSbmSolidInterfaceCondition);
+
+    /// Size types
+    using IndexType = std::size_t;
+
+    ///@}
+    ///@name Life Cycle
+    ///@{
+    
+    void Initialize(const ProcessInfo& rCurrentProcessInfo) override;
+
+    /// Constructor with Id and geometry
+    GapSbmSolidInterfaceCondition(
+        IndexType NewId,
+        GeometryType::Pointer pGeometry)
+        : Condition(NewId, pGeometry)
+    {};
+
+    /// Constructor with Id, geometry and property
+    GapSbmSolidInterfaceCondition(
+        IndexType NewId,
+        GeometryType::Pointer pGeometry,
+        PropertiesType::Pointer pProperties)
+        : Condition(NewId, pGeometry, pProperties)
+    {};
+
+    /// Default constructor
+    GapSbmSolidInterfaceCondition() : Condition()
+    {};
+
+    /// Destructor
+    virtual ~GapSbmSolidInterfaceCondition() override
+    {};
+
+    ///@}
+    ///@name Life Cycle
+    ///@{
+
+    /// Create with Id, pointer to geometry and pointer to property
+    Condition::Pointer Create(
+        IndexType NewId,
+        GeometryType::Pointer pGeom,
+        PropertiesType::Pointer pProperties
+    ) const override
+    {
+        return Kratos::make_intrusive<GapSbmSolidInterfaceCondition>(
+            NewId, pGeom, pProperties);
+    };
+
+    /// Create with Id, pointer to geometry and pointer to property
+    Condition::Pointer Create(
+        IndexType NewId,
+        NodesArrayType const& ThisNodes,
+        PropertiesType::Pointer pProperties
+    ) const override
+    {
+        return Kratos::make_intrusive<GapSbmSolidInterfaceCondition>(
+            NewId, GetGeometry().Create(ThisNodes), pProperties);
+    };
+
+    ///@}
+    ///@name Operations
+    ///@{
+
+    /**
+    * @brief This is called during the assembling process in order
+    *        to calculate the condition right hand side matrix
+    * @param rLeftHandSideMatrix the condition right hand side matrix
+    * @param rCurrentProcessInfo the current process info
+    */
+    void CalculateRightHandSide(
+        VectorType& rRightHandSideVector,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    /**
+    * @brief This is called during the assembling process in order
+    *        to calculate the condition left hand side matrix
+    * @param rLeftHandSideMatrix the condition left hand side matrix
+    * @param rCurrentProcessInfo the current process info
+    */
+    void CalculateLeftHandSide(
+        MatrixType& rLeftHandSideMatrix,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    /**
+     * @brief This function provides a more general interface to the element.
+     * @details It is designed so that rLHSvariables and rRHSvariables are
+     *          passed to the element thus telling what is the desired output
+     * @param rLeftHandSideMatrix container with the output Left Hand Side matrix
+     * @param rRightHandSideVector container for the desired RHS output
+     * @param rCurrentProcessInfo the current process info instance
+     */
+    void CalculateLocalSystem(
+        MatrixType& rLeftHandSideMatrix,
+        VectorType& rRightHandSideVector,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    /**
+    * @brief Sets on rResult the ID's of the element degrees of freedom
+    * @param rResult The vector containing the equation id
+    * @param rCurrentProcessInfo The current process info instance
+    */
+    void EquationIdVector(
+        EquationIdVectorType& rResult,
+        const ProcessInfo& rCurrentProcessInfo
+    ) const override;
+
+    /**
+    * @brief Sets on rConditionDofList the degrees of freedom of the considered element geometry
+    * @param rElementalDofList The vector containing the dof of the element
+    * @param rCurrentProcessInfo The current process info instance
+    */
+    void GetDofList(
+        DofsVectorType& rElementalDofList,
+        const ProcessInfo& rCurrentProcessInfo
+    ) const override;
+
+    /**
+     * @brief Get the solution coefficient at the previous time step in the two-dimensional case.
+     * 
+     * @param rValues solution coefficients at the previous time step
+     */
+    void GetSolutionCoefficientVectorPlus(
+        Vector& rValues) const;
+    
+    /**
+     * @brief Get the solution coefficient at the previous time step in the two-dimensional case.
+     * 
+     * @param rValues solution coefficients at the previous time step
+     */
+    void GetSolutionCoefficientVectorMinus(
+        Vector& rValues) const;
+
+
+    ///@}
+
+    ///@name Input and output
+    ///@{
+
+    /// Turn back information as a string.
+    std::string Info() const override
+    {
+        std::stringstream buffer;
+        buffer << "\"GapSbmSolidInterfaceCondition\" #" << Id();
+        return buffer.str();
+    }
+
+    /// Print information about this object.
+    void PrintInfo(std::ostream& rOStream) const override
+    {
+        rOStream << "\"GapSbmSolidInterfaceCondition\" #" << Id();
+    }
+
+    /// Print object's data.
+    void PrintData(std::ostream& rOStream) const override
+    {
+        pGetGeometry()->PrintData(rOStream);
+    }
+
+    ///@}
+
+protected:
+
+/**
+ * Internal variables used in the constitutive calculations
+ */
+struct ConstitutiveVariables
+{
+    ConstitutiveLaw::StrainVectorType StrainVector;
+    ConstitutiveLaw::StressVectorType StressVector;
+    ConstitutiveLaw::VoigtSizeMatrixType D;
+
+    /**
+     * The default constructor
+     * @param StrainSize The size of the strain vector in Voigt notation
+     */
+    ConstitutiveVariables(const std::size_t StrainSize)
+    {
+        if (StrainVector.size() != StrainSize)
+            StrainVector.resize(StrainSize);
+
+        if (StressVector.size() != StrainSize)
+            StressVector.resize(StrainSize);
+
+        if (D.size1() != StrainSize || D.size2() != StrainSize)
+            D.resize(StrainSize, StrainSize);
+
+        noalias(StrainVector) = ZeroVector(StrainSize);
+        noalias(StressVector) = ZeroVector(StrainSize);
+        noalias(D)            = ZeroMatrix(StrainSize, StrainSize);
+    }
+};
+
+///@name Protected static Member Variables
+///@{
+void InitializeMaterial();
+void UpdateMaterialResponse(const ProcessInfo& rCurrentProcessInfo, bool Finalize);
+
+void FinalizeSolutionStep(const ProcessInfo& rCurrentProcessInfo) override;
+
+void InitializeSolutionStep(const ProcessInfo& rCurrentProcessInfo) override;
+
+//@}
+/**
+ * @brief 
+ * 
+ */
+void InitializeMemberVariables(const GeometryType& rTrueGeometry);
+
+/**
+ * @brief 
+ * 
+ */
+void InitializeSbmMemberVariables(const GeometryType& rTrueGeometry);
+
+
+/**
+ * @brief Calculate the B matrix for the element in the two-dimensional case.
+ * 
+ * @param rB B matrix to be calculated
+ * @param r_DN_DX The shape function derivatives in the global coordinate system
+ */
+void CalculateB(
+    const GeometryType& rGeometry,
+    Matrix& rB,
+    Matrix& r_DN_DX) const;
+
+/**
+ * @brief Calculate the traction vector for the condition
+ *
+ * @param rStressVector
+ * @param rNormal
+ * @param rTraction
+ */
+void CalculateTraction(
+    const Vector& rStressVector,
+    const array_1d<double, 3>& rNormal,
+    Vector& rTraction) const;
+
+/**
+ * @brief Compute the constitutive law response for the given strain vector.
+ * 
+ * @param matSize 
+ * @param rStrain 
+ * @param rValues 
+ * @param rConstitutiVariables 
+ */
+void ApplyConstitutiveLaw(
+        std::size_t matSize, 
+        Vector& rStrain, 
+        ConstitutiveLaw::Parameters& rValues,
+        ConstitutiveVariables& rConstitutiVariables,
+        bool IsMinusSide = false);
+
+/**
+ * @brief 
+ * 
+ * @param rGeometry 
+ * @param rDistanceVector 
+ * @param H_sum_vec 
+ */
+void ComputeTaylorExpansionContribution(
+    const GeometryType& rGeometry,
+    const Vector& rDistanceVector, 
+    Vector& H_sum_vec);
+
+/**
+ * @brief 
+ * 
+ * @param rGeometry 
+ * @param rDistanceVector 
+ * @param grad_H_sum 
+ */
+void ComputeGradientTaylorExpansionContribution(
+    const GeometryType& rGeometry,
+    const Vector& rDistanceVector, 
+    Matrix& grad_H_sum);
+
+using TaylorDerivativeData = std::vector<Matrix>;
+
+TaylorDerivativeData CalculateTaylorDerivativeData(
+    const GeometryType& rGeometry) const;
+
+void EvaluateTaylorExpansion(
+    const GeometryType& rGeometry,
+    const Vector& rDistanceVector,
+    const TaylorDerivativeData& rDerivativeData,
+    Vector* pShapeFunctions,
+    Matrix* pShapeFunctionGradients) const;
+
+/**
+ * @brief compute the Taylor expansion for apply the Shifted Boundary Method in 2D
+ * @param derivative 
+ * @param dx 
+ * @param k 
+ * @param dy 
+ * @param n_k 
+ * @return double 
+ */
+double ComputeTaylorTerm(
+    double derivative, 
+    double dx, IndexType k, 
+    double dy, IndexType n_k);
+
+/**
+ * @brief compute the Taylor expansion for apply the Shifted Boundary Method in 3D
+ * @param derivative 
+ * @param dx 
+ * @param k 
+ * @param dy 
+ * @param n_k 
+ * @return double 
+ */
+double ComputeTaylorTerm3D(
+    double derivative, 
+    double dx, IndexType k_x, 
+    double dy, IndexType k_y, 
+    double dz, IndexType k_z);
+
+///@name Protected member Variables
+///@{
+    ConstitutiveLaw::Pointer mpConstitutiveLawMinus;
+    ConstitutiveLaw::Pointer mpConstitutiveLaw; /// The pointer containing the constitutive laws
+    // sbm variables
+    array_1d<double, 3> mNormalParameterSpace;
+    array_1d<double, 3> mNormalPhysicalSpace;
+    Vector mDistanceVectorPlus; // referenced woth the normal
+    Vector mDistanceVectorMinus;
+    double mPenalty;
+    double mNitschePenalty;
+    unsigned int mDim;
+    IndexType mBasisFunctionsOrder;
+
+///@}
+
+private:
+
+    ///@name Operations
+    ///@{
+    const GeometryType& GetGeometryPlus() const
+    {
+        return *this->GetValue(NEIGHBOUR_GEOMETRIES)[0];
+    }
+
+    const GeometryType& GetGeometryMinus() const
+    {
+        return *this->GetValue(NEIGHBOUR_GEOMETRIES)[1];
+    }
+
+    /// @}
+
+    ///@name Serialization
+    ///@{
+
+    friend class Serializer;
+
+    virtual void save(Serializer& rSerializer) const override
+    {
+        KRATOS_SERIALIZE_SAVE_BASE_CLASS(rSerializer, Condition);
+    }
+
+    virtual void load(Serializer& rSerializer) override
+    {
+        KRATOS_SERIALIZE_LOAD_BASE_CLASS(rSerializer, Condition);
+    }
+
+    ///@}
+
+}; // Class SupportPenaltyLaplacianCondition
+
+class KRATOS_API(IGA_APPLICATION) GapSbmSolidInterfaceConditionBatched
+    : public GapSbmSolidInterfaceCondition
+{
+public:
+    KRATOS_CLASS_INTRUSIVE_POINTER_DEFINITION(
+        GapSbmSolidInterfaceConditionBatched);
+
+    using BaseType = GapSbmSolidInterfaceCondition;
+    using GeometryType = BaseType::GeometryType;
+    using NodesArrayType = BaseType::NodesArrayType;
+    using PropertiesType = BaseType::PropertiesType;
+    using MatrixType = BaseType::MatrixType;
+    using VectorType = BaseType::VectorType;
+
+    GapSbmSolidInterfaceConditionBatched(
+        IndexType NewId,
+        GeometryType::Pointer pGeometry);
+
+    GapSbmSolidInterfaceConditionBatched(
+        IndexType NewId,
+        GeometryType::Pointer pGeometry,
+        PropertiesType::Pointer pProperties);
+
+    ~GapSbmSolidInterfaceConditionBatched() override = default;
+
+    Condition::Pointer Create(
+        IndexType NewId,
+        GeometryType::Pointer pGeom,
+        PropertiesType::Pointer pProperties) const override;
+
+    Condition::Pointer Create(
+        IndexType NewId,
+        NodesArrayType const& ThisNodes,
+        PropertiesType::Pointer pProperties) const override;
+
+    IntegrationMethod GetIntegrationMethod() const override;
+
+    void Initialize(const ProcessInfo& rCurrentProcessInfo) override;
+
+    void CalculateLocalSystem(
+        MatrixType& rLeftHandSideMatrix,
+        VectorType& rRightHandSideVector,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    void CalculateLeftHandSide(
+        MatrixType& rLeftHandSideMatrix,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    void CalculateRightHandSide(
+        VectorType& rRightHandSideVector,
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    void InitializeSolutionStep(
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    void FinalizeSolutionStep(
+        const ProcessInfo& rCurrentProcessInfo) override;
+
+    std::string Info() const override
+    {
+        std::stringstream buffer;
+        buffer << "GapSbmSolidInterfaceConditionBatched #" << Id();
+        return buffer.str();
+    }
+
+protected:
+    GapSbmSolidInterfaceConditionBatched() = default;
+
+private:
+    std::vector<ConstitutiveLaw::Pointer> mConstitutiveLawVector;
+    Vector mQuadraturePointWeights;
+    Vector mQuadraturePointReferenceWeights;
+    Matrix mQuadraturePointNormals;
+    Matrix mQuadraturePointCoordinates;
+
+    void CompactQuadratureGeometries();
+
+    void SetQuadraturePointDistances(
+        const std::size_t PointIndex);
+
+    std::size_t NumberOfQuadraturePoints() const;
+
+    const GeometryType& GetQuadraturePointGeometry(
+        const std::size_t PointIndex) const;
+
+    void FillB(
+        Matrix& rB,
+        const Matrix& rShapeFunctionGradients,
+        const std::size_t NumberOfControlPoints) const;
+
+    void CalculateAllContributions(
+        MatrixType* pLeftHandSideMatrix,
+        VectorType* pRightHandSideVector,
+        const ProcessInfo& rCurrentProcessInfo);
+
+    friend class Serializer;
+
+    void save(Serializer& rSerializer) const override
+    {
+        KRATOS_SERIALIZE_SAVE_BASE_CLASS(
+            rSerializer,
+            GapSbmSolidInterfaceCondition);
+        rSerializer.save(
+            "ConstitutiveLawVector",
+            mConstitutiveLawVector);
+        rSerializer.save(
+            "QuadraturePointWeights",
+            mQuadraturePointWeights);
+        rSerializer.save(
+            "QuadraturePointReferenceWeights",
+            mQuadraturePointReferenceWeights);
+        rSerializer.save(
+            "QuadraturePointNormals",
+            mQuadraturePointNormals);
+        rSerializer.save(
+            "QuadraturePointCoordinates",
+            mQuadraturePointCoordinates);
+    }
+
+    void load(Serializer& rSerializer) override
+    {
+        KRATOS_SERIALIZE_LOAD_BASE_CLASS(
+            rSerializer,
+            GapSbmSolidInterfaceCondition);
+        rSerializer.load(
+            "ConstitutiveLawVector",
+            mConstitutiveLawVector);
+        rSerializer.load(
+            "QuadraturePointWeights",
+            mQuadraturePointWeights);
+        rSerializer.load(
+            "QuadraturePointReferenceWeights",
+            mQuadraturePointReferenceWeights);
+        rSerializer.load(
+            "QuadraturePointNormals",
+            mQuadraturePointNormals);
+        rSerializer.load(
+            "QuadraturePointCoordinates",
+            mQuadraturePointCoordinates);
+    }
+};
+
+}  // namespace Kratos.

@@ -1,0 +1,46 @@
+[
+  {
+    "mesh": 20,
+    "variant": "Prodotto delle normali",
+    "status": "failed",
+    "stop_time": 0.00075,
+    "completed_steps": 2,
+    "last_accepted_time": 0.0005,
+    "last_L2": 0.09253527349123035,
+    "max_L2": 0.09253527349123035,
+    "max_NR_accepted": 12
+  },
+  {
+    "mesh": 20,
+    "variant": "Fattore 1",
+    "status": "failed",
+    "stop_time": 0.0005,
+    "completed_steps": 1,
+    "last_accepted_time": 0.00025,
+    "last_L2": 0.021263874725001655,
+    "max_L2": 0.021263874725001655,
+    "max_NR_accepted": 5
+  },
+  {
+    "mesh": 40,
+    "variant": "Prodotto delle normali",
+    "status": "failed",
+    "stop_time": 0.00075,
+    "completed_steps": 2,
+    "last_accepted_time": 0.0005,
+    "last_L2": 0.027106721960669357,
+    "max_L2": 0.027106721960669357,
+    "max_NR_accepted": 7
+  },
+  {
+    "mesh": 40,
+    "variant": "Fattore 1",
+    "status": "failed",
+    "stop_time": 0.0005,
+    "completed_steps": 1,
+    "last_accepted_time": 0.00025,
+    "last_L2": 0.000525527081762048,
+    "max_L2": 0.000525527081762048,
+    "max_NR_accepted": 2
+  }
+]

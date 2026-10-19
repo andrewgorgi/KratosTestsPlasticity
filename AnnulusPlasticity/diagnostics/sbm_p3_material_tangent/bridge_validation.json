@@ -1,0 +1,5 @@
+{
+  "max_stress_difference": 0.0,
+  "max_committed_alpha_difference": 0.0,
+  "max_clone_stress_difference": 0.0
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "new",
+  "degree": 3,
+  "spans": 40,
+  "seconds": 67.51199846668169,
+  "status": {
+    "status": "failed",
+    "time": 0.00075,
+    "error": "Diagnostic residual Newton exceeded 100 iterations at t=0.00075.",
+    "completed_steps": 2,
+    "spans": [
+      40,
+      40
+    ],
+    "degree": 3
+  },
+  "metrics": [
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.0005007475446298868,
+      "H1_bulk_amplitude_relative": 0.00033801912788145657,
+      "step": 1,
+      "iterations": 2
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.02581286988482481,
+      "H1_bulk_amplitude_relative": 0.018158871492441806,
+      "step": 2,
+      "iterations": 11
+    }
+  ]
+}

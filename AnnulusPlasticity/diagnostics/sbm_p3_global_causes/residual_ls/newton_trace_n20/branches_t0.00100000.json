@@ -1,0 +1,19 @@
+{
+  "alpha": 1e-07,
+  "counts": {
+    "surrogate": {
+      "points": 280,
+      "base_active_plastic": 167,
+      "trial_active_plastic": 232,
+      "elastic_to_plastic": 95,
+      "plastic_to_elastic": 30
+    },
+    "true": {
+      "points": 280,
+      "base_active_plastic": 169,
+      "trial_active_plastic": 219,
+      "elastic_to_plastic": 88,
+      "plastic_to_elastic": 38
+    }
+  }
+}

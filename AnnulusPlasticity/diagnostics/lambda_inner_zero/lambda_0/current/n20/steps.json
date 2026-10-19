@@ -1,0 +1,12 @@
+[
+  {
+    "time": 0.001,
+    "iteration": 7,
+    "converged": true
+  },
+  {
+    "time": 0.002,
+    "iteration": 8,
+    "converged": true
+  }
+]

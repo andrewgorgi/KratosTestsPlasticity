@@ -1,0 +1,6 @@
+{
+  "points": 200,
+  "surrogate_radius_min": 0.9096413591819559,
+  "surrogate_radius_max": 1.1198060597359083,
+  "analytic_elastic_surrogate_points_at_first_step": 80
+}

@@ -1,0 +1,28 @@
+--- a/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
++++ b/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
+@@ -335,7 +335,7 @@
+                 
+                     // SBM TERM
+                     rLeftHandSideMatrix(iglob, jglob) += r_N(0,i)*sigma_u_n_sum[idim] 
+-                                                        * int_to_reference_weight * mTrueDotSurrogateNormal;
++                                                        * int_to_reference_weight * 1.0;
+                 }
+             }
+         }
+@@ -442,14 +442,14 @@
+ 
+ 
+             // External load term
+-            rRightHandSideVector[iglob] += r_N(0,i) * g_N[idim] * mTrueDotSurrogateNormal * int_to_reference_weight;
++            rRightHandSideVector[iglob] += r_N(0,i) * g_N[idim] * 1.0 * int_to_reference_weight;
+ 
+             // Residual terms
+             // FLUX STANDARD TERM
+             rRightHandSideVector(iglob) += r_N(0,i) * normal_stress_old[idim] * int_to_reference_weight;
+         
+             // // SBM TERM
+-            rRightHandSideVector(iglob) -= r_N(0,i)*normal_stress_true_old[idim] * int_to_reference_weight * mTrueDotSurrogateNormal;
++            rRightHandSideVector(iglob) -= r_N(0,i)*normal_stress_true_old[idim] * int_to_reference_weight * 1.0;
+         }
+     }
+     KRATOS_CATCH("")

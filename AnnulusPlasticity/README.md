@@ -256,3 +256,121 @@ Le mesh sono state verificate anche in invocazioni separate; non è una
 garanzia di convergenza per qualsiasi parametro o grado. L'errore temporale
 resta distinto dalla convergenza del solve: sulla 80×80, L2 è circa 0.084583
 con Δt=0.001, contro 0.083515 nella prova precedente a Δt=0.0001.
+# Caso ciclico: carico, scarico e inversione
+
+I nuovi comandi sono `convergence_cyclic.py` e `run_and_post_cyclic.py`, presenti
+sia in `sbm` sia in `gap_sbm`. Usano `cyclic_analytic.py`, con forcing nullo,
+hardening isotropo lineare H=10000 e storia della coppia:
+
+| Tempo | 0 | 0.001 | 0.002 | 0.003 | 0.004 | 0.005 | 0.006 |
+|---|---|---|---|---|---|---|---|
+| C/C_final | 0 | 1 | 0 | -1.2 | 0 | 1.4 | 0 |
+
+Le configurazioni nuove sono `ProjectParameters_mixed_cyclic.json` e
+`ProjectParameters_dirichlet_cyclic.json`: fine a 0.006, passo 0.00025 e
+line search. Le configurazioni monotone restano separate. Il runner verifica
+che il materiale corrisponda al riferimento analitico (E=67000, nu=0,
+snervamento 201, H=10000, saturazione esponenziale disattiva).
+
+Dalla radice del repository:
+
+```bash
+python3 AnnulusPlasticity/sbm/convergence_cyclic.py --degree 2
+python3 AnnulusPlasticity/gap_sbm/convergence_cyclic.py --degree 2
+
+python3 AnnulusPlasticity/sbm/run_and_post_cyclic.py --degree 2 --spans 40 40
+python3 AnnulusPlasticity/gap_sbm/run_and_post_cyclic.py --degree 2 --spans 40 40
+```
+
+Dalla cartella del metodo basta `python3 convergence_cyclic.py --degree 2` o
+`python3 run_and_post_cyclic.py --degree 2 --spans 40 40`.
+Il bordo predefinito è `mixed`; `--boundary dirichlet` prescrive lo spostamento
+su entrambi i cerchi. Gap-SBM mixed richiede la condition già modificata per
+leggere la trazione da `FORCE`, descritta nel seguito. Il nuovo runner assegna
+questo dato a ogni passo. Per SBM resta rilevante la selezione in compilazione
+di `SBM_USE_PROJECTION_POINT_CONSTITUTIVE_LAW`; gli script non la cambiano.
+
+Lo studio usa di default le mesh 10, 20, 40, 80; si può scegliere, ad esempio,
+`--refinements 20 40 80`. Salva e mostra sempre i grafici, con reference line
+di ordine p e p+1. `--no-show` salva senza aprire finestre. Un ciclo fallito
+viene registrato in `failures.json` e saltato; i passi precedentemente convergenti
+restano nel suo `errors_by_time.csv`. Solo i cicli completi entrano nei grafici
+e nelle pendenze dello studio.
+
+L'errore è normalizzato con la norma esatta al primo picco, anche durante gli
+scarichi a coppia nulla. `convergence.png` mostra il massimo su tutti i passi
+e lo stato residuo finale; `convergence_by_time.png` mostra i sei picchi/scarichi.
+`convergence.csv` contiene errori e pendenze tra mesh riuscite. Per separare gli
+effetti temporali, ripetere con `--dt 0.000125`: il passo deve dividere 0.001
+esattamente per raggiungere tutte le inversioni.
+
+Il run-and-post apre un viewer Matplotlib con tre contour (numerico, analitico,
+errore), slider sullo step e selettore per spostamenti, stress e deformazione
+plastica equivalente. Le scale dei colori sono fisse durante lo scorrimento
+temporale di ciascun campo. Il grafico della coppia indica il passo selezionato.
+I risultati sono in `results/cyclic/<boundary>/p<degree>/spans_<nx>x<ny>`:
+`history.npz`, `contours.png`, `errors_by_time.csv`, `status.json`, parametri e
+materiale effettivamente usati. Se il solve si arresta, il viewer mostra solo
+i passi convergenti e indica che il ciclo è parziale.
+
+Per riaprire il viewer senza rifare il solve, dalla radice:
+
+```bash
+python3 AnnulusPlasticity/sbm/run_and_post_cyclic.py --post-only AnnulusPlasticity/sbm/results/cyclic/mixed/p2/spans_40x40/history.npz
+python3 AnnulusPlasticity/gap_sbm/run_and_post_cyclic.py --post-only AnnulusPlasticity/gap_sbm/results/cyclic/mixed/p2/spans_40x40/history.npz
+```
+
+Il backend Matplotlib deve supportare finestre interattive per usare lo slider;
+`--no-show` permette l'esecuzione su una macchina senza interfaccia grafica.
+
+Verifiche del nuovo runner: 24 passi completati con SBM p1 (mesh 10 e 12),
+SBM p2 (mesh 20, libreria temporanea con macro di proiezione attivo) e Gap-SBM
+p2 (mesh 40, libreria installata). Nello studio Gap-SBM p2, la mesh 20 fallisce
+a t=0.00475 e viene saltata; la 40 completa il ciclo e genera i grafici.
+Questo controllo non costituisce uno studio dell'ordine asintotico.
+Sono verificati anche il salvataggio delle storie parziali e la riapertura del
+viewer. I test automatici si lanciano con
+`python3 AnnulusPlasticity/test_cyclic_study.py` dalla radice del repository.
+
+Successivamente è stato corretto l'operatore adjoint della condition d'interfaccia
+Gap-SBM: ora vengono congelati `DBOldPlus` e `DBOldMinus` a inizio step.
+Con la libreria installata aggiornata, la mesh p2 10×10 completa il ciclo con
+Newton standard e la 20×20 con line search. Dettagli e controlli del Jacobiano
+in [gap_interface_frozen_adjoint_check.md](gap_interface_frozen_adjoint_check.md).
+
+Il confronto ciclico SBM p2 tra macro di proiezione disattivo e attivo è in
+[sbm_cyclic_old_vs_new_check.md](sbm_cyclic_old_vs_new_check.md). Include anche
+gli errori dei passi convergenti dei cicli interrotti, confrontati a tempi uguali.
+La stessa prova con grado p1 è in
+[sbm_cyclic_old_vs_new_p1_check.md](sbm_cyclic_old_vs_new_p1_check.md).
+Il confronto p3 è in
+[sbm_cyclic_old_vs_new_p3_check.md](sbm_cyclic_old_vs_new_p3_check.md): entrambe
+le versioni si arrestano durante il primo carico su tutte le quattro mesh;
+sono riportati anche i grafici dei primi passi convergenti.
+Le successive prove p3 con time step ridotti e penalty positive sono in
+[sbm_p3_sensitivity_check.md](sbm_p3_sensitivity_check.md), insieme ai controlli
+del Jacobiano e dello spettro dell'operatore elastico e plastico.
+La sostituzione della Neumann interna con Dirichlet analitica per p3 è documentata
+in [sbm_p3_dirichlet_check.md](sbm_p3_dirichlet_check.md): con penalty-free e
+dt=0.00025 entrambe le mesh 20 e 40 completano il ciclo.
+Il successivo controllo puntuale del flusso, del Taylor completo e delle due
+storie costitutive è in [sbm_neumann_current_check.md](sbm_neumann_current_check.md).
+Include anche il controllo del difetto di proiezione vicino alla chiusura del cerchio.
+Le ulteriori verifiche su modi globali, line search e cambi di ramo costitutivo
+sono in [sbm_p3_global_causes_check.md](sbm_p3_global_causes_check.md).
+
+Il controllo delle coppie surrogate–true nei passi non convergenti p3 è in
+[sbm_p3_pair_phases_check.md](sbm_p3_pair_phases_check.md), con conteggi per
+iterazione e distinzione fra ramo attivo e plasticità accumulata.
+Il test per iterazione dei termini dello strain Taylor p3 sulla versione corrente
+è in [sbm_p3_taylor_iterations_check.md](sbm_p3_taylor_iterations_check.md):
+include i run nativi di controllo, gli errori al true e la separazione per knot.
+La prova p3 con il fattore del prodotto delle normali sostituito da 1 è in
+[sbm_p3_unit_normal_factor_check.md](sbm_p3_unit_normal_factor_check.md),
+con libreria sperimentale separata e patch delle tre sostituzioni nell'assembly.
+Il controllo direzionale di Newton p3, separato fra volume e bordi, e i riavvii
+dalla proiezione L2 analitica sono in
+[sbm_p3_directional_warm_start_check.md](sbm_p3_directional_warm_start_check.md).
+I test locali dei cambi di ramo e le prove del solver con la vera
+`TangentOperatorCalculatorUtility` sono in
+[sbm_p3_material_tangent_check.md](sbm_p3_material_tangent_check.md).

@@ -1,0 +1,32 @@
+[
+  {
+    "alpha": 0.0001,
+    "relative_directional_derivative_mismatch": 1.6266420410879832,
+    "phi_forward_slope": 11.116274895357492,
+    "phi_predicted_slope": -3202.3139213247687
+  },
+  {
+    "alpha": 1e-05,
+    "relative_directional_derivative_mismatch": 1.6264939993731111,
+    "phi_forward_slope": 10.080464744532946,
+    "phi_predicted_slope": -3202.3139213247687
+  },
+  {
+    "alpha": 1e-06,
+    "relative_directional_derivative_mismatch": 1.6264792050885382,
+    "phi_forward_slope": 9.976868796002236,
+    "phi_predicted_slope": -3202.3139213247687
+  },
+  {
+    "alpha": 1e-07,
+    "relative_directional_derivative_mismatch": 1.6264777267147759,
+    "phi_forward_slope": 9.966502148017753,
+    "phi_predicted_slope": -3202.3139213247687
+  },
+  {
+    "alpha": 1e-08,
+    "relative_directional_derivative_mismatch": 1.6264775436108414,
+    "phi_forward_slope": 9.965287972590886,
+    "phi_predicted_slope": -3202.3139213247687
+  }
+]

@@ -1,0 +1,178 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-agv023c0 because the default path (/home/agorgi/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.4."2"-GapSbmPlasticityActualized-b34462dddd8-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 24.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [41](-2.2,-2.09,-1.98,-1.87,-1.76,-1.65,-1.54,-1.43,-1.32,-1.21,-1.1,-0.99,-0.88,-0.77,-0.66,-0.55,-0.44,-0.33,-0.22,-0.11,5.27356e-16,0.11,0.22,0.33,0.44,0.55,0.66,0.77,0.88,0.99,1.1,1.21,1.32,1.43,1.54,1.65,1.76,1.87,1.98,2.09,2.2)
+    KNOT_VECTOR_V : [41](-2.2,-2.09,-1.98,-1.87,-1.76,-1.65,-1.54,-1.43,-1.32,-1.21,-1.1,-0.99,-0.88,-0.77,-0.66,-0.55,-0.44,-0.33,-0.22,-0.11,5.27356e-16,0.11,0.22,0.33,0.44,0.55,0.66,0.77,0.88,0.99,1.1,1.21,1.32,1.43,1.54,1.65,1.76,1.87,1.98,2.09,2.2)
+    KNOT_VECTOR_W : [0]()
+    KNOT_SPAN_SIZES : [2](0.11,0.11)
+    PARAMETER_SPACE_CORNERS : [[2](-2.2,2.2), [2](-2.2,2.2)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 5
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Mesh 0 :
+        Number of Nodes       : 970
+        Number of Properties  : 1
+        Number of Elements    : 11905
+        Number of Conditions  : 1344
+        Number of Geometries  : 225
+        Number of Constraints : 0
+
+    -SBM_Inner- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 400
+            Number of Geometries  : 0
+            Number of Constraints : 0
+        -Layer0- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+                Number of Elements    : 0
+                Number of Conditions  : 400
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -SBM_Support_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 720
+            Number of Geometries  : 0
+            Number of ConstrainREGIME_RESULT {"status": "converged", "L2_relative": 0.11386130000865256, "H1_bulk_relative": 0.09870272099450081, "area": 9.002400000000003, "H1_bulk_area": 9.002400000000003, "time": 0.002, "lambda_inner": 0.0, "geometry": {"points": 400, "surrogate_radius_min": 1.0152817709620026, "surrogate_radius_max": 1.1300223481855334, "analytic_elastic_surrogate_points_at_first_step": 248}, "spans": 40, "strategy": "line_search", "steps": [{"time": 0.001, "iteration": 6, "converged": true}, {"time": 0.002, "iteration": 8, "converged": true}]}
+ts : 0
+        -Layer0- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+                Number of Elements    : 0
+                Number of Conditions  : 720
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 11904
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 2
+            Number of Properties  : 1
+            Number of Elements    : 1
+            Number of Conditions  : 80
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 144
+            Number of Geometries  : 0
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+[WARNING] LineSearchStrategy: Using deprecated constructor. Please use constructor without linear solver.::[MechanicalSolver]:: : Finished initialization. 
+[WARNING] DEPRECATION-Warning; AnalysisStage: ModifyAfterSolverInitialize is deprecated. Please, use ModifyBeforeSolutionLoop instead. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.001 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.09772 r1 = 0.293696 r2 = 0.0480148
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.940942 r1 = 0.000527644 r2 = -7.06703e-05
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.03634 r1 = 7.96494e-05 r2 = 5.39632e-06
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.999976 r1 = 1.25851e-07 r2 = -5.97831e-12
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.3311e-14 r2 = 5.83687e-22
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 9.83809e-27 r2 = 5.49081e-30
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.002 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.9694 rf = 0.127104 r1 = 0.374369 r2 = 0.24698
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.598484 r1 = 0.240538 r2 = -0.980662
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04147 r1 = 0.300196 r2 = 0.0229916
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04621 r1 = 0.00145305 r2 = 0.000122928
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.04589 r1 = 7.18488e-06 r2 = 6.03976e-07
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00006 r1 = 2.03152e-08 r2 = 2.34785e-12
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 2.20458e-16 r2 = 1.35936e-23
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 1.46957e-30 r2 = -3.22179e-31
+::[KSM Simulation]:: : Analysis -END-  
+Deregistering KratosMultiphysics
+Deregistering IgaApplication
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering StructuralMechanicsApplication

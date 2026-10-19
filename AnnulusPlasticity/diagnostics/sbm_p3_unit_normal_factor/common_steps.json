@@ -1,0 +1,18 @@
+[
+  {
+    "mesh": 20,
+    "time": 0.00025,
+    "L2_dot": 0.00520126367976239,
+    "L2_unit": 0.021263874725001655,
+    "iterations_dot": 2,
+    "iterations_unit": 5
+  },
+  {
+    "mesh": 40,
+    "time": 0.00025,
+    "L2_dot": 0.0003430730827995097,
+    "L2_unit": 0.000525527081762048,
+    "iterations_dot": 2,
+    "iterations_unit": 2
+  }
+]

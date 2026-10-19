@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "time": 0.001,
+  "error": "Newton non convergente al tempo 0.001; nessuna norma di errore viene calcolata.",
+  "spans": 40,
+  "strategy": "newton_raphson",
+  "steps": [
+    {
+      "time": 0.001,
+      "iteration": 100,
+      "converged": false
+    }
+  ]
+}

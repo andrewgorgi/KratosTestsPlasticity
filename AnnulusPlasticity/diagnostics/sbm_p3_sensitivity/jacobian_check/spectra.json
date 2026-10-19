@@ -1,0 +1,27 @@
+{
+  "elastic_state": {
+    "min_real_eigenvalue": -35621.62630209305,
+    "max_real_eigenvalue": 66757.05618077746,
+    "negative_real_eigenvalues": 84,
+    "negative_threshold": 6.67570561807959e-05,
+    "symmetric_part_min_eigenvalue": -67945.72976636249,
+    "non_symmetry_relative": 0.9743910588930061,
+    "relative_difference_from_zero_displacement_matrix": 0.0
+  },
+  "converged_state": {
+    "min_real_eigenvalue": -19076.410403134912,
+    "max_real_eigenvalue": 65395.03376516786,
+    "negative_real_eigenvalues": 56,
+    "negative_threshold": 6.53950337651688e-05,
+    "symmetric_part_min_eigenvalue": -43508.642907017624,
+    "non_symmetry_relative": 0.8882575815946547
+  },
+  "failed_state": {
+    "min_real_eigenvalue": -15467.734072035262,
+    "max_real_eigenvalue": 45193.64699622805,
+    "negative_real_eigenvalues": 97,
+    "negative_threshold": 4.5193646996228056e-05,
+    "symmetric_part_min_eigenvalue": -28908.158826564217,
+    "non_symmetry_relative": 1.149416745307563
+  }
+}

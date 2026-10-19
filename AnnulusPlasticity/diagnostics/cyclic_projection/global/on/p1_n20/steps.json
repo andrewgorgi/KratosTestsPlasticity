@@ -1,0 +1,194 @@
+[
+  {
+    "time": 0.00025,
+    "level": 0.25,
+    "iteration": 2,
+    "L2_amplitude_relative": 0.05692928842316482,
+    "stress_amplitude_relative": 0.10005350162453829,
+    "alpha_rms_error": 0.0
+  },
+  {
+    "time": 0.0005,
+    "level": 0.5,
+    "iteration": 5,
+    "L2_amplitude_relative": 0.10919546240823787,
+    "stress_amplitude_relative": 0.19143887542283985,
+    "alpha_rms_error": 2.728225522098494e-05
+  },
+  {
+    "time": 0.00075,
+    "level": 0.75,
+    "iteration": 7,
+    "L2_amplitude_relative": 0.23894965143091126,
+    "stress_amplitude_relative": 0.21385536022359464,
+    "alpha_rms_error": 0.0014053882619406272
+  },
+  {
+    "time": 0.001,
+    "level": 1.0,
+    "iteration": 8,
+    "L2_amplitude_relative": 0.686976278473545,
+    "stress_amplitude_relative": 0.3601023487344452,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.00125,
+    "level": 0.75,
+    "iteration": 3,
+    "L2_amplitude_relative": 0.6345825551664236,
+    "stress_amplitude_relative": 0.3112854024569907,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.0015,
+    "level": 0.5,
+    "iteration": 2,
+    "L2_amplitude_relative": 0.5830398950487593,
+    "stress_amplitude_relative": 0.2900774179011878,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.00175,
+    "level": 0.25,
+    "iteration": 2,
+    "L2_amplitude_relative": 0.5325954439122863,
+    "stress_amplitude_relative": 0.3023452022842317,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.002,
+    "level": 0.0,
+    "iteration": 2,
+    "L2_amplitude_relative": 0.4835929923960004,
+    "stress_amplitude_relative": 0.3445311897158639,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.0022500000000000003,
+    "level": -0.30000000000000027,
+    "iteration": 2,
+    "L2_amplitude_relative": 0.4273913951412225,
+    "stress_amplitude_relative": 0.4217545972634638,
+    "alpha_rms_error": 0.0029027977223589872
+  },
+  {
+    "time": 0.0025000000000000005,
+    "level": -0.6000000000000005,
+    "iteration": 5,
+    "L2_amplitude_relative": 0.3781816249891104,
+    "stress_amplitude_relative": 0.5011482481906783,
+    "alpha_rms_error": 0.0029076411766452695
+  },
+  {
+    "time": 0.0027500000000000007,
+    "level": -0.9000000000000008,
+    "iteration": 7,
+    "L2_amplitude_relative": 0.4621037537397711,
+    "stress_amplitude_relative": 0.5119618820372491,
+    "alpha_rms_error": 0.006109084089690046
+  },
+  {
+    "time": 0.003000000000000001,
+    "level": -1.1999999999999988,
+    "iteration": 8,
+    "L2_amplitude_relative": 1.4313983359450824,
+    "stress_amplitude_relative": 0.5937890290199395,
+    "alpha_rms_error": 0.009244262211137137
+  },
+  {
+    "time": 0.003250000000000001,
+    "level": -0.8999999999999986,
+    "iteration": 6,
+    "L2_amplitude_relative": 1.3632837794399106,
+    "stress_amplitude_relative": 0.5010442331250775,
+    "alpha_rms_error": 0.00924457440763456
+  },
+  {
+    "time": 0.0035000000000000014,
+    "level": -0.5999999999999984,
+    "iteration": 4,
+    "L2_amplitude_relative": 1.305857338153607,
+    "stress_amplitude_relative": 0.4013591376832931,
+    "alpha_rms_error": 0.0092445745482689
+  },
+  {
+    "time": 0.0037500000000000016,
+    "level": -0.29999999999999816,
+    "iteration": 3,
+    "L2_amplitude_relative": 1.2394382491702445,
+    "stress_amplitude_relative": 0.3276380291134438,
+    "alpha_rms_error": 0.0092445745482689
+  },
+  {
+    "time": 0.004000000000000002,
+    "level": 2.4286128663675295e-15,
+    "iteration": 2,
+    "L2_amplitude_relative": 1.1720031377859603,
+    "stress_amplitude_relative": 0.2855077107575195,
+    "alpha_rms_error": 0.0092445745482689
+  },
+  {
+    "time": 0.004250000000000002,
+    "level": 0.3500000000000027,
+    "iteration": 2,
+    "L2_amplitude_relative": 1.0938445201755504,
+    "stress_amplitude_relative": 0.2997310884537736,
+    "alpha_rms_error": 0.0092445745482689
+  },
+  {
+    "time": 0.004500000000000002,
+    "level": 0.700000000000003,
+    "iteration": 5,
+    "L2_amplitude_relative": 1.015602523342096,
+    "stress_amplitude_relative": 0.3706420315316092,
+    "alpha_rms_error": 0.009244580928107324
+  },
+  {
+    "time": 0.0047500000000000025,
+    "level": 1.0500000000000032,
+    "iteration": 5,
+    "L2_amplitude_relative": 0.9365280425546292,
+    "stress_amplitude_relative": 0.4708890733520583,
+    "alpha_rms_error": 0.00924677016127378
+  },
+  {
+    "time": 0.005000000000000003,
+    "level": 1.3999999999999964,
+    "iteration": 7,
+    "L2_amplitude_relative": 0.655573402108502,
+    "stress_amplitude_relative": 0.5338590567289414,
+    "alpha_rms_error": 0.008995776047254659
+  },
+  {
+    "time": 0.005250000000000003,
+    "level": 1.049999999999996,
+    "iteration": 9,
+    "L2_amplitude_relative": 0.7146604529137751,
+    "stress_amplitude_relative": 0.5246499158939621,
+    "alpha_rms_error": 0.009024410308013469
+  },
+  {
+    "time": 0.005500000000000003,
+    "level": 0.6999999999999957,
+    "iteration": 6,
+    "L2_amplitude_relative": 0.770057788881687,
+    "stress_amplitude_relative": 0.3387298560847814,
+    "alpha_rms_error": 0.009028084373356605
+  },
+  {
+    "time": 0.005750000000000003,
+    "level": 0.3499999999999954,
+    "iteration": 4,
+    "L2_amplitude_relative": 0.8348234847375205,
+    "stress_amplitude_relative": 0.26697738964932216,
+    "alpha_rms_error": 0.009030709832383289
+  },
+  {
+    "time": 0.006000000000000004,
+    "level": 0.0,
+    "iteration": 4,
+    "L2_amplitude_relative": 0.901820301097184,
+    "stress_amplitude_relative": 0.25780547647235513,
+    "alpha_rms_error": 0.00903243721411478
+  }
+]

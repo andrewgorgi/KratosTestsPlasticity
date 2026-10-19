@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "spans": 10,
+      "parameters_identical": true,
+      "material_identical": true,
+      "polynomial_order": [
+        3,
+        3
+      ],
+      "conditions_identical": true
+    },
+    {
+      "spans": 20,
+      "parameters_identical": true,
+      "material_identical": true,
+      "polynomial_order": [
+        3,
+        3
+      ],
+      "conditions_identical": true
+    },
+    {
+      "spans": 40,
+      "parameters_identical": true,
+      "material_identical": true,
+      "polynomial_order": [
+        3,
+        3
+      ],
+      "conditions_identical": true
+    },
+    {
+      "spans": 80,
+      "parameters_identical": true,
+      "material_identical": true,
+      "polynomial_order": [
+        3,
+        3
+      ],
+      "conditions_identical": true
+    }
+  ],
+  "input_matches_p2": true,
+  "material_matches_p2": true,
+  "source_matches_p2": true,
+  "installed_library_matches_p2": true
+}

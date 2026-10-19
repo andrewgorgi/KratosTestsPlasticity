@@ -1,0 +1,83 @@
+{
+  "mode": "new",
+  "degree": 3,
+  "spans": 20,
+  "seconds": 20.932363227941096,
+  "status": {
+    "status": "failed",
+    "time": 0.0005625000000000001,
+    "error": "Newton non convergente al tempo 0.0005625; nessuna norma di errore viene calcolata.",
+    "completed_steps": 8,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3
+  },
+  "metrics": [
+    {
+      "time": 6.25e-05,
+      "load_factor": 0.0625,
+      "L2_amplitude_relative": 0.0009606305003969801,
+      "H1_bulk_amplitude_relative": 0.0006819216311340521,
+      "step": 1,
+      "iterations": 2
+    },
+    {
+      "time": 0.000125,
+      "load_factor": 0.125,
+      "L2_amplitude_relative": 0.0019212610007939062,
+      "H1_bulk_amplitude_relative": 0.0013638432622680933,
+      "step": 2,
+      "iterations": 2
+    },
+    {
+      "time": 0.0001875,
+      "load_factor": 0.1875,
+      "L2_amplitude_relative": 0.002881891501191458,
+      "H1_bulk_amplitude_relative": 0.002045764893402323,
+      "step": 3,
+      "iterations": 2
+    },
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.0038425220015882817,
+      "H1_bulk_amplitude_relative": 0.002727686524536297,
+      "step": 4,
+      "iterations": 2
+    },
+    {
+      "time": 0.0003125,
+      "load_factor": 0.3125,
+      "L2_amplitude_relative": 0.004803152501985471,
+      "H1_bulk_amplitude_relative": 0.0034096081556703396,
+      "step": 5,
+      "iterations": 2
+    },
+    {
+      "time": 0.000375,
+      "load_factor": 0.375,
+      "L2_amplitude_relative": 0.005763783002383262,
+      "H1_bulk_amplitude_relative": 0.004091529786804714,
+      "step": 6,
+      "iterations": 2
+    },
+    {
+      "time": 0.0004375,
+      "load_factor": 0.4375,
+      "L2_amplitude_relative": 0.006724413502779252,
+      "H1_bulk_amplitude_relative": 0.0047734514179385385,
+      "step": 7,
+      "iterations": 2
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.13149037437842603,
+      "H1_bulk_amplitude_relative": 0.10823235117356363,
+      "step": 8,
+      "iterations": 9
+    }
+  ]
+}

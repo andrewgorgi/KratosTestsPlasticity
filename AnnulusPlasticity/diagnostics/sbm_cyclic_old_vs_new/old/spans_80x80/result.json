@@ -1,0 +1,82 @@
+{
+  "mode": "old",
+  "spans": 80,
+  "seconds": 100.69762853672728,
+  "status": {
+    "status": "failed",
+    "time": 0.0022500000000000003,
+    "error": "Newton non convergente al tempo 0.00225; nessuna norma di errore viene calcolata.",
+    "completed_steps": 8,
+    "spans": [
+      80,
+      80
+    ],
+    "degree": 2
+  },
+  "metrics": [
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.001095132391760933,
+      "H1_bulk_amplitude_relative": 0.0006270206761590466,
+      "step": 1,
+      "iterations": 2
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.007580070058863212,
+      "H1_bulk_amplitude_relative": 0.010394562760200145,
+      "step": 2,
+      "iterations": 12
+    },
+    {
+      "time": 0.00075,
+      "load_factor": 0.75,
+      "L2_amplitude_relative": 0.013991927399176192,
+      "H1_bulk_amplitude_relative": 0.017692906554696703,
+      "step": 3,
+      "iterations": 9
+    },
+    {
+      "time": 0.001,
+      "load_factor": 1.0,
+      "L2_amplitude_relative": 0.030472212793045888,
+      "H1_bulk_amplitude_relative": 0.026621324162058698,
+      "step": 4,
+      "iterations": 10
+    },
+    {
+      "time": 0.00125,
+      "load_factor": 0.75,
+      "L2_amplitude_relative": 0.3603913725263203,
+      "H1_bulk_amplitude_relative": 0.19514811620079706,
+      "step": 5,
+      "iterations": 14
+    },
+    {
+      "time": 0.0015,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.36919274483530656,
+      "H1_bulk_amplitude_relative": 0.19994655815973336,
+      "step": 6,
+      "iterations": 6
+    },
+    {
+      "time": 0.00175,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.37147058766891966,
+      "H1_bulk_amplitude_relative": 0.20113926416154032,
+      "step": 7,
+      "iterations": 5
+    },
+    {
+      "time": 0.002,
+      "load_factor": 0.0,
+      "L2_amplitude_relative": 0.3728190433176776,
+      "H1_bulk_amplitude_relative": 0.20187064073646607,
+      "step": 8,
+      "iterations": 5
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "time": 0.00075,
+  "error": "Diagnostic residual Newton exceeded 100 iterations at t=0.00075.",
+  "completed_steps": 2,
+  "spans": [
+    40,
+    40
+  ],
+  "degree": 3
+}

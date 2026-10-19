@@ -27,7 +27,8 @@
     "clear_storage": false,
     "move_mesh_flag": false,
     "solving_strategy_settings": {
-      "type": "line_search",
+      // "type": "line_search",
+      "type": "newton_raphson",
       "advanced_settings": {}
     },
     "builder_and_solver_settings": {
@@ -104,7 +105,7 @@
         "skin_model_part_name": "skin_model_part",
         "lambda_outer": 0.5,
         "skin_model_part_inner_initial_name": "initial_skin_inner",
-        "lambda_inner": 0.5
+        "lambda_inner": 0.0
       }
     },
     {

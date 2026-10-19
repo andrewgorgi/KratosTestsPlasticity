@@ -1,0 +1,7 @@
+/tmp/sbm_cyclic_old_vs_new/old/condition.cpp: In member function ‘void Kratos::SbmLoadSolidCondition::InitializeSbmMemberVariables()’:
+/tmp/sbm_cyclic_old_vs_new/old/condition.cpp:169:72: warning: ‘closestNodeId’ may be used uninitialized [-Wmaybe-uninitialized]
+  169 |     mpProjectionNode = &candidate_closest_skin_segment_1.GetGeometry()[closestNodeId] ;
+      |                                                                        ^~~~~~~~~~~~~
+/tmp/sbm_cyclic_old_vs_new/old/condition.cpp:156:9: note: ‘closestNodeId’ was declared here
+  156 |     int closestNodeId;
+      |         ^~~~~~~~~~~~~

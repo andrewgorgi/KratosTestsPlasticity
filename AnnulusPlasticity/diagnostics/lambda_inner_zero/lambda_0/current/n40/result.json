@@ -1,0 +1,29 @@
+{
+  "status": "converged",
+  "L2_relative": 0.11386130000865256,
+  "H1_bulk_relative": 0.09870272099450081,
+  "area": 9.002400000000003,
+  "H1_bulk_area": 9.002400000000003,
+  "time": 0.002,
+  "lambda_inner": 0.0,
+  "geometry": {
+    "points": 400,
+    "surrogate_radius_min": 1.0152817709620026,
+    "surrogate_radius_max": 1.1300223481855334,
+    "analytic_elastic_surrogate_points_at_first_step": 248
+  },
+  "spans": 40,
+  "strategy": "line_search",
+  "steps": [
+    {
+      "time": 0.001,
+      "iteration": 6,
+      "converged": true
+    },
+    {
+      "time": 0.002,
+      "iteration": 8,
+      "converged": true
+    }
+  ]
+}

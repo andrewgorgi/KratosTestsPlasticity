@@ -1,0 +1,244 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5u8c3ple because the default path (/home/agorgi/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.4."2"-GapSbmPlasticityActualized-b34462dddd8-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 1.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [11](-2.2,-1.76,-1.32,-0.88,-0.44,-1.11022e-16,0.44,0.88,1.32,1.76,2.2)
+    KNOT_VECTOR_V : [11](-2.2,-1.76,-1.32,-0.88,-0.44,-1.11022e-16,0.44,0.88,1.32,1.76,2.2)
+    KNOT_VECTOR_W : [0]()
+    KNOT_SPAN_SIZES : [2](0.44,0.44)
+    PARAMETER_SPACE_CORNERS : [[2](-2.2,2.2), [2](-2.2,2.2)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 7
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Mesh 0 :
+        Number of Nodes       : 134
+        Number of Properties  : 1
+        Number of Elements    : 685
+        Number of Conditions  : 616
+        Number of Geometries  : 57
+        Number of Constraints : 0
+
+    -GapConditions- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -GapElements- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 504
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -GapInterfaces- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 280
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -Layer0- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 280
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -StructuralAnalyCYCLIC_STEP {"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.012832609057640401, "H1_bulk_amplitude_relative": 0.01901474748023251, "step": 1, "iterations": 2}
+GLOBAL_AUDIT {"time": 0.0005, "dofs": 152, "iteration": 5, "residual_norm": 1.5316080069990136e-13, "jacobian": [{"direction": 0, "h": 1e-07, "error": 2.162806947471847e-11}, {"direction": 0, "h": 1e-08, "error": 8.046929517502628e-11}, {"direction": 0, "h": 1e-09, "error": 8.458162996408229e-10}, {"direction": 1, "h": 1e-07, "error": 8.308696854708969e-11}, {"direction": 1, "h": 1e-08, "error": 7.073634655651003e-11}, {"direction": 1, "h": 1e-09, "error": 8.176051989513706e-10}, {"direction": 2, "h": 1e-07, "error": 3.182843447951866e-11}, {"direction": 2, "h": 1e-08, "error": 9.29310052282294e-11}, {"direction": 2, "h": 1e-09, "error": 6.61052443742361e-10}]}
+ENTITY_AUDIT {"repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 1.5817819166375962e-09, "worst_entity": 94, "assembled_directional_error": 4.2232692865830435e-11, "mismatch_norm": 4.406772524832586e-06, "fd_norm": 104345.0518022262}, "SolidElement": {"count": 180, "max_local_error": 5.822258955370034e-10, "worst_entity": 554, "assembled_directional_error": 3.4207185537027316e-11, "mismatch_norm": 7.061657016263561e-07, "fd_norm": 20643.782601230734}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 1.1793550166462244e-09, "worst_entity": 258, "assembled_directional_error": 1.3185580902063325e-10, "mismatch_norm": 3.1176807030452534e-06, "fd_norm": 23644.62154683976}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 1.1045299959317189e-10, "worst_entity": 316, "assembled_directional_error": 1.902491277979316e-11, "mismatch_norm": 8.633081662288434e-07, "fd_norm": 45377.77261958251}}, "global_error": 4.096028558684436e-11, "matrix_reconstruction_error": 4.679583248591938e-16}
+FROZEN_ADJOINT_CHECK {"time": 0.0005, "global_fd_error": 8.458162996408229e-10, "matrix_reconstruction_error": 4.679583248591938e-16, "repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 1.5817819166375962e-09, "worst_entity": 94, "assembled_directional_error": 4.2232692865830435e-11, "mismatch_norm": 4.406772524832586e-06, "fd_norm": 104345.0518022262}, "SolidElement": {"count": 180, "max_local_error": 5.822258955370034e-10, "worst_entity": 554, "assembled_directional_error": 3.4207185537027316e-11, "mismatch_norm": 7.061657016263561e-07, "fd_norm": 20643.782601230734}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 1.1793550166462244e-09, "worst_entity": 258, "assembled_directional_error": 1.3185580902063325e-10, "mismatch_norm": 3.1176807030452534e-06, "fd_norm": 23644.62154683976}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 1.1045299959317189e-10, "worst_entity": 316, "assembled_directional_error": 1.902491277979316e-11, "mismatch_norm": 8.633081662288434e-07, "fd_norm": 45377.77261958251}}}
+CYCLIC_STEP {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.03000916029863251, "H1_bulk_amplitude_relative": 0.043260645253252086, "step": 2, "iterations": 5}
+CYCLIC_STEP {"time": 0.00075, "load_factor": 0.75, "L2_amplitude_relative": 0.3142779637895556, "H1_bulk_amplitude_relative": 0.5340517783899603, "step": 3, "iterations": 7}
+CYCLIC_STEP {"time": 0.001, "load_factor": 1.0, "L2_amplitude_relative": 0.7506779274382995, "H1_bulk_amplitude_relative": 1.5098274689781341, "step": 4, "iterations": 6}
+GLOBAL_AUDIT {"time": 0.00125, "dofs": 152, "iteration": 5, "residual_norm": 7.071086599017848e-13, "jacobian": [{"direction": 0, "h": 1e-07, "error": 3.246786598727902e-11}, {"direction": 0, "h": 1e-08, "error": 3.1312416668168713e-10}, {"direction": 0, "h": 1e-09, "error": 3.5278413217025194e-09}, {"direction": 1, "h": 1e-07, "error": 2.646304079504338e-11}, {"direction": 1, "h": 1e-08, "error": 3.040908565535276e-10}, {"direction": 1, "h": 1e-09, "error": 3.2121283217294214e-09}, {"direction": 2, "h": 1e-07, "error": 3.040523630743133e-11}, {"direction": 2, "h": 1e-08, "error": 3.1957315190630626e-10}, {"direction": 2, "h": 1e-09, "error": 3.1440499474391436e-09}]}
+ENTITY_AUDIT {"repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 1.939268625074242e-09, "worst_entity": 216, "assembled_directional_error": 2.773055540954201e-10, "mismatch_norm": 3.043578503665486e-05, "fd_norm": 109755.41090742809}, "SolidElement": {"count": 180, "max_local_error": 2.1523306613937338e-09, "worst_entity": 644, "assembled_directional_error": 1.6078721060478486e-10, "mismatch_norm": 3.319256220907504e-06, "fd_norm": 20643.78260200209}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 4.400896569580356e-09, "worst_entity": 220, "assembled_directional_error": 1.0880424464165314e-09, "mismatch_norm": 2.3472719823084356e-05, "fd_norm": 21573.349367381554}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 9.159710877678411e-10, "worst_entity": 411, "assembled_directional_error": 8.553558320383055e-11, "mismatch_norm": 3.784417902340749e-06, "fd_norm": 44243.784406338986}}, "global_error": 2.9585255776996785e-10, "matrix_reconstruction_error": 5.961407167657181e-16}
+FROZEN_ADJOINT_CHECK {"time": 0.00125, "global_fd_error": 3.5278413217025194e-09, "matrix_reconstruction_error": 5.961407167657181e-16, "repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 1.939268625074242e-09, "worst_entity": 216, "assembled_directional_error": 2.773055540954201e-10, "mismatch_norm": 3.043578503665486e-05, "fd_norm": 109755.41090742809}, "SolidElement": {"count": 180, "max_local_error": 2.1523306613937338e-09, "worst_entity": 644, "assembled_directional_error": 1.6078721060478486e-10, "mismatch_norm": 3.319256220907504e-06, "fd_norm": 20643.78260200209}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 4.400896569580356e-09, "worst_entity": 220, "assembled_directional_error": 1.0880424464165314e-09, "mismatch_norm": 2.3472719823084356e-05, "fd_norm": 21573.349367381554}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 9.159710877678411e-10, "worst_entity": 411, "assembled_directional_error": 8.553558320383055e-11, "mismatch_norm": 3.784417902340749e-06, "fd_norm": 44243.784406338986}}}
+CYCLIC_STEP {"time": 0.00125, "load_factor": 0.75, "L2_amplitude_relative": 0.7493007153900402, "H1_bulk_amplitude_relative": 1.5075582443514999, "step": 5, "iterations": 5}
+CYCLIC_STEP {"time": 0.0015, "load_factor": 0.5, "L2_amplitude_relative": 0.7583141523530081, "H1_bulk_amplitude_relative": 1.5137634590719025, "step": 6, "iterations": 4}
+CYCLIC_STEP {"time": 0.00175, "load_factor": 0.25, "L2_amplitude_relative": 0.7477578950870325, "H1_bulk_amplitude_relative": 1.500405829517848, "step": 7, "iterations": 3}
+CYCLIC_STEP {"time": 0.002, "load_factor": 0.0, "L2_amplitude_relative": 0.7371357477681016, "H1_bulk_amplitude_relative": 1.4881877000394759, "step": 8, "iterations": 2}
+CYCLIC_STEP {"time": 0.0022500000000000003, "load_factor": -0.30000000000000027, "L2_amplitude_relative": 0.724606580366235, "H1_bulk_amplitude_relative": 1.4738066597188813, "step": 9, "iterations": 4}
+CYCLIC_STEP {"time": 0.0025000000000000005, "load_factor": -0.6000000000000005, "L2_amplitude_relative": 0.7119914004520235, "H1_bulk_amplitude_relative": 1.4595280961375696, "step": 10, "iterations": 4}
+CYCLIC_STEP {"time": 0.0027500000000000007, "load_factor": -0.9000000000000008, "L2_amplitude_relative": 0.6926422665187816, "H1_bulk_amplitude_relative": 1.438792278365676, "step": 11, "iterations": 6}
+GLOBAL_AUDIT {"time": 0.003000000000000001, "dofs": 152, "iteration": 7, "residual_norm": 4.3246508134869714e-13, "jacobian": [{"direction": 0, "h": 1e-07, "error": 2.3503154292747818e-11}, {"direction": 0, "h": 1e-08, "error": 2.0778081328451906e-10}, {"direction": 0, "h": 1e-09, "error": 2.338809525974638e-09}, {"direction": 1, "h": 1e-07, "error": 2.9208022129231594e-11}, {"direction": 1, "h": 1e-08, "error": 2.0901542974068793e-10}, {"direction": 1, "h": 1e-09, "error": 1.9409119856695656e-09}, {"direction": 2, "h": 1e-07, "error": 3.565415003317287e-11}, {"direction": 2, "h": 1e-08, "error": 2.3084565836763957e-10}, {"direction": 2, "h": 1e-09, "error": 2.4400998890977904e-09}]}
+ENTITY_AUDIT {"repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 6.375752996288919e-09, "worst_entity": 210, "assembled_directional_error": 6.78877123253676e-11, "mismatch_norm": 4.217681282819058e-06, "fd_norm": 62127.314919743396}, "SolidElement": {"count": 180, "max_local_error": 4.563148436055753e-09, "worst_entity": 645, "assembled_directional_error": 7.755183111852536e-11, "mismatch_norm": 1.106802843914256e-06, "fd_norm": 14271.78221263}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 6.92914857368898e-09, "worst_entity": 220, "assembled_directional_error": 2.1184341732895046e-10, "mismatch_norm": 4.3170801068688815e-06, "fd_norm": 20378.6370202163}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 5.151871020413312e-10, "worst_entity": 316, "assembled_directional_error": 3.340169197329598e-11, "mismatch_norm": 1.4514007798795708e-06, "fd_norm": 43452.91193751317}}, "global_error": 6.909782752258272e-11, "matrix_reconstruction_error": 5.613718146923189e-16}
+FROZEN_ADJOINT_CHECK {"time": 0.003000000000000001, "global_fd_error": 2.4400998890977904e-09, "matrix_reconstruction_error": 5.613718146923189e-16, "repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 6.375752996288919e-09, "worst_entity": 210, "assembled_directional_error": 6.78877123253676e-11, "mismatch_norm": 4.217681282819058e-06, "fd_norm": 62127.314919743396}, "SolidElement": {"count": 180, "max_local_error": 4.563148436055753e-09, "worst_entity": 645, "assembled_directional_error": 7.755183111852536e-11, "mismatch_norm": 1.106802843914256e-06, "fd_norm": 14271.78221263}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 6.92914857368898e-09, "worst_entity": 220, "assembled_directional_error": 2.1184341732895046e-10, "mismatch_norm": 4.3170801068688815e-06, "fd_norm": 20378.6370202163}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 5.151871020413312e-10, "worst_entity": 316, "assembled_directional_error": 3.340169197329598e-11, "mismatch_norm": 1.4514007798795708e-06, "fd_norm": 43452.91193751317}}}
+CYCLIC_STEP {"time": 0.003000000000000001, "load_factor": -1.1999999999999988, "L2_amplitude_relative": 0.6610075567441399, "H1_bulk_amplitude_relative": 1.5792730870255067, "step": 12, "iterations": 7}
+CYCLIC_STEP {"time": 0.003250000000000001, "load_factor": -0.8999999999999986, "L2_amplitude_relative": 0.6671842325335042, "H1_bulk_amplitude_relative": 1.5860673831225167, "step": 13, "iterations": 3}
+CYCLIC_STEP {"time": 0.0035000000000000014, "load_factor": -0.5999999999999984, "L2_amplitude_relative": 0.6812050696969407, "H1_bulk_amplitude_relative": 1.600599568621536, "step": 14, "iterations": 2}
+CYCLIC_STEP {"time": 0.0037500000000000016, "load_factor": -0.29999999999999816, "L2_amplitude_relative": 0.6916595037511273, "H1_bulk_amplitude_relative": 1.6112190412895275, "step": 15, "iterations": 2}
+CYCLIC_STEP {"time": 0.004000000000000002, "load_factor": 2.4286128663675295e-15, "L2_amplitude_relative": 0.7022959901215079, "H1_bulk_amplitude_relative": 1.6220899831843623, "step": 16, "iterations": 2}
+CYCLIC_STEP {"time": 0.004250000000000002, "load_factor": 0.3500000000000027, "L2_amplitude_relative": 0.7149244700669539, "H1_bulk_amplitude_relative": 1.635083879958085, "step": 17, "iterations": 2}
+CYCLIC_STEP {"time": 0.004500000000000002, "load_factor": 0.700000000000003, "L2_amplitude_relative": 0.7277773474166173, "H1_bulk_amplitude_relative": 1.64840528787302, "step": 18, "iterations": 2}
+CYCLIC_STEP {"time": 0.0047500000000000025, "load_factor": 1.0500000000000032, "L2_amplitude_relative": 0.8089700772419518, "H1_bulk_amplitude_relative": 1.7343980450420335, "step": 19, "iterations": 6}
+CYCLIC_STEP {"time": 0.005000000000000003, "load_factor": 1.3999999999999964, "L2_amplitude_relative": 1.39643779024053, "H1_bulk_amplitude_relative": 2.434865645063443, "step": 20, "iterations": 7}
+CYCLIC_STEP {"time": 0.005250000000000003, "load_factor": 1.049999999999996, "L2_amplitude_relative": 1.383826067645755, "H1_bulk_amplitude_relative": 2.4186163462777293, "step": 21, "iterations": 6}
+CYCLIC_STEP {"time": 0.005500000000000003, "load_factor": 0.6999999999999957, "L2_amplitude_relative": 1.3959271460661151, "H1_bulk_amplitude_relative": 2.4353320341606417, "step": 22, "iterations": 5}
+CYCLIC_STEP {"time": 0.005750000000000003, "load_factor": 0.3499999999999954, "L2_amplitude_relative": 1.380722298856486, "H1_bulk_amplitude_relative": 2.4183598834570916, "step": 23, "iterations": 4}
+GLOBAL_AUDIT {"time": 0.006000000000000004, "dofs": 152, "iteration": 2, "residual_norm": 7.031046380603356e-13, "jacobian": [{"direction": 0, "h": 1e-07, "error": 3.735670974689986e-11}, {"direction": 0, "h": 1e-08, "error": 3.486768541799932e-10}, {"direction": 0, "h": 1e-09, "error": 3.1073116869021155e-09}, {"direction": 1, "h": 1e-07, "error": 3.4020614671574086e-11}, {"direction": 1, "h": 1e-08, "error": 3.2840649978616154e-10}, {"direction": 1, "h": 1e-09, "error": 3.5577174847072044e-09}, {"direction": 2, "h": 1e-07, "error": 3.281083981774168e-11}, {"direction": 2, "h": 1e-08, "error": 3.172540602966114e-10}, {"direction": 2, "h": 1e-09, "error": 3.2690654429344134e-09}]}
+ENTITY_AUDIT {"repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 3.895563776202135e-09, "worst_entity": 44, "assembled_directional_error": 3.3158561326829196e-10, "mismatch_norm": 3.677593976805273e-05, "fd_norm": 110909.33471319411}, "SolidElement": {"count": 180, "max_local_error": 5.200922159816039e-09, "worst_entity": 554, "assembled_directional_error": 2.15011006417481e-10, "mismatch_norm": 4.438640473607738e-06, "fd_norm": 20643.782602409436}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 9.481576851487077e-09, "worst_entity": 220, "assembled_directional_error": 1.1086375786528987e-09, "mismatch_norm": 2.5594903059773966e-05, "fd_norm": 23086.808126127416}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 8.158810434895914e-10, "worst_entity": 417, "assembled_directional_error": 1.2163592636228763e-10, "mismatch_norm": 5.519567408955961e-06, "fd_norm": 45377.77262053446}}, "global_error": 3.4477392522446523e-10, "matrix_reconstruction_error": 5.719208362364619e-16}
+FROZEN_ADJOINT_CHECK {"time": 0.006000000000000004, "global_fd_error": 3.5577174847072044e-09, "matrix_reconstruction_error": 5.719208362364619e-16, "repeat_error": 0.0, "by_type": {"GapSbmSolidElement": {"count": 504, "max_local_error": 3.895563776202135e-09, "worst_entity": 44, "assembled_directional_error": 3.3158561326829196e-10, "mismatch_norm": 3.677593976805273e-05, "fd_norm": 110909.33471319411}, "SolidElement": {"count": 180, "max_local_error": 5.200922159816039e-09, "worst_entity": 554, "assembled_directional_error": 2.15011006417481e-10, "mismatch_norm": 4.438640473607738e-06, "fd_norm": 20643.782602409436}, "\"GapSbmLoadSolidCondition\"": {"count": 120, "max_local_error": 0.0, "worst_entity": null, "assembled_directional_error": 0.0, "mismatch_norm": 0.0, "fd_norm": 0.0}, "\"GapSbmSolidInterfaceCondition\"": {"count": 280, "max_local_error": 9.481576851487077e-09, "worst_entity": 220, "assembled_directional_error": 1.1086375786528987e-09, "mismatch_norm": 2.5594903059773966e-05, "fd_norm": 23086.808126127416}, "\"GapSbmSolidCondition\"": {"count": 160, "max_local_error": 8.158810434895914e-10, "worst_entity": 417, "assembled_directional_error": 1.2163592636228763e-10, "mismatch_norm": 5.519567408955961e-06, "fd_norm": 45377.77262053446}}}
+CYCLIC_STEP {"time": 0.006000000000000004, "load_factor": 0.0, "L2_amplitude_relative": 1.367289938697777, "H1_bulk_amplitude_relative": 2.4034525535819347, "step": 24, "iterations": 2}
+CYCLIC_RESULT {"status": "converged", "time": 0.006000000000000004, "completed_steps": 24, "spans": [10, 10], "degree": 2}
+sisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 180
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 2
+            Number of Properties  : 1
+            Number of Elements    : 1
+            Number of Conditions  : 24
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 32
+            Number of Geometries  : 0
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+::[MechanicalSolver]:: : Finished initialization. 
+[WARNING] DEPRECATION-Warning; AnalysisStage: ModifyAfterSolverInitialize is deprecated. Please, use ModifyBeforeSolutionLoop instead. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.00025 
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.0005 
+::[KSM Simulation]:: : STEP:  3 
+::[KSM Simulation]:: : TIME:  0.00075 
+::[KSM Simulation]:: : STEP:  4 
+::[KSM Simulation]:: : TIME:  0.001 
+::[KSM Simulation]:: : STEP:  5 
+::[KSM Simulation]:: : TIME:  0.00125 
+::[KSM Simulation]:: : STEP:  6 
+::[KSM Simulation]:: : TIME:  0.0015 
+::[KSM Simulation]:: : STEP:  7 
+::[KSM Simulation]:: : TIME:  0.00175 
+::[KSM Simulation]:: : STEP:  8 
+::[KSM Simulation]:: : TIME:  0.002 
+::[KSM Simulation]:: : STEP:  9 
+::[KSM Simulation]:: : TIME:  0.0022500000000000003 
+::[KSM Simulation]:: : STEP:  10 
+::[KSM Simulation]:: : TIME:  0.0025000000000000005 
+::[KSM Simulation]:: : STEP:  11 
+::[KSM Simulation]:: : TIME:  0.0027500000000000007 
+::[KSM Simulation]:: : STEP:  12 
+::[KSM Simulation]:: : TIME:  0.003000000000000001 
+::[KSM Simulation]:: : STEP:  13 
+::[KSM Simulation]:: : TIME:  0.003250000000000001 
+::[KSM Simulation]:: : STEP:  14 
+::[KSM Simulation]:: : TIME:  0.0035000000000000014 
+::[KSM Simulation]:: : STEP:  15 
+::[KSM Simulation]:: : TIME:  0.0037500000000000016 
+::[KSM Simulation]:: : STEP:  16 
+::[KSM Simulation]:: : TIME:  0.004000000000000002 
+::[KSM Simulation]:: : STEP:  17 
+::[KSM Simulation]:: : TIME:  0.004250000000000002 
+::[KSM Simulation]:: : STEP:  18 
+::[KSM Simulation]:: : TIME:  0.004500000000000002 
+::[KSM Simulation]:: : STEP:  19 
+::[KSM Simulation]:: : TIME:  0.0047500000000000025 
+::[KSM Simulation]:: : STEP:  20 
+::[KSM Simulation]:: : TIME:  0.005000000000000003 
+::[KSM Simulation]:: : STEP:  21 
+::[KSM Simulation]:: : TIME:  0.005250000000000003 
+::[KSM Simulation]:: : STEP:  22 
+::[KSM Simulation]:: : TIME:  0.005500000000000003 
+::[KSM Simulation]:: : STEP:  23 
+::[KSM Simulation]:: : TIME:  0.005750000000000003 
+::[KSM Simulation]:: : STEP:  24 
+::[KSM Simulation]:: : TIME:  0.006000000000000004 
+::[KSM Simulation]:: : Analysis -END-  
+Deregistering KratosMultiphysics
+Deregistering IgaApplication
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering StructuralMechanicsApplication

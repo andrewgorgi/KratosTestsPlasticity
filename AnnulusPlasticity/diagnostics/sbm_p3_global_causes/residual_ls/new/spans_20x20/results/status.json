@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "time": 0.001,
+  "error": "Diagnostic residual Newton stalled at t=0.001.",
+  "completed_steps": 3,
+  "spans": [
+    20,
+    20
+  ],
+  "degree": 3
+}

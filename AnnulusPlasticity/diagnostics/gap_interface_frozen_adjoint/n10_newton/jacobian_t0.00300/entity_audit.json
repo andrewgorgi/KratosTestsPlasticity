@@ -1,0 +1,47 @@
+{
+  "repeat_error": 0.0,
+  "by_type": {
+    "GapSbmSolidElement": {
+      "count": 504,
+      "max_local_error": 6.375752996288919e-09,
+      "worst_entity": 210,
+      "assembled_directional_error": 6.78877123253676e-11,
+      "mismatch_norm": 4.217681282819058e-06,
+      "fd_norm": 62127.314919743396
+    },
+    "SolidElement": {
+      "count": 180,
+      "max_local_error": 4.563148436055753e-09,
+      "worst_entity": 645,
+      "assembled_directional_error": 7.755183111852536e-11,
+      "mismatch_norm": 1.106802843914256e-06,
+      "fd_norm": 14271.78221263
+    },
+    "\"GapSbmLoadSolidCondition\"": {
+      "count": 120,
+      "max_local_error": 0.0,
+      "worst_entity": null,
+      "assembled_directional_error": 0.0,
+      "mismatch_norm": 0.0,
+      "fd_norm": 0.0
+    },
+    "\"GapSbmSolidInterfaceCondition\"": {
+      "count": 280,
+      "max_local_error": 6.92914857368898e-09,
+      "worst_entity": 220,
+      "assembled_directional_error": 2.1184341732895046e-10,
+      "mismatch_norm": 4.3170801068688815e-06,
+      "fd_norm": 20378.6370202163
+    },
+    "\"GapSbmSolidCondition\"": {
+      "count": 160,
+      "max_local_error": 5.151871020413312e-10,
+      "worst_entity": 316,
+      "assembled_directional_error": 3.340169197329598e-11,
+      "mismatch_norm": 1.4514007798795708e-06,
+      "fd_norm": 43452.91193751317
+    }
+  },
+  "global_error": 6.909782752258272e-11,
+  "matrix_reconstruction_error": 5.613718146923189e-16
+}

@@ -1,0 +1,112 @@
+{
+  "cases": [
+    {
+      "spans": 10,
+      "parameters_identical": true,
+      "material_identical": true,
+      "degree": 1,
+      "old_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          10,
+          10
+        ],
+        "degree": 1
+      },
+      "new_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          10,
+          10
+        ],
+        "degree": 1
+      }
+    },
+    {
+      "spans": 20,
+      "parameters_identical": true,
+      "material_identical": true,
+      "degree": 1,
+      "old_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          20,
+          20
+        ],
+        "degree": 1
+      },
+      "new_status": {
+        "status": "failed",
+        "time": 0.005250000000000003,
+        "error": "Newton non convergente al tempo 0.00525; nessuna norma di errore viene calcolata.",
+        "completed_steps": 20,
+        "spans": [
+          20,
+          20
+        ],
+        "degree": 1
+      }
+    },
+    {
+      "spans": 40,
+      "parameters_identical": true,
+      "material_identical": true,
+      "degree": 1,
+      "old_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          40,
+          40
+        ],
+        "degree": 1
+      },
+      "new_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          40,
+          40
+        ],
+        "degree": 1
+      }
+    },
+    {
+      "spans": 80,
+      "parameters_identical": true,
+      "material_identical": true,
+      "degree": 1,
+      "old_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          80,
+          80
+        ],
+        "degree": 1
+      },
+      "new_status": {
+        "status": "converged",
+        "time": 0.006000000000000004,
+        "completed_steps": 24,
+        "spans": [
+          80,
+          80
+        ],
+        "degree": 1
+      }
+    }
+  ],
+  "new20_repeat_identical": true,
+  "input_matches_p2": true,
+  "material_matches_p2": true
+}

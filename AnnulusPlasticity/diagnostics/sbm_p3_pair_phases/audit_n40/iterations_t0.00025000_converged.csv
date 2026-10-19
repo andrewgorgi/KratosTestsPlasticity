@@ -1,0 +1,4 @@
+time,step_status,iteration,points,elastic_s_plastic_t,plastic_s_elastic_t,both_elastic,both_active_plastic,robust_elastic_s_plastic_t,robust_plastic_s_elastic_t,near_yield_pairs
+0.00025,converged,0,560,0,0,560,0,0,0,0
+0.00025,converged,1,560,0,0,560,0,0,0,0
+0.00025,converged,2,560,0,0,560,0,0,0,0

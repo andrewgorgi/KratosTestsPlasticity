@@ -1,0 +1,9 @@
+{
+  "source_matches_frozen": true,
+  "installed_library_matches_frozen": true,
+  "global_audit_preserves_native_status": true,
+  "global_audit_preserves_native_metrics": true,
+  "derivatives10_preserves_native_status": true,
+  "derivatives10_preserves_native_metrics": true,
+  "all_materials_unchanged": true
+}

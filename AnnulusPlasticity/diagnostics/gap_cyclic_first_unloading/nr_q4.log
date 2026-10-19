@@ -1,0 +1,734 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-s333k8ds because the default path (/home/agorgi/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.4."2"-GapSbmPlasticityActualized-b34462dddd8-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 1.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [11](-2.2,-1.76,-1.32,-0.88,-0.44,-1.11022e-16,0.44,0.88,1.32,1.76,2.2)
+    KNOT_VECTOR_V : [11](-2.2,-1.76,-1.32,-0.88,-0.44,-1.11022e-16,0.44,0.88,1.32,1.76,2.2)
+    KNOT_VECTOR_W : [0]()
+    KNOT_SPAN_SIZES : [2](0.44,0.44)
+    PARAMETER_SPACE_CORNERS : [[2](-2.2,2.2), [2](-2.2,2.2)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 7
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Mesh 0 :
+        Number of Nodes       : 134
+        Number of Properties  : 1
+        Number of Elements    : 825
+        Number of Conditions  : 616
+        Number of Geometries  : 57
+        Number of Constraints : 0
+
+    -GapConditions- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -GapElements- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 504
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -GapInterfaces- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 280
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -Layer0- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 280
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -StructuralAnalyCYCLIC_STEP {"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.01283375197738171, "H1_bulk_amplitude_relative": 0.019303218797354953, "step": 1, "iterations": 2}
+sisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 320
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 2
+            Number of Properties  : 1
+            Number of Elements    : 1
+            Number of Conditions  : 24
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 32
+            Number of Geometries  : 0
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+::[Mechanical Solver]:: : CONVERGENCE CRITERION : and_criterion 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+::[MechanicalSolver]:: : Finished initialization. 
+[WARNING] DEPRECATION-Warning; AnalysisStage: ModifyAfterSolverInitialize is deprecated. Please, use ModifyBeforeSolutionLoop instead. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.00025 
+ResidualBasedNewtonRaphsonStrategy: Setup Dofs Time: 0.000516166 [s]
+ResidualBasedNewtonRaphsonStrategy: Setup System Time: 3.682e-06 [s]
+ResidualBasedNewtonRaphsonStrategy: System Matrix Resize Time: 0.00238667 [s]
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 0.00291563 [s]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0294449 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000386471 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.66392e-15; Expected ratio = 1e-09; Absolute norm = 1.8229e-15; Expected norm =  1e-10]
+RESIDUAL CRITERION: Convergence is achieved
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1; Expected ratio = 1e-10; Absolute norm = 0.000257288; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280069 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311853 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.22676e-16; Expected ratio = 1e-09; Absolute norm = 4.63061e-16; Expected norm =  1e-10]
+RESIDUAL CRITERION: Convergence is achieved
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0; Expected ratio = 1e-10; Absolute norm = 5.83119e-19; Expected norm =  1e-12]
+DISPLACEMENT CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 100 iterations
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.0005 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2.385e-06 [s]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0288696 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000339143 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0249052; Expected ratio = 1e-09; Absolute norm = 0.0272847; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.5; Expected ratio = 1e-10; Absolute norm = 0.000257288; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: CYCLIC_STEP {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.027379645516133155, "H1_bulk_amplitude_relative": 0.040952256828724706, "step": 2, "iterations": 7}
+Build time: 0.0278848 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306821 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00106801; Expected ratio = 1e-09; Absolute norm = 0.00117005; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0150802; Expected ratio = 1e-10; Absolute norm = 7.84399e-06; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280055 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000294773 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 3.13108e-05; Expected ratio = 1e-09; Absolute norm = 3.43023e-05; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.000230397; Expected ratio = 1e-10; Absolute norm = 1.19839e-07; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.027952 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000317444 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.42195e-06; Expected ratio = 1e-09; Absolute norm = 1.55781e-06; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 8.2149e-06; Expected ratio = 1e-10; Absolute norm = 4.27292e-09; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0291214 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030986 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 5.69359e-08; Expected ratio = 1e-09; Absolute norm = 6.23759e-08; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 3.39428e-07; Expected ratio = 1e-10; Absolute norm = 1.76551e-10; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279807 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000300443 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 2.36549e-09; Expected ratio = 1e-09; Absolute norm = 2.5915e-09; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.39044e-08; Expected ratio = 1e-10; Absolute norm = 7.23228e-12; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0274649 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000313568 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 9.72241e-11; Expected ratio = 1e-09; Absolute norm = 1.06513e-10; Expected norm =  1e-10]
+RESIDUAL CRITERION: Convergence is achieved
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 5.73644e-10; Expected ratio = 1e-10; Absolute norm = 2.98377e-13; Expected norm =  1e-12]
+DISPLACEMENT CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 7 / 100 iterations
+::[KSM Simulation]:: : STEP:  3 
+::[KSM Simulation]:: : TIME:  0.00075 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2.28e-06 [s]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282155 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00032964 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.530819; Expected ratio = 1e-09; Absolute norm = 0.585157; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.350071; Expected ratio = 1e-10; Absolute norm = 0.000279755; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284851 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000317497 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.14854; Expected ratio = 1e-09; Absolute norm = 0.163745; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.323204; Expected ratio = 1e-10; Absolute norm = 0.00036504; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028516 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306115 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0212226; Expected ratio = 1e-09; Absolute norm = 0.0233951; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0942992; Expected ratio = 1e-10; Absolute norm = 0.000117092; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281864 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00031213 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00142747; Expected ratio = 1e-09; Absolute CYCLIC_STEP {"time": 0.00075, "load_factor": 0.75, "L2_amplitude_relative": 0.16460360309199878, "H1_bulk_amplitude_relative": 0.271158992195597, "step": 3, "iterations": 13}
+norm = 0.00157359; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.00782319; Expected ratio = 1e-10; Absolute norm = 9.78305e-06; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280992 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301698 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000283566; Expected ratio = 1e-09; Absolute norm = 0.000312594; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.000716991; Expected ratio = 1e-10; Absolute norm = 8.97219e-07; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282153 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030623 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.28538e-05; Expected ratio = 1e-09; Absolute norm = 4.72406e-05; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 5.65059e-05; Expected ratio = 1e-10; Absolute norm = 7.07107e-08; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283469 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304208 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 9.07605e-06; Expected ratio = 1e-09; Absolute norm = 1.00051e-05; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.13213e-05; Expected ratio = 1e-10; Absolute norm = 1.41674e-08; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279741 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000297094 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.74543e-06; Expected ratio = 1e-09; Absolute norm = 1.92411e-06; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.9554e-06; Expected ratio = 1e-10; Absolute norm = 2.44698e-09; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283108 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309996 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 3.48994e-07; Expected ratio = 1e-09; Absolute norm = 3.8472e-07; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 4.00066e-07; Expected ratio = 1e-10; Absolute norm = 5.0064e-10; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285004 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000292688 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 6.88957e-08; Expected ratio = 1e-09; Absolute norm = 7.59483e-08; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 7.80883e-08; Expected ratio = 1e-10; Absolute norm = 9.77192e-11; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281867 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000298013 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.3669e-08; Expected ratio = 1e-09; Absolute norm = 1.50682e-08; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.55441e-08; Expected ratio = 1e-10; Absolute norm = 1.94518e-11; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283749 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000296367 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 2.70787e-09; Expected ratio = 1e-09; Absolute norm = 2.98507e-09; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 3.07492e-09; Expected ratio = 1e-10; Absolute norm = 3.84793e-12; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028502 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000313716 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 5.36839e-10; Expected ratio = 1e-09; Absolute norm = 5.91794e-10; Expected norm =  1e-10]
+RESIDUAL CRITERION: Convergence is achieved
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 6.0985e-10; Expected ratio = 1e-10; Absolute norm = 7.63162e-13; Expected norm =  1e-12]
+DISPLACEMENT CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 13 / 100 iterations
+::[KSM Simulation]:: : STEP:  4 
+::[KSM Simulation]:: : TIME:  0.001 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2.273e-06 [s]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281295 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000321056 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.759905; Expected ratio = 1e-09; Absolute norm = 0.929285; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.29134; Expected ratio = 1e-10; Absolute norm = 0.000510808; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284656 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000332911 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.276865; Expected ratio = 1e-09; Absolute norm = 0.338577; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.443926; Expected ratio = 1e-10; Absolute norm = 0.00138425; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283295 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309136 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0170591; Expected ratio = 1e-09; Absolute norm = 0.0208615; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0634402; Expected ratio = 1e-10; Absolute norm = 0.000209184; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280165 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00029949 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0009757; Expected ratio = 1e-09; Absolute norm = 0.00119318; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.00415742; Expected ratio = 1e-10; Absolute norm = 1.37596e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280975 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000302976 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 6.77698e-05; Expected ratio = 1e-09; Absolute norm = 8.28755e-05; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.000115583; Expected ratio = 1e-10; Absolute norm = 3.82566e-07; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280502 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304569 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 7.24867e-06; Expected ratio = 1e-09; Absolute norm = 8.86437e-06; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 9.35436e-06; Expected ratio = 1e-10; Absolute norm = 3.09619e-08; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282028 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000302987 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 7.46632e-07; Expected ratio = 1e-09; Absolute norm = 9.13054e-07; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 7.81428e-07; Expected ratio = 1e-10; Absolute norm = 2.58644e-09; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0287148 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00031076 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 8.97454e-08; Expected ratio = 1e-09; Absolute norm = 1.09749e-07; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 9.09954e-08; Expected ratio = 1e-10; Absolute norm = 3.01185e-10; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282727 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000302875 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.08428e-08; Expected ratio = 1e-09; Absolute norm = 1.32597e-08; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.08095e-08; Expected ratio = 1e-10; Absolute norm = 3.57782e-11; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.02821 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311132 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.36424e-09; Expected ratio = 1e-09; Absolute norm = 1.66832e-09; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.3455e-09; Expected ratio = 1e-10; Absolute norm = 4.45344e-12; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281332 [s]
+ResidualBasedBlCYCLIC_STEP {"time": 0.001, "load_factor": 1.0, "L2_amplitude_relative": 0.5484788681332723, "H1_bulk_amplitude_relative": 1.1929553907265518, "step": 4, "iterations": 11}
+ockBuilderAndSolver: System solve time: 0.000302046 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.74265e-10; Expected ratio = 1e-09; Absolute norm = 2.13108e-10; Expected norm =  1e-10]
+RESIDUAL CRITERION: Convergence is achieved
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 1.70148e-10; Expected ratio = 1e-10; Absolute norm = 5.6317e-13; Expected norm =  1e-12]
+DISPLACEMENT CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 11 / 100 iterations
+::[KSM Simulation]:: : STEP:  5 
+::[KSM Simulation]:: : TIME:  0.00125 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2.312e-06 [s]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286753 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000297239 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 1.30815; Expected ratio = 1e-09; Absolute norm = 2.00166; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.163157; Expected ratio = 1e-10; Absolute norm = 0.000473071; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282943 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306831 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.355864; Expected ratio = 1e-09; Absolute norm = 0.544522; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.105127; Expected ratio = 1e-10; Absolute norm = 0.000334924; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283113 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309682 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.45521; Expected ratio = 1e-09; Absolute norm = 0.696536; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.029104; Expected ratio = 1e-10; Absolute norm = 9.19008e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028219 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000318364 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.465026; Expected ratio = 1e-09; Absolute norm = 0.711555; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0276179; Expected ratio = 1e-10; Absolute norm = 8.76831e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0287643 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000300764 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.458298; Expected ratio = 1e-09; Absolute norm = 0.701261; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0259027; Expected ratio = 1e-10; Absolute norm = 8.19116e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285804 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00031631 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.481658; Expected ratio = 1e-09; Absolute norm = 0.737006; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0260517; Expected ratio = 1e-10; Absolute norm = 8.26596e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286432 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000307391 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.493088; Expected ratio = 1e-09; Absolute norm = 0.754495; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0262799; Expected ratio = 1e-10; Absolute norm = 8.31202e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285055 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000300925 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.517191; Expected ratio = 1e-09; Absolute norm = 0.791376; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0270466; Expected ratio = 1e-10; Absolute norm = 8.56521e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286563 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000308193 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.494134; Expected ratio = 1e-09; Absolute norm = 0.756095; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0271776; Expected ratio = 1e-10; Absolute norm = 8.59588e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281123 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000297856 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538517; Expected ratio = 1e-09; Absolute norm = 0.824007; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027654; Expected ratio = 1e-10; Absolute norm = 8.74961e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0288775 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030278 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495511; Expected ratio = 1e-09; Absolute norm = 0.758203; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278611; Expected ratio = 1e-10; Absolute norm = 8.8117e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.027954 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00029625 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536861; Expected ratio = 1e-09; Absolute norm = 0.821473; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277709; Expected ratio = 1e-10; Absolute norm = 8.78664e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0287104 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030867 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495125; Expected ratio = 1e-09; Absolute norm = 0.757611; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277809; Expected ratio = 1e-10; Absolute norm = 8.78571e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286457 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000295526 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278167; Expected ratio = 1e-10; Absolute norm = 8.80077e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285392 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000314314 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278441; Expected ratio = 1e-10; Absolute norm = 8.80588e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285631 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000363572 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285466 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000295827 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285912 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301194 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284617 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000312495 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284566 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000293102 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028105 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000297669 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284754 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306184 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286288 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000292679 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028312 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000324679 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279534 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301807 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.027916 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00029197 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0278064 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309428 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279425 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304164 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0278724 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000303041 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283879 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00029927 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283302 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000307496 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0283052 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000296338 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281528 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000289369 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0278181 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000296407 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0278777 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000292501 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028026 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000310989 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280016 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306242 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279694 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000305756 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286225 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000312143 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281705 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311917 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028392 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030475 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280473 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000307954 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279431 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000299861 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0354274 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301159 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028408 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000323822 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286447 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000308817 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282773 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309827 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282065 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301127 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281939 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000305367 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279314 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000308949 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280546 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000302688 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279485 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000289989 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279252 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000285509 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279859 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000298713 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280038 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301278 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281122 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000308521 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280539 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030644 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0277774 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000296163 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279792 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000302638 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279368 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304744 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286371 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000312897 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280849 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000299934 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280408 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000285745 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282374 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311855 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279015 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000294479 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279761 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00030092 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285521 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304204 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279649 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000303964 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286458 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000314616 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285518 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.0003168 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0282028 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000299705 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0280425 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000312307 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285793 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000286151 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279854 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306749 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.027975 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304665 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279199 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000306499 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284241 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000304679 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279897 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000290314 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.028036 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000289974 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279445 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000292378 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0277726 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000289297 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279082 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000322354 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0279799 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000290521 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0281382 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000294217 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284115 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000291031 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0284621 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000296657 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0291981 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000301606 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0288862 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000464713 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286459 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000305277 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285645 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000310775 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0288131 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311902 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0287784 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000311413 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; ECYCLIC_RESULT {"status": "failed", "time": 0.00125, "error": "Newton non convergente al tempo 0.00125; nessuna norma di errore viene calcolata.", "completed_steps": 4, "spans": [10, 10], "degree": 2}
+CHECK_RESULT {"status": {"status": "failed", "time": 0.00125, "error": "Newton non convergente al tempo 0.00125; nessuna norma di errore viene calcolata.", "completed_steps": 4, "spans": [10, 10], "degree": 2}, "boundary_audit": [{"time": 0.00025, "load_conditions": 120, "max_traction_error": 2.842170943040401e-14, "body_force": 0.0}, {"time": 0.0005, "load_conditions": 120, "max_traction_error": 5.684341886080802e-14, "body_force": 0.0}, {"time": 0.00075, "load_conditions": 120, "max_traction_error": 8.526512829121202e-14, "body_force": 0.0}, {"time": 0.001, "load_conditions": 120, "max_traction_error": 1.1368683772161603e-13, "body_force": 0.0}, {"time": 0.00125, "load_conditions": 120, "max_traction_error": 8.526512829121202e-14, "body_force": 0.0}]}
+xpected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286115 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000309856 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286494 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000313954 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0286771 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.00029443 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0285521 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000318587 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0288604 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000313659 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495122; Expected ratio = 1e-09; Absolute norm = 0.757606; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277769; Expected ratio = 1e-10; Absolute norm = 8.78445e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.029102 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000313852 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.538267; Expected ratio = 1e-09; Absolute norm = 0.823625; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0278163; Expected ratio = 1e-10; Absolute norm = 8.80065e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0290465 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000312908 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.495259; Expected ratio = 1e-09; Absolute norm = 0.757817; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.027844; Expected ratio = 1e-10; Absolute norm = 8.80586e-05; Expected norm =  1e-12]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.0289596 [s]
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.000321629 [s]
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.536822; Expected ratio = 1e-09; Absolute norm = 0.821414; Expected norm =  1e-10]
+DISPLACEMENT CRITERION:  :: [ Obtained ratio = 0.0277806; Expected ratio = 1e-10; Absolute norm = 8.78973e-05; Expected norm =  1e-12]
+ResidualBasedNewtonRaphsonStrategy: ATTENTION: max iterations ( 100 ) exceeded!
+[WARNING] ::[MechanicalSolver]:: : Solver did not converge for step 5
+corresponding to time 0.00125
+ 
+BuilderAndSolver: Clear Function called
+BuilderAndSolver: Clear Function called
+Deregistering KratosMultiphysics
+Deregistering IgaApplication
+Deregistering ConstitutiveLawsApplication
+Deregistering LinearSolversApplication
+Deregistering StructuralMechanicsApplication

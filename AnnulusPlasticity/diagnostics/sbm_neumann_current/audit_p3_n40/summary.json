@@ -1,0 +1,84 @@
+{
+  "degree": 3,
+  "spans": 40,
+  "conditions": 560,
+  "load_checks": [
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "max_force_error": 1.1381166927749112e-13,
+      "max_zero_rhs_error": 1.3187985743165245e-15,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    },
+    {
+      "time": 0.001,
+      "load_factor": 1.0,
+      "max_force_error": 2.2762333855498224e-13,
+      "max_zero_rhs_error": 2.637597148633049e-15,
+      "max_affine_rhs_error": 2.3187725379013672e-15,
+      "max_random_rhs_error": 3.1441096573961285e-15
+    },
+    {
+      "time": 0.0015,
+      "load_factor": 0.5,
+      "max_force_error": 1.1381166927749112e-13,
+      "max_zero_rhs_error": 1.3187985743165245e-15,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    },
+    {
+      "time": 0.003,
+      "load_factor": -1.2,
+      "max_force_error": 2.3437142008433856e-13,
+      "max_zero_rhs_error": 2.8936610503797986e-15,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    },
+    {
+      "time": 0.004,
+      "load_factor": 0.0,
+      "max_force_error": 0.0,
+      "max_zero_rhs_error": 0.0,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    },
+    {
+      "time": 0.005,
+      "load_factor": 1.4,
+      "max_force_error": 2.8563464471519893e-13,
+      "max_zero_rhs_error": 3.634096152106242e-15,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    },
+    {
+      "time": 0.006,
+      "load_factor": 0.0,
+      "max_force_error": 0.0,
+      "max_zero_rhs_error": 0.0,
+      "max_affine_rhs_error": 0.0,
+      "max_random_rhs_error": 0.0
+    }
+  ],
+  "maxima": {
+    "projection_distance": 0.0025445982042597817,
+    "normal_dot": 1.0,
+    "true_normal_error": 6.342923343242401e-16,
+    "surrogate_basis_error": 3.1086244689504383e-15,
+    "surrogate_gradient_error": 2.125076167487472e-14,
+    "truncated_gradient_error": 1.113711577486582,
+    "complete_gradient_error": 2.0380131422853864e-14,
+    "stiffness_direct_error": 3.2439915439331615e-14
+  },
+  "minimum_normal_dot": 0.1965960361813839,
+  "history_checks": {
+    "samples": 96,
+    "maxima": {
+      "residual_error": 2.630138328674041e-14,
+      "tangent_error": 1.715977267324988e-14,
+      "trial_repeat_error": 0.0,
+      "finite_difference_error": 4.956435631143033e-09,
+      "true_surrogate_strain_distance": 0.002295713837443889
+    }
+  }
+}

@@ -1,0 +1,85 @@
+-- No KRATOS_SOURCE_DIR is defined, using: /home/agorgi/Documents/GECKO/Kratos
+-- No KRATOS_BINARY_DIR is defined, using: /home/agorgi/Documents/GECKO/Kratos/build/Release
+-- No KRATOS_INSTALL_PYTHON_USING_LINKS is defined, setting to OFF
+-- No CMAKE_INSTALL_MESSAGE is defined. Setting to NEVER
+-- Additional default options were set for GCC
+-- CMAKE_SYSTEM_NAME = Linux
+-- CMAKE_CXX_COMPILER_ID = GNU
+-- CMAKE_CXX_FLAGS =  -funroll-loops -Wall -Wl,--no-as-needed -ldl -Wsuggest-override
+-- CMAKE_C_FLAGS =  -funroll-loops -Wall -Wl,--no-as-needed -ldl
+-- LTO is Disabled
+-- AR VERSION: /usr/bin/ar
+-- Python version used for the interface will be 3.12
+-- User defined install dir /home/agorgi/Documents/GECKO/Kratos/bin/Release
+-- "KRATOS_SHARED_MEMORY_PARALLELIZATION" not defined, defaulting to "OpenMP"
+-- Using OpenMP for shared memory parallelization
+-- Boost include directory found with find_package
+-- Boost library deduced from root directory
+-- Boost include directory: /usr/include
+-- Boost library directory: /lib
+
+-- CMAKE_BUILD_TYPE ........ Release
+
+-- Eigen include directory (from OS install): /usr/include/eigen3
+-- Found ZLIB by find_package(): /usr/include
+-- Kernel version: 6.8.0-51-generic
+-- * Configuring gidpost library
+-- Configuring applications (ENV):
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/LinearSolversApplication'
+**** configuring KratosLinearSolversApplication ****
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/StructuralMechanicsApplication'
+**** configuring KratosStructuralMechanicsApplication ****
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/ConstitutiveLawsApplication'
+**** configuring KratosConstitutiveLawsApplication ****
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/FluidDynamicsApplication'
+**** configuring KratosFluidDynamicsApplication ****
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/ConvectionDiffusionApplication'
+**** configuring KratosConvectionDiffusionApplication ****
+	Adding application '/home/agorgi/Documents/GECKO/Kratos/build/../applications/IgaApplication'
+**** configuring KratosIgaApplication ****
+
+***********************************************************************
+
+        LIST OF APPLICATIONS THAT ARE GOING TO BE COMPILED:
+
+        LinearSolversApplication
+        StructuralMechanicsApplication
+        ConstitutiveLawsApplication
+        FluidDynamicsApplication
+        ConvectionDiffusionApplication
+        IgaApplication
+
+        APPLICATIONS ADDED TO COMPILATION THROUGH DEPENDENCIES:
+
+
+***********************************************************************
+
+
+List of upcoming API-breaking and behavior changes:
+	 Behavior change of Testing. Please ensure you use KRATOS_EXPECT for testing instead of KRATOS_CHECK
+	 Removal of misused EXTENDED_GAUSS integration rules and unification across geometries: https://github.com/KratosMultiphysics/Kratos/pull/13444
+-- clipper : /home/agorgi/Documents/GECKO/Kratos/external_libraries/clipper
+-- tinyexpr : /home/agorgi/Documents/GECKO/Kratos/external_libraries/tinyexpr/tinyexpr/
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/agorgi/Documents/GECKO/Kratos/build/Release
+[  2%] Built target gidpost
+[  5%] Built target tinyexpr
+[  5%] Built target KratosVersion
+[  8%] Built target clipper
+[ 82%] Built target KratosCore
+[ 82%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaCore.dir/custom_conditions/gap_sbm_solid_interface_condition.cpp.o
+[ 82%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaCore.dir/iga_application.cpp.o
+[ 82%] Linking CXX shared library libKratosIgaCore.so
+[100%] Built target KratosIgaCore
+[100%] Building CXX object applications/IgaApplication/CMakeFiles/KratosIgaApplication.dir/custom_python/iga_python_application.cpp.o
+[100%] Linking CXX shared module KratosIgaApplication.cpython-312-x86_64-linux-gnu.so
+[100%] Built target KratosIgaApplication
+-- Install configuration: "Release"
+-- Set non-toolchain portion of runtime path of "/home/agorgi/Documents/GECKO/Kratos/bin/Release/test/KratosFluidDynamicsCoreTest" to "$ORIGIN"
+-- Set non-toolchain portion of runtime path of "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/libKratosFluidDynamicsCore.so" to "$ORIGIN"
+-- Set non-toolchain portion of runtime path of "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/KratosFluidDynamicsApplication.cpython-312-x86_64-linux-gnu.so" to "$ORIGIN"
+-- Set non-toolchain portion of runtime path of "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/libKratosIgaCore.so" to "$ORIGIN"
+-- Set non-toolchain portion of runtime path of "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/KratosIgaApplication.cpython-312-x86_64-linux-gnu.so" to "$ORIGIN"
+-- Trying to install python stub files to enable python hinting support for cpp libraries in IDEs...
+Please install mypy using  "pip install mypy" to generate pyi stub files for libraries generated by pybind11.

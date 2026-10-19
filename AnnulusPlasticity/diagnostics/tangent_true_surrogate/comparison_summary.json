@@ -1,0 +1,214 @@
+[
+  {
+    "spans": 10,
+    "time": 0.001,
+    "conditions": 80,
+    "different": 80,
+    "both_elastic": 0,
+    "mixed_elastic_plastic": 16,
+    "mean_relative_difference": 0.16563406729349447,
+    "max_relative_difference": 0.5898087884262819,
+    "worst": {
+      "time": 0.001,
+      "condition": 257,
+      "relative_difference": 0.5898087884262819,
+      "surrogate_elastic": true,
+      "true_elastic": false,
+      "D_surrogate": [
+        [
+          67000.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          67000.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          33500.0
+        ]
+      ],
+      "D_true": [
+        [
+          34495.6,
+          26165.1,
+          6620.49
+        ],
+        [
+          26165.1,
+          37870.6,
+          -6122.98
+        ],
+        [
+          6620.49,
+          -6122.98,
+          24742.6
+        ]
+      ],
+      "spans": 10,
+      "degree": 2
+    }
+  },
+  {
+    "spans": 10,
+    "time": 0.002,
+    "conditions": 80,
+    "different": 80,
+    "both_elastic": 0,
+    "mixed_elastic_plastic": 0,
+    "mean_relative_difference": 0.0186672240145337,
+    "max_relative_difference": 0.05106431840594851,
+    "worst": {
+      "time": 0.002,
+      "condition": 327,
+      "relative_difference": 0.05106431840594851,
+      "surrogate_elastic": false,
+      "true_elastic": false,
+      "D_surrogate": [
+        [
+          27938.2,
+          21805.4,
+          275.624
+        ],
+        [
+          21805.4,
+          27868.0,
+          -277.775
+        ],
+        [
+          275.624,
+          -277.775,
+          7545.98
+        ]
+      ],
+      "D_true": [
+        [
+          27351.7,
+          21016.3,
+          586.188
+        ],
+        [
+          21016.3,
+          27378.0,
+          -582.985
+        ],
+        [
+          586.188,
+          -582.985,
+          5429.21
+        ]
+      ],
+      "spans": 10,
+      "degree": 2
+    }
+  },
+  {
+    "spans": 20,
+    "time": 0.001,
+    "conditions": 200,
+    "different": 200,
+    "both_elastic": 0,
+    "mixed_elastic_plastic": 0,
+    "mean_relative_difference": 0.08669704018419198,
+    "max_relative_difference": 0.22321757283411273,
+    "worst": {
+      "time": 0.001,
+      "condition": 568,
+      "relative_difference": 0.22321757283411273,
+      "surrogate_elastic": false,
+      "true_elastic": false,
+      "D_surrogate": [
+        [
+          54481.9,
+          9990.28,
+          -12146.8
+        ],
+        [
+          9990.28,
+          54678.0,
+          11990.3
+        ],
+        [
+          -12146.8,
+          11990.3,
+          10594.1
+        ]
+      ],
+      "D_true": [
+        [
+          44330.2,
+          15720.4,
+          -8890.48
+        ],
+        [
+          15720.4,
+          42782.8,
+          9787.71
+        ],
+        [
+          -8890.48,
+          9787.71,
+          11140.4
+        ]
+      ],
+      "spans": 20,
+      "degree": 2
+    }
+  },
+  {
+    "spans": 20,
+    "time": 0.002,
+    "conditions": 200,
+    "different": 200,
+    "both_elastic": 0,
+    "mixed_elastic_plastic": 0,
+    "mean_relative_difference": 0.01166068753944413,
+    "max_relative_difference": 0.027115967293845383,
+    "worst": {
+      "time": 0.002,
+      "condition": 527,
+      "relative_difference": 0.027115967293845383,
+      "surrogate_elastic": false,
+      "true_elastic": false,
+      "D_surrogate": [
+        [
+          29807.0,
+          18855.9,
+          -1099.7
+        ],
+        [
+          18855.9,
+          29784.0,
+          1124.9
+        ],
+        [
+          -1099.7,
+          1124.9,
+          3539.35
+        ]
+      ],
+      "D_true": [
+        [
+          29011.8,
+          19184.3,
+          -808.648
+        ],
+        [
+          19184.3,
+          28979.8,
+          844.928
+        ],
+        [
+          -808.648,
+          844.928,
+          3397.06
+        ]
+      ],
+      "spans": 20,
+      "degree": 2
+    }
+  }
+]

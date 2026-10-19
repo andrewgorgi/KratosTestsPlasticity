@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+  "iterations": 100,
+  "time": 0.00075
+}

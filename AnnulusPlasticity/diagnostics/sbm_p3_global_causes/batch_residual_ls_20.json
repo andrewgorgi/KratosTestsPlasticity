@@ -1,0 +1,46 @@
+[
+  {
+    "variant": "residual_ls",
+    "mode": "new",
+    "degree": 3,
+    "spans": 20,
+    "seconds": 4.980446688365191,
+    "status": {
+      "status": "failed",
+      "time": 0.001,
+      "error": "Diagnostic residual Newton stalled at t=0.001.",
+      "completed_steps": 3,
+      "spans": [
+        20,
+        20
+      ],
+      "degree": 3
+    },
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.004322641986471412,
+        "H1_bulk_amplitude_relative": 0.0038667331896353884,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.091304133391153,
+        "H1_bulk_amplitude_relative": 0.056797046274868854,
+        "step": 2,
+        "iterations": 8
+      },
+      {
+        "time": 0.00075,
+        "load_factor": 0.75,
+        "L2_amplitude_relative": 0.10558854217585772,
+        "H1_bulk_amplitude_relative": 0.11385082785995011,
+        "step": 3,
+        "iterations": 12
+      }
+    ]
+  }
+]

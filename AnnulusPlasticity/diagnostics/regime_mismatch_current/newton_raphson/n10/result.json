@@ -1,0 +1,18 @@
+{
+  "status": "converged",
+  "time": 0.002,
+  "spans": 10,
+  "strategy": "newton_raphson",
+  "steps": [
+    {
+      "time": 0.001,
+      "iteration": 7,
+      "converged": true
+    },
+    {
+      "time": 0.002,
+      "iteration": 21,
+      "converged": true
+    }
+  ]
+}

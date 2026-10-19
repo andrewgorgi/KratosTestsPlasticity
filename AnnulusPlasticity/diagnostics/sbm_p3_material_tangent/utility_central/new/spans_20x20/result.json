@@ -1,0 +1,42 @@
+{
+  "mode": "new",
+  "degree": 3,
+  "spans": 20,
+  "seconds": 16.882141881156713,
+  "status": {
+    "status": "converged",
+    "time": 0.00075,
+    "completed_steps": 3,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3
+  },
+  "metrics": [
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.00520126367976239,
+      "H1_bulk_amplitude_relative": 0.0033325206066920163,
+      "step": 1,
+      "iterations": 2
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.09253527349123047,
+      "H1_bulk_amplitude_relative": 0.05687615283459872,
+      "step": 2,
+      "iterations": 12
+    },
+    {
+      "time": 0.00075,
+      "load_factor": 0.75,
+      "L2_amplitude_relative": 0.4963648320858141,
+      "H1_bulk_amplitude_relative": 0.73462650978379,
+      "step": 3,
+      "iterations": 77
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "status": {
+    "status": "converged",
+    "time": 0.006000000000000004,
+    "completed_steps": 24,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 2
+  },
+  "checks": [
+    {
+      "time": 0.0005,
+      "global_fd_error": 7.344584080723493e-10,
+      "matrix_reconstruction_error": 5.123980690970394e-16,
+      "repeat_error": 0.0,
+      "by_type": {
+        "GapSbmSolidElement": {
+          "count": 1035,
+          "max_local_error": 2.2045710394231297e-09,
+          "worst_entity": 195,
+          "assembled_directional_error": 5.7947673173539906e-11,
+          "mismatch_norm": 4.014585540780495e-06,
+          "fd_norm": 69279.4951189453
+        },
+        "SolidElement": {
+          "count": 1224,
+          "max_local_error": 1.3189569448589458e-09,
+          "worst_entity": 1439,
+          "assembled_directional_error": 5.154614090864044e-11,
+          "mismatch_norm": 1.9830100507411146e-06,
+          "fd_norm": 38470.58219655609
+        },
+        "\"GapSbmLoadSolidCondition\"": {
+          "count": 200,
+          "max_local_error": 0.0,
+          "worst_entity": null,
+          "assembled_directional_error": 0.0,
+          "mismatch_norm": 0.0,
+          "fd_norm": 0.0
+        },
+        "\"GapSbmSolidInterfaceCondition\"": {
+          "count": 560,
+          "max_local_error": 1.3700817117928903e-08,
+          "worst_entity": 399,
+          "assembled_directional_error": 1.4869455665886438e-10,
+          "mismatch_norm": 3.248008050405495e-06,
+          "fd_norm": 21843.489925842325
+        },
+        "\"GapSbmSolidCondition\"": {
+          "count": 375,
+          "max_local_error": 1.3349955355887574e-10,
+          "worst_entity": 595,
+          "assembled_directional_error": 1.4835655823050994e-11,
+          "mismatch_norm": 9.443760126098516e-07,
+          "fd_norm": 63655.831860329454
+        }
+      }
+    },
+    {
+      "time": 0.00125,
+      "global_fd_error": 3.3268083252780153e-09,
+      "matrix_reconstruction_error": 4.99864235267827e-16,
+      "repeat_error": 0.0,
+      "by_type": {
+        "GapSbmSolidElement": {
+          "count": 1035,
+          "max_local_error": 8.234219141450505e-09,
+          "worst_entity": 185,
+          "assembled_directional_error": 3.199344726738402e-10,
+          "mismatch_norm": 2.3732855406426586e-05,
+          "fd_norm": 74180.36327276692
+        },
+        "SolidElement": {
+          "count": 1224,
+          "max_local_error": 1.1890040237783632e-08,
+          "worst_entity": 2021,
+          "assembled_directional_error": 1.5761160678336144e-10,
+          "mismatch_norm": 6.063410273914058e-06,
+          "fd_norm": 38470.58219670503
+        },
+        "\"GapSbmLoadSolidCondition\"": {
+          "count": 200,
+          "max_local_error": 0.0,
+          "worst_entity": null,
+          "assembled_directional_error": 0.0,
+          "mismatch_norm": 0.0,
+          "fd_norm": 0.0
+        },
+        "\"GapSbmSolidInterfaceCondition\"": {
+          "count": 560,
+          "max_local_error": 3.8788565929455666e-08,
+          "worst_entity": 335,
+          "assembled_directional_error": 6.456779267814982e-10,
+          "mismatch_norm": 1.517949706398445e-05,
+          "fd_norm": 23509.394443216417
+        },
+        "\"GapSbmSolidCondition\"": {
+          "count": 375,
+          "max_local_error": 2.1902943920003115e-10,
+          "worst_entity": 813,
+          "assembled_directional_error": 2.500138945855181e-11,
+          "mismatch_norm": 1.5914842436499233e-06,
+          "fd_norm": 63655.831860398896
+        }
+      }
+    },
+    {
+      "time": 0.003000000000000001,
+      "global_fd_error": 1.4188362825191403e-09,
+      "matrix_reconstruction_error": 4.851867879565668e-16,
+      "repeat_error": 0.0,
+      "by_type": {
+        "GapSbmSolidElement": {
+          "count": 1035,
+          "max_local_error": 6.185482103197504e-09,
+          "worst_entity": 185,
+          "assembled_directional_error": 1.0015829526816929e-10,
+          "mismatch_norm": 6.4762640833287525e-06,
+          "fd_norm": 64660.28665912143
+        },
+        "SolidElement": {
+          "count": 1224,
+          "max_local_error": 8.069481086623913e-09,
+          "worst_entity": 1747,
+          "assembled_directional_error": 1.4143175972487503e-10,
+          "mismatch_norm": 3.6801320745415363e-06,
+          "fd_norm": 26020.54928610405
+        },
+        "\"GapSbmLoadSolidCondition\"": {
+          "count": 200,
+          "max_local_error": 0.0,
+          "worst_entity": null,
+          "assembled_directional_error": 0.0,
+          "mismatch_norm": 0.0,
+          "fd_norm": 0.0
+        },
+        "\"GapSbmSolidInterfaceCondition\"": {
+          "count": 560,
+          "max_local_error": 2.3611623631067768e-08,
+          "worst_entity": 337,
+          "assembled_directional_error": 1.8699000302362477e-10,
+          "mismatch_norm": 3.980274401394042e-06,
+          "fd_norm": 21286.027793107016
+        },
+        "\"GapSbmSolidCondition\"": {
+          "count": 375,
+          "max_local_error": 4.258136503805037e-10,
+          "worst_entity": 815,
+          "assembled_directional_error": 3.909429079596319e-11,
+          "mismatch_norm": 2.4885796016062196e-06,
+          "fd_norm": 63655.831860318234
+        }
+      }
+    },
+    {
+      "time": 0.006000000000000004,
+      "global_fd_error": 3.261669085316138e-09,
+      "matrix_reconstruction_error": 4.809702249092907e-16,
+      "repeat_error": 0.0,
+      "by_type": {
+        "GapSbmSolidElement": {
+          "count": 1035,
+          "max_local_error": 7.582110691893908e-09,
+          "worst_entity": 186,
+          "assembled_directional_error": 3.8047815247364205e-10,
+          "mismatch_norm": 2.8224007567117078e-05,
+          "fd_norm": 74180.3632708512
+        },
+        "SolidElement": {
+          "count": 1224,
+          "max_local_error": 1.9305635360525036e-08,
+          "worst_entity": 2021,
+          "assembled_directional_error": 1.6540706509630578e-10,
+          "mismatch_norm": 6.36330609370414e-06,
+          "fd_norm": 38470.582196710886
+        },
+        "\"GapSbmLoadSolidCondition\"": {
+          "count": 200,
+          "max_local_error": 0.0,
+          "worst_entity": null,
+          "assembled_directional_error": 0.0,
+          "mismatch_norm": 0.0,
+          "fd_norm": 0.0
+        },
+        "\"GapSbmSolidInterfaceCondition\"": {
+          "count": 560,
+          "max_local_error": 4.2427915588472544e-08,
+          "worst_entity": 335,
+          "assembled_directional_error": 8.018868489681121e-10,
+          "mismatch_norm": 1.8796007486182475e-05,
+          "fd_norm": 23439.72533078656
+        },
+        "\"GapSbmSolidCondition\"": {
+          "count": 375,
+          "max_local_error": 1.1398284911894127e-10,
+          "worst_entity": 595,
+          "assembled_directional_error": 1.0454287516382566e-11,
+          "mismatch_norm": 6.654763683634511e-07,
+          "fd_norm": 63655.83186043097
+        }
+      }
+    }
+  ]
+}

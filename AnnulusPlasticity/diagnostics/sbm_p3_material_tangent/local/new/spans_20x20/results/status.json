@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "time": 0.00075,
+  "error": "Local material audit complete; no solve or commit at target time.",
+  "completed_steps": 2,
+  "spans": [
+    20,
+    20
+  ],
+  "degree": 3
+}

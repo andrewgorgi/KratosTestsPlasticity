@@ -1,0 +1,306 @@
+ |  /           |                  
+ ' /   __| _` | __|  _ \   __|    
+ . \  |   (   | |   (   |\__ \  
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 10.4."2"-GapSbmPlasticityActualized-b34462dddd8-Release-x86_64
+           Compiled for GNU/Linux and Python3.12 with GCC-13.3
+Compiled with threading support. Threading support with OpenMP.
+Maximum number of threads: 1.
+Importing    KratosIgaApplication 
+    KRATOS  _____ _____
+           |_   _/ ____|   /\
+             | || |  __   /  \
+             | || | |_ | / /\ \
+            _| || |__| |/ ____ \
+           |_____\_____/_/    \_\
+Initializing KratosIgaApplication...
+Importing    KratosStructuralMechanicsApplication 
+    KRATOS   ___|  |                   |                   |
+           \___ \  __|  __| |   |  __| __| |   |  __| _` | |
+                 | |   |    |   | (    |   |   | |   (   | |
+           _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS
+Initializing KratosStructuralMechanicsApplication...
+Importing    KratosConstitutiveLawsApplication 
+Initializing KratosConstitutiveLawsApplication...
+::[MechanicalSolver]:: : Construction finished 
+::[StaticMechanicalSolver]:: : Construction finished 
+::[MechanicalSolver]:: : Variables ADDED 
+[WARNING] DEPRECATION-Warning; KratosModelerFactory: please use "KratosModelParametersFactory" instead. 
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] ModelPart: Property 0 does not exist!. Creating and adding new property. Please use CreateNewProperties() instead
+[WARNING] IgaModelerSbm: Closest-point convergence was not verified for quadrature point [3](0.00559813,1.1,0). Using the closest evaluated point on the NURBS skin [3](0,1,0) (distance 0.100157).
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Using already imported model part - no reading necessary. 
+ModelPart: -IgaModelPart- model part
+    KNOT_VECTOR_U : [21](-2.2,-1.98,-1.76,-1.54,-1.32,-1.1,-0.88,-0.66,-0.44,-0.22,-2.77556e-16,0.22,0.44,0.66,0.88,1.1,1.32,1.54,1.76,1.98,2.2)
+    KNOT_VECTOR_V : [21](-2.2,-1.98,-1.76,-1.54,-1.32,-1.1,-0.88,-0.66,-0.44,-0.22,-2.77556e-16,0.22,0.44,0.66,0.88,1.1,1.32,1.54,1.76,1.98,2.2)
+    KNOT_VECTOR_W : [0]()
+    KNOT_SPAN_SIZES : [2](0.22,0.22)
+    PARAMETER_SPACE_CORNERS : [[2](-2.2,2.2), [2](-2.2,2.2)]
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 5
+    Current solution step index : 0
+    DOMAIN_SIZE : 2
+    OSS_SWITCH : 0
+    IS_RESTARTED : 0
+
+    Mesh 0 :
+        Number of Nodes       : 338
+        Number of Properties  : 1
+        Number of Elements    : 2689
+        Number of Conditions  : 896
+        Number of Geometries  : 113
+        Number of Constraints : 0
+
+    -SBM_Inner- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 280
+            Number of Geometries  : 0
+            Number of Constraints : 0
+        -Layer0- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+                Number of Elements    : 0
+                Number of Conditions  : 280
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -SBM_Support_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 504
+            Number of Geometries  : 0
+            Number of Constraints : 0
+        -Layer0- mCYCLIC_STEP {"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.00520126367976239, "H1_bulk_amplitude_relative": 0.0033325206066920163, "step": 1, "iterations": 2}
+odel part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Mesh 0 :
+                Number of Nodes       : 0
+                Number of Properties  : 0
+                Number of Elements    : 0
+                Number of Conditions  : 504
+                Number of Geometries  : 0
+                Number of Constraints : 0
+    -StructuralAnalysisDomain- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 0
+            Number of Elements    : 2688
+            Number of Conditions  : 0
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_inner- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 2
+            Number of Properties  : 1
+            Number of Elements    : 1
+            Number of Conditions  : 40
+            Number of Geometries  : 0
+            Number of Constraints : 0
+    -surrogate_outer- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Mesh 0 :
+            Number of Nodes       : 0
+            Number of Properties  : 1
+            Number of Elements    : 0
+            Number of Conditions  : 72
+            Number of Geometries  : 0
+            Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[MechanicalSolver]:: : Constitutive law was successfully imported. 
+::[MechanicalSolver]::: ModelPart prepared for Solver. 
+::[MechanicalSolver]:: : DOF's ADDED 
+::[MechanicalSolver]:: : Initializing ... 
+Importing    LinearSolversApplication 
+    Kratos  _     _                       ____        _
+           | |   (_)_ __   ___  __ _ _ __/ ___|  ___ | |_   _____ _ __ ___
+           | |   | | '_ \ / _ \/ _` | '__\___ \ / _ \| \ \ / / _ \ '__/ __|
+           | |___| | | | |  __/ (_| | |   ___) | (_) | |\ V /  __/ |  \__ \
+           |_____|_|_| |_|\___|\__,_|_|  |____/ \___/|_| \_/ \___|_|  |___/
+Initializing KratosLinearSolversApplication...
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+[WARNING] LineSearchStrategy: Using deprecated constructor. Please use constructor without linear solver.::[MechanicalSolver]:: : Finished initialization. 
+[WARNING] DEPRECATION-Warning; AnalysisStage: ModifyAfterSolverInitialize is deprecated. Please, use ModifyBeforeSolutionLoop instead. 
+::[KSM Simulation]:: : Analysis -START-  
+::[KSM Simulation]:: : STEP:  1 
+::[KSM Simulation]:: : TIME:  0.00025 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 0.0680051 r2 = -1.69764e-18
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 9.48874e-30 r2 = 1.1904e-30
+::[KSM Simulation]:: : STEP:  2 
+::[KSM Simulation]:: : TIME:  0.0005 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.32567 r1 = 0.0680051 r2 = 0.0268234
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.583054 r1 = 0.00148803 r2 = -0.00747017
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.00182293 r1 = -0.00172271 r2 = -0.00261809
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.327788 rf = 0.000348567 r1 = 0.00182293 r2 = -0.00137817
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.30456 r1 = -0.00767818 r2 = -0.0273215
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.00154694 r1 = 0.00076632 r2 = 0.000910704
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.386471 rf = -0.000171626 r1 = -0.00154694 r2 = 0.000613056
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.56287 rf = -0.000337939 r1 = 0.00040911 r2 = 0.000216655
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.1 rf = -0.00106377 r1 = -0.000337939 r2 = -0.000243898
+LineSearchStrategy: LINE SEARCH it 2 coeff = 0.758568 rf = -0.000150638 r1 = -0.00106377 r2 = 0.000389979
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.372251 r1 = -0.000426841 r2 = -0.00209746
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.862643 r1 = 2.51591e-05 r2 = -9.52939e-06
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.961605 r1 = 3.29CYCLIC_STEP {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.09253527349123035, "H1_bulk_amplitude_relative": 0.056876152834598626, "step": 2, "iterations": 12}
+368e-06 r2 = -2.7396e-07
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.986818 r1 = 8.86123e-10 r2 = -2.39946e-11
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 6.38241e-14 r2 = -4.30448e-17
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1 r1 = 5.89421e-22 r2 = -2.6641e-27
+::[KSM Simulation]:: : STEP:  3 
+::[KSM Simulation]:: : TIME:  0.00075 
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.00975 r1 = 0.0195561 r2 = 0.000373921
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = 0.0434481 r2 = 0.0968212
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = -0.00830351 r1 = -0.00157537 r2 = -0.00120485
+LineSearchStrategy: LINE SEARCH it 1 coeff = 1.22493 rf = -0.000626422 r1 = -0.00830351 r2 = 0.0024097
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = 0.00147924 r1 = 0.000516002 r2 = 0.000426824
+LineSearchStrategy: LINE SEARCH it 1 coeff = 1.36592 rf = 0.000352287 r1 = 0.00147924 r2 = -0.000853647
+LineSearchStrategy: LINE SEARCH it 2 coeff = 1.17197 rf = 0.000152325 r1 = 0.000352287 r2 = -0.000312366
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.196792 r1 = 0.0945848 r2 = 0.250558
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.24827 r1 = -0.00225807 r2 = -0.000749208
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = 393320 r2 = 788072
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.02401 r1 = -4133.3 r2 = -189.372
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 5.10713 r1 = -21.0895 r2 = -40.4904
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = 11.3892 r1 = -25.6944 r2 = -18.1138
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.378063 r1 = -15.3064 r2 = -78.07
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.423267 r1 = -6.95893 r2 = -52.3038
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.340262 r1 = -4.36626 r2 = -18.0332
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = 19.7984 r2 = 40.6508
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.284882 r1 = -1.8787 r2 = -6.24536
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -3.08798 r2 = -6.48599
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.693192 rf = -0.18822 r1 = -0.393859 r2 = 0.625486
+LineSearchStrategy: LINE SEARCH it 0 coeff = 2 rf = -20.2557 r1 = -20.3995 r2 = -16.9261
+LineSearchStrategy: LINE SEARCH it 1 coeff = 1.62564 rf = -16.309 r1 = -20.2557 r2 = 33.8521
+LineSearchStrategy: LINE SEARCH it 2 coeff = 2 r1 = -16.309 r2 = -7.58287
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -164.802 r1 = 335.239 r2 = 657.682
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.481817 r1 = -1.79094 r2 = -51.0379
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.287705 r1 = -9.60557 r2 = -32.2288
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.414985 r1 = -2.317 r2 = -15.944
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.248698 r1 = -1.86225 r2 = -5.56746
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.279874 r1 = -1.01923 r2 = -3.33433
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.662951 r1 = 0.0982826 r2 = -0.203289
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.361294 r1 = -0.133285 r2 = -0.613743
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.4181 r1 = -0.035204 r2 = -0.250124
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.155476 r1 = -2.06755 r2 = -3.08127
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.659955 r1 = -0.0944303 r2 = 0.200747
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.537005 r1 = 0.0544134 r2 = -0.680795
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.0634731 r1 = -0.866294 r2 = -1.35868
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.069524 r1 = -1.60849 r2 = -2.9255
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.579701 r1 = -0.606751 r2 = 3.19969
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -0.678418 r2 = -1.43499
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.219585 r1 = -0.565074 r2 = -1.57264
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.510344 r1 = -0.874545 r2 = -1.61241
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.485145 r1 = -0.00463571 r2 = -0.160671
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.750156 rf = -0.00521357 r1 = 0.0430983 r2 = -0.0430445
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.040519 r1 = -0.0992198 r2 = -0.187491
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1887 r1 = -0.0954888 r2 = -0.24886
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.992324 r1 = 0.11624 r2 = -0.0018123
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.493032 r1 = 0.0962594 r2 = 7.00368
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.305792 r1 = -1.34722 r2 = -4.81572
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 2.12756 r1 = -0.897466 r2 = -1.72991
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.399074 r1 = 2.12756 r2 = -0.717973
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.44421 r1 = -5.53902 r2 = -2.60588
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 30.1358 r1 = -20.1552 r2 = -25.8242
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.360578 rf = 6.2527 r1 = 30.1358 r2 = -16.1241
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.535166 r1 = 0.621035 r2 = -8.20891
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.566279 r1 = 0.138737 r2 = -0.907873
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.609678 r1 = 0.0557046 r2 = -0.198242
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.293332 r1 = -0.970265 r2 = -1.84531
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.314408 r1 = -0.199787 r2 = -0.738031
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.327005 r1 = 0.577908 r2 = 0.851799
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.0150693 r1 = -2.53757 r2 = -2.76306
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.219275 r1 = -1.80864 r2 = -5.03003
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.536689 r1 = 0.00886011 r2 = -0.111887
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -0.0557926 r1 = 0.0341535 r2 = 0.0459231
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.368507 rf = -0.00837963 r1 = -0.0557926 r2 = 0.0273228
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.451834 r1 = -0.0241044 r2 = -0.274328
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.402883 r1 = -0.0700411 r2 = -0.430643
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.194307 r1 = 4.44916 r2 = 11.7263
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.594697 r1 = 0.118099 r2 = -0.505462
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.047483 r1 = -0.0481164 r2 = -0.0818378
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.320913 r1 = 0.047483 r2 = -0.0384931
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.155706 r1 = 19.8421 r2 = 48.6577
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.255898 r1 = 9.27106 r2 = 28.2612
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -5.68772 r2 = -12.3499
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.142665 r1 = -2.04157 r2 = -4.89822
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -2.20381 r2 = -4.87183
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 1.20611 r1 = -1.68362 r2 = -2.50282
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.759197 r1 = -0.551852 r2 = -0.794177
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.352923 rf = 0.142282 r1 = 0.759197 r2 = -0.441482
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.705351 rf = -0.0826334 r1 = 0.290306 r2 = -0.416546
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = 27.7529 r2 = 60.0673
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -0.388698 r2 = -0.813343
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.101286 r1 = -0.229345 r2 = -0.51695
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.58728 rf = 1.03387 r1 = -5.4171 r2 = -2.92597
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 11.0471 r1 = -35.6062 r2 = -42.6496
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.738265 rf = 0.403737 r1 = -18.7392 r2 = 20.585
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.13117 r1 = -7.86779 r2 = -18.5337
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.142694 r1 = -5.74032 r2 = -13.7731
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.150982 r1 = -3.81573 r2 = -9.28211
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -4.15701 r2 = -9.02983
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 9.30701 r1 = -4.19302 r2 = -5.14649
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.394027 rf = 0.831983 r1 = 9.30701 rCYCLIC_RESULT {"status": "failed", "time": 0.00075, "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.", "completed_steps": 2, "spans": [20, 20], "degree": 3}
+COMPARISON_CASE {"mode": "new", "degree": 3, "spans": 20, "seconds": 17.50247604213655, "status": {"status": "failed", "time": 0.00075, "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.", "completed_steps": 2, "spans": [20, 20], "degree": 3}, "metrics": [{"time": 0.00025, "load_factor": 0.25, "L2_amplitude_relative": 0.00520126367976239, "H1_bulk_amplitude_relative": 0.0033325206066920163, "step": 1, "iterations": 2}, {"time": 0.0005, "load_factor": 0.5, "L2_amplitude_relative": 0.09253527349123035, "H1_bulk_amplitude_relative": 0.056876152834598626, "step": 2, "iterations": 12}]}
+2 = -3.35442
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.322304 r1 = -0.679715 r2 = -2.59229
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.306418 r1 = -0.26471 r2 = -0.948423
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.199369 r1 = -0.161422 r2 = -0.429895
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.33547 r1 = -1.08995 r2 = -4.40227
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.325129 r1 = -1.45642 r2 = -5.6207
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.526096 r1 = -0.21724 r2 = 3.94515
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = -2.60586 r1 = -3.25604 r2 = -4.13409
+LineSearchStrategy: LINE SEARCH it 1 coeff = 2 rf = -16.5886 r1 = -2.60586 r2 = -2.60483
+LineSearchStrategy: LINE SEARCH it 2 coeff = 1.05592 rf = -4.60849 r1 = -16.5886 r2 = 9.76811
+LineSearchStrategy: LINE SEARCH it 3 coeff = 0.744574 rf = -1.91638 r1 = -4.60849 r2 = 3.62017
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.550786 r1 = -0.0218006 r2 = 0.192833
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 0.331741 r1 = -2.55261 r2 = -3.07209
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 339.278 r1 = -214.937 r2 = -255.455
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.365461 rf = 55.1873 r1 = 339.278 r2 = -171.949
+LineSearchStrategy: LINE SEARCH it 0 coeff = 1.23266 r1 = 51.8059 r2 = 16.4512
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 227.377 r1 = -71.0811 r2 = -99.7237
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.419977 rf = 13.1117 r1 = 227.377 r2 = -56.8649
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.159215 r1 = -21.0977 r2 = -52.0523
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.22576 r1 = -14.7998 r2 = -41.783
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.269006 r1 = -9.97779 r2 = -31.5753
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.254652 r1 = -8.55825 r2 = -25.9993
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 rf = 15.8858 r1 = -14.5681 r2 = -21.3268
+LineSearchStrategy: LINE SEARCH it 1 coeff = 0.330728 rf = 3.33 r1 = 15.8858 r2 = -11.6545
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.404302 r1 = -0.384569 r2 = -2.39386
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.624465 r1 = 0.0738642 r2 = -0.222862
+LineSearchStrategy: LINE SEARCH it 0 coeff = 0.1 r1 = -0.132227 r2 = -0.289843
+[WARNING] ::[MechanicalSolver]:: : Solver did not converge for step 3
+corresponding to time 0.00075
+ 
+Deregistering KratosMultiphysics
+Deregistering LinearSolversApplication
+Deregistering IgaApplication
+Deregistering ConstitutiveLawsApplication
+Deregistering StructuralMechanicsApplication

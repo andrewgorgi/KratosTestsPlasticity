@@ -1,0 +1,34 @@
+[
+  {
+    "case": "n10_newton",
+    "status": {
+      "status": "converged",
+      "time": 0.006000000000000004,
+      "completed_steps": 24,
+      "spans": [
+        10,
+        10
+      ],
+      "degree": 2
+    },
+    "global_fd_error": 3.5577174847072044e-09,
+    "interface_fd_error": 1.1086375786528987e-09,
+    "repeat_error": 0.0
+  },
+  {
+    "case": "n20_line_search",
+    "status": {
+      "status": "converged",
+      "time": 0.006000000000000004,
+      "completed_steps": 24,
+      "spans": [
+        20,
+        20
+      ],
+      "degree": 2
+    },
+    "global_fd_error": 3.3268083252780153e-09,
+    "interface_fd_error": 8.018868489681121e-10,
+    "repeat_error": 0.0
+  }
+]

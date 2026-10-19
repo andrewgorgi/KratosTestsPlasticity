@@ -1,0 +1,10 @@
+{
+  "status": "converged",
+  "time": 0.00075,
+  "completed_steps": 3,
+  "spans": [
+    20,
+    20
+  ],
+  "degree": 3
+}

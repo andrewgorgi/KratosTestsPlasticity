@@ -1,0 +1,20 @@
+{
+    "build_level": 2,
+    "builder_and_solver_settings": {},
+    "compute_reactions": false,
+    "convergence_criteria_settings": {},
+    "echo_level": 1,
+    "first_alpha_value": 0.5,
+    "line_search_tolerance": 0.5,
+    "linear_solver_settings": {},
+    "max_alpha": 1.0,
+    "max_iteration": 100,
+    "max_line_search_iterations": 10,
+    "min_alpha": 0.0001,
+    "move_mesh_flag": false,
+    "name": "line_search_strategy",
+    "reform_dofs_at_each_step": false,
+    "scheme_settings": {},
+    "second_alpha_value": 1.0,
+    "use_old_stiffness_in_first_iteration": false
+}

@@ -1,0 +1,12 @@
+Built old /tmp/sbm_cyclic_old_vs_new_p3/old/libKratosIgaCore.so
+Built new /tmp/sbm_cyclic_old_vs_new_p3/new/libKratosIgaCore.so
+CASE_COMPLETE old 10 failed 0.0005
+CASE_COMPLETE new 10 failed 0.00075
+CASE_COMPLETE old 20 failed 0.0005
+CASE_COMPLETE new 20 failed 0.00075
+CASE_COMPLETE old 40 failed 0.0005
+CASE_COMPLETE new 40 failed 0.00075
+CASE_COMPLETE old 80 failed 0.0005
+CASE_COMPLETE new 80 failed 0.00075
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-0uqeaw86 because the default path (/home/agorgi/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+COMPARISON_SUMMARY {"degree": 3, "availability": [{"mode": "old", "spans": 10, "h": 0.44000000000000006, "status": "failed", "completed_steps": 1, "last_converged_time": 0.00025, "failed_time": 0.0005, "seconds": 5.264177670236677}, {"mode": "new", "spans": 10, "h": 0.44000000000000006, "status": "failed", "completed_steps": 2, "last_converged_time": 0.0005, "failed_time": 0.00075, "seconds": 5.901419117115438}, {"mode": "old", "spans": 20, "h": 0.22000000000000003, "status": "failed", "completed_steps": 1, "last_converged_time": 0.00025, "failed_time": 0.0005, "seconds": 13.08537401072681}, {"mode": "new", "spans": 20, "h": 0.22000000000000003, "status": "failed", "completed_steps": 2, "last_converged_time": 0.0005, "failed_time": 0.00075, "seconds": 14.193456747103482}, {"mode": "old", "spans": 40, "h": 0.11000000000000001, "status": "failed", "completed_steps": 1, "last_converged_time": 0.00025, "failed_time": 0.0005, "seconds": 38.625646175350994}, {"mode": "new", "spans": 40, "h": 0.11000000000000001, "status": "failed", "completed_steps": 2, "last_converged_time": 0.0005, "failed_time": 0.00075, "seconds": 42.08935673208907}, {"mode": "old", "spans": 80, "h": 0.05500000000000001, "status": "failed", "completed_steps": 1, "last_converged_time": 0.00025, "failed_time": 0.0005, "seconds": 148.46562329074368}, {"mode": "new", "spans": 80, "h": 0.05500000000000001, "status": "failed", "completed_steps": 2, "last_converged_time": 0.0005, "failed_time": 0.00075, "seconds": 176.57485179323703}], "common_converged_states": 4, "error_states": 12, "meshes": [10, 20, 40, 80]}

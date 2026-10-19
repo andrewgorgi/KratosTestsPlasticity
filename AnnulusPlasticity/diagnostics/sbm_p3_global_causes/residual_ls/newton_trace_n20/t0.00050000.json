@@ -1,0 +1,72 @@
+{
+  "time": 0.0005,
+  "status": "converged",
+  "residual_norm": 1.0272195507666646e-13,
+  "iterations": [
+    {
+      "iteration": 1,
+      "residual_norm": 56.58899116722939,
+      "alpha": 1.0,
+      "trial_residual_norm": 11.679072804922658,
+      "accepted": true,
+      "correction_norm": 0.006813770247648905,
+      "linear_solve_relative_error": 1.5532009064810693e-15
+    },
+    {
+      "iteration": 2,
+      "residual_norm": 11.679072804922658,
+      "alpha": 0.25,
+      "trial_residual_norm": 5.089846247017262,
+      "accepted": true,
+      "correction_norm": 0.01458906530901632,
+      "linear_solve_relative_error": 1.357104733307724e-14
+    },
+    {
+      "iteration": 3,
+      "residual_norm": 5.089846247017262,
+      "alpha": 1.0,
+      "trial_residual_norm": 2.2959062387040428,
+      "accepted": true,
+      "correction_norm": 0.002925623484775102,
+      "linear_solve_relative_error": 2.682115689928472e-15
+    },
+    {
+      "iteration": 4,
+      "residual_norm": 2.2959062387040428,
+      "alpha": 1.0,
+      "trial_residual_norm": 0.2186374918060963,
+      "accepted": true,
+      "correction_norm": 0.0007009497659720864,
+      "linear_solve_relative_error": 2.12178859943328e-15
+    },
+    {
+      "iteration": 5,
+      "residual_norm": 0.2186374918060963,
+      "alpha": 1.0,
+      "trial_residual_norm": 0.0028216071133257657,
+      "accepted": true,
+      "correction_norm": 0.00020042683700874754,
+      "linear_solve_relative_error": 1.944977691679379e-15
+    },
+    {
+      "iteration": 6,
+      "residual_norm": 0.0028216071133257657,
+      "alpha": 1.0,
+      "trial_residual_norm": 7.202257617204253e-07,
+      "accepted": true,
+      "correction_norm": 2.3994536965489153e-06,
+      "linear_solve_relative_error": 2.1415425724035326e-15
+    },
+    {
+      "iteration": 7,
+      "residual_norm": 7.202257617204253e-07,
+      "alpha": 1.0,
+      "trial_residual_norm": 1.0272195507666646e-13,
+      "accepted": true,
+      "correction_norm": 2.750910798603859e-10,
+      "linear_solve_relative_error": 2.137888607460055e-15
+    }
+  ],
+  "convergence": "absolute residual norm < 1e-10 and Newton correction norm < 1e-12",
+  "linear_solver": "same configured Kratos solver"
+}

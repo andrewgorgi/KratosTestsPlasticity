@@ -1,0 +1,18 @@
+{
+  "status": "converged",
+  "time": 0.002,
+  "spans": 80,
+  "strategy": "line_search",
+  "steps": [
+    {
+      "time": 0.001,
+      "iteration": 7,
+      "converged": true
+    },
+    {
+      "time": 0.002,
+      "iteration": 22,
+      "converged": true
+    }
+  ]
+}

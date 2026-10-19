@@ -1,0 +1,110 @@
+[
+  {
+    "mesh": 20,
+    "iteration": 0,
+    "group": "bulk",
+    "points": 2688,
+    "near_yield": 176,
+    "switches_forward": 98,
+    "switches_backward": 78
+  },
+  {
+    "mesh": 20,
+    "iteration": 0,
+    "group": "surrogate",
+    "points": 280,
+    "near_yield": 224,
+    "switches_forward": 124,
+    "switches_backward": 100
+  },
+  {
+    "mesh": 20,
+    "iteration": 0,
+    "group": "true",
+    "points": 280,
+    "near_yield": 280,
+    "switches_forward": 111,
+    "switches_backward": 169
+  },
+  {
+    "mesh": 20,
+    "iteration": 2,
+    "group": "bulk",
+    "points": 2688,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  },
+  {
+    "mesh": 20,
+    "iteration": 2,
+    "group": "surrogate",
+    "points": 280,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  },
+  {
+    "mesh": 20,
+    "iteration": 2,
+    "group": "true",
+    "points": 280,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  },
+  {
+    "mesh": 40,
+    "iteration": 0,
+    "group": "bulk",
+    "points": 11904,
+    "near_yield": 460,
+    "switches_forward": 240,
+    "switches_backward": 220
+  },
+  {
+    "mesh": 40,
+    "iteration": 0,
+    "group": "surrogate",
+    "points": 560,
+    "near_yield": 528,
+    "switches_forward": 277,
+    "switches_backward": 251
+  },
+  {
+    "mesh": 40,
+    "iteration": 0,
+    "group": "true",
+    "points": 560,
+    "near_yield": 560,
+    "switches_forward": 257,
+    "switches_backward": 303
+  },
+  {
+    "mesh": 40,
+    "iteration": 2,
+    "group": "bulk",
+    "points": 11904,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  },
+  {
+    "mesh": 40,
+    "iteration": 2,
+    "group": "surrogate",
+    "points": 560,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  },
+  {
+    "mesh": 40,
+    "iteration": 2,
+    "group": "true",
+    "points": 560,
+    "near_yield": 0,
+    "switches_forward": 0,
+    "switches_backward": 0
+  }
+]

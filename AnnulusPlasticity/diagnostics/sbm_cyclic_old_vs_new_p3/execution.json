@@ -1,0 +1,11 @@
+{
+  "degree": 3,
+  "refinements": [
+    10,
+    20,
+    40,
+    80
+  ],
+  "source_unchanged": true,
+  "installed_library_unchanged": true
+}

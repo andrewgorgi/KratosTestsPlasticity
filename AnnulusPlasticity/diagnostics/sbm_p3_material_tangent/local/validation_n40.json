@@ -1,0 +1,15 @@
+{
+  "points": 13024,
+  "committed_steps": [
+    {
+      "time": 0.00025,
+      "max_stress_error": 0.0
+    },
+    {
+      "time": 0.0005,
+      "max_stress_error": 8.994752605795614e-14
+    }
+  ],
+  "max_reference_stress_error": 1.88271032603543e-12,
+  "history_committed_at_failed_step": false
+}

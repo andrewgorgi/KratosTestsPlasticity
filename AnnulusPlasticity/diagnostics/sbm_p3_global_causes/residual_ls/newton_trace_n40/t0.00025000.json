@@ -1,0 +1,18 @@
+{
+  "time": 0.00025,
+  "status": "converged",
+  "residual_norm": 2.421600697399346e-13,
+  "iterations": [
+    {
+      "iteration": 1,
+      "residual_norm": 37.96539219749611,
+      "alpha": 1.0,
+      "trial_residual_norm": 2.421600697399346e-13,
+      "accepted": true,
+      "correction_norm": 0.011741102475411186,
+      "linear_solve_relative_error": 5.712109651691442e-15
+    }
+  ],
+  "convergence": "absolute residual norm < 1e-10 and Newton correction norm < 1e-12",
+  "linear_solver": "same configured Kratos solver"
+}

@@ -1,0 +1,11 @@
+time,step_status,iteration,points,elastic_s_plastic_t,plastic_s_elastic_t,both_elastic,both_active_plastic,robust_elastic_s_plastic_t,robust_plastic_s_elastic_t,near_yield_pairs
+0.0005,converged,0,560,0,0,560,0,0,0,0
+0.0005,converged,1,560,8,0,0,552,8,0,0
+0.0005,converged,2,560,104,0,0,456,104,0,0
+0.0005,converged,3,560,64,0,0,496,64,0,0
+0.0005,converged,4,560,48,0,0,512,48,0,0
+0.0005,converged,5,560,48,0,0,512,48,0,0
+0.0005,converged,6,560,48,0,0,512,48,0,0
+0.0005,converged,7,560,48,0,0,512,48,0,0
+0.0005,converged,8,560,48,0,0,512,48,0,0
+0.0005,converged,9,560,48,0,0,512,48,0,0

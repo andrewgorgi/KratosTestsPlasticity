@@ -1,0 +1,13 @@
+mesh,iteration,group,points,near_yield,switches_forward,switches_backward
+20,0,bulk,2688,176,98,78
+20,0,surrogate,280,224,124,100
+20,0,true,280,280,111,169
+20,2,bulk,2688,0,0,0
+20,2,surrogate,280,0,0,0
+20,2,true,280,0,0,0
+40,0,bulk,11904,460,240,220
+40,0,surrogate,560,528,277,251
+40,0,true,560,560,257,303
+40,2,bulk,11904,0,0,0
+40,2,surrogate,560,0,0,0
+40,2,true,560,0,0,0

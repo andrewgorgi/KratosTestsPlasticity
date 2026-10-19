@@ -1,0 +1,866 @@
+[
+  {
+    "step": 1,
+    "condition": 617,
+    "residual_error": 5.216185631283174e-16,
+    "tangent_error": 4.2118805091138055e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.211080422366724e-11,
+    "true_surrogate_strain_distance": 0.0018615721100115014
+  },
+  {
+    "step": 1,
+    "condition": 642,
+    "residual_error": 2.4658445185687877e-16,
+    "tangent_error": 6.040666508391002e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.607701649266826e-10,
+    "true_surrogate_strain_distance": 0.0006770510233744256
+  },
+  {
+    "step": 1,
+    "condition": 667,
+    "residual_error": 8.534175552476285e-15,
+    "tangent_error": 2.0683900800966355e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.011871256588364e-10,
+    "true_surrogate_strain_distance": 0.0007611197411449997
+  },
+  {
+    "step": 1,
+    "condition": 693,
+    "residual_error": 2.118000063458795e-15,
+    "tangent_error": 2.7087294516363194e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.5239875004574973e-10,
+    "true_surrogate_strain_distance": 0.0007345590992280166
+  },
+  {
+    "step": 1,
+    "condition": 718,
+    "residual_error": 2.6101030993447284e-14,
+    "tangent_error": 3.235964860432565e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.855911901505446e-10,
+    "true_surrogate_strain_distance": 0.0011069828828603045
+  },
+  {
+    "step": 1,
+    "condition": 743,
+    "residual_error": 3.4456951006583363e-16,
+    "tangent_error": 5.542046020503941e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.1813828884394885e-10,
+    "true_surrogate_strain_distance": 0.0002819761750481023
+  },
+  {
+    "step": 1,
+    "condition": 769,
+    "residual_error": 2.9675957057649102e-15,
+    "tangent_error": 4.457166738813437e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.8959969323987315e-10,
+    "true_surrogate_strain_distance": 0.000488669955449885
+  },
+  {
+    "step": 1,
+    "condition": 794,
+    "residual_error": 1.0443616387856338e-15,
+    "tangent_error": 3.1503850524119122e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.9652736527648795e-10,
+    "true_surrogate_strain_distance": 0.0006257163810471056
+  },
+  {
+    "step": 1,
+    "condition": 819,
+    "residual_error": 3.206985444157839e-15,
+    "tangent_error": 2.4657168900803774e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.3265831069312935e-10,
+    "true_surrogate_strain_distance": 0.0006305014028519456
+  },
+  {
+    "step": 1,
+    "condition": 845,
+    "residual_error": 1.576385063534939e-14,
+    "tangent_error": 3.157818997815832e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 8.091121575393142e-11,
+    "true_surrogate_strain_distance": 0.0004154959033822542
+  },
+  {
+    "step": 1,
+    "condition": 870,
+    "residual_error": 1.2467826165212311e-15,
+    "tangent_error": 4.19097387647378e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0917675183526676e-10,
+    "true_surrogate_strain_distance": 0.0007083528580490172
+  },
+  {
+    "step": 1,
+    "condition": 896,
+    "residual_error": 6.8270598339838e-16,
+    "tangent_error": 5.004609540677782e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.130069466550024e-10,
+    "true_surrogate_strain_distance": 0.002116836185575754
+  },
+  {
+    "step": 2,
+    "condition": 617,
+    "residual_error": 1.1831831495643775e-15,
+    "tangent_error": 3.926649891503153e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.987264780844268e-10,
+    "true_surrogate_strain_distance": 0.004200326498581302
+  },
+  {
+    "step": 2,
+    "condition": 642,
+    "residual_error": 4.790673098739969e-16,
+    "tangent_error": 6.0689846655635246e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.187006200089456e-10,
+    "true_surrogate_strain_distance": 0.000987810381100302
+  },
+  {
+    "step": 2,
+    "condition": 667,
+    "residual_error": 9.703178342589533e-15,
+    "tangent_error": 1.9764825437004318e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.0280282999717867e-09,
+    "true_surrogate_strain_distance": 0.0013179089645590017
+  },
+  {
+    "step": 2,
+    "condition": 693,
+    "residual_error": 9.037125806014168e-15,
+    "tangent_error": 3.0563350933993156e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.5932710136456833e-09,
+    "true_surrogate_strain_distance": 0.0012841369311038596
+  },
+  {
+    "step": 2,
+    "condition": 718,
+    "residual_error": 2.9451800751248145e-14,
+    "tangent_error": 2.8005778064296607e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.6333730187844587e-10,
+    "true_surrogate_strain_distance": 0.0017491986422230618
+  },
+  {
+    "step": 2,
+    "condition": 743,
+    "residual_error": 8.055570364623903e-16,
+    "tangent_error": 5.777279193418013e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.055937578349781e-10,
+    "true_surrogate_strain_distance": 0.00048439966393047304
+  },
+  {
+    "step": 2,
+    "condition": 769,
+    "residual_error": 6.220534255238006e-16,
+    "tangent_error": 4.340213514996318e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 9.268622888367712e-11,
+    "true_surrogate_strain_distance": 0.0007232422262309445
+  },
+  {
+    "step": 2,
+    "condition": 794,
+    "residual_error": 1.2756419452963764e-15,
+    "tangent_error": 3.43918072438341e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.252059331839846e-10,
+    "true_surrogate_strain_distance": 0.0013708126446746818
+  },
+  {
+    "step": 2,
+    "condition": 819,
+    "residual_error": 2.9114863101038013e-15,
+    "tangent_error": 2.2300404217976402e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.216465063900462e-11,
+    "true_surrogate_strain_distance": 0.001529653206537281
+  },
+  {
+    "step": 2,
+    "condition": 845,
+    "residual_error": 2.2498572902385178e-14,
+    "tangent_error": 2.9896145394061456e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.2280781002559713e-10,
+    "true_surrogate_strain_distance": 0.001084860259750981
+  },
+  {
+    "step": 2,
+    "condition": 870,
+    "residual_error": 1.0550371531200492e-15,
+    "tangent_error": 4.845328164816408e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.269242143710578e-10,
+    "true_surrogate_strain_distance": 0.0010540710987882776
+  },
+  {
+    "step": 2,
+    "condition": 896,
+    "residual_error": 2.4552556010289898e-15,
+    "tangent_error": 5.125614280713171e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0866870698239146e-09,
+    "true_surrogate_strain_distance": 0.004374606689267438
+  },
+  {
+    "step": 3,
+    "condition": 617,
+    "residual_error": 1.1522160310947425e-15,
+    "tangent_error": 3.835579400417531e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.872452023861128e-11,
+    "true_surrogate_strain_distance": 0.0011650964307309759
+  },
+  {
+    "step": 3,
+    "condition": 642,
+    "residual_error": 4.867631229094395e-16,
+    "tangent_error": 6.2534028370578365e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.2201705706860446e-11,
+    "true_surrogate_strain_distance": 0.00027991959055829443
+  },
+  {
+    "step": 3,
+    "condition": 667,
+    "residual_error": 9.443048995968671e-16,
+    "tangent_error": 2.1520703404764403e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.259660458098628e-10,
+    "true_surrogate_strain_distance": 0.00037394729901895886
+  },
+  {
+    "step": 3,
+    "condition": 693,
+    "residual_error": 8.444155232009402e-16,
+    "tangent_error": 3.275768949261843e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.722392969535046e-10,
+    "true_surrogate_strain_distance": 0.000364097290443059
+  },
+  {
+    "step": 3,
+    "condition": 718,
+    "residual_error": 1.58115144646142e-15,
+    "tangent_error": 3.095744440032365e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.9653136876129705e-11,
+    "true_surrogate_strain_distance": 0.0004992968482661601
+  },
+  {
+    "step": 3,
+    "condition": 743,
+    "residual_error": 5.393171530440962e-16,
+    "tangent_error": 5.423916256504445e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.5171610575881048e-10,
+    "true_surrogate_strain_distance": 0.0001329863730595138
+  },
+  {
+    "step": 3,
+    "condition": 769,
+    "residual_error": 8.359090155385963e-16,
+    "tangent_error": 4.166444350132007e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.109415767534898e-10,
+    "true_surrogate_strain_distance": 0.00020656322627384782
+  },
+  {
+    "step": 3,
+    "condition": 794,
+    "residual_error": 9.194469788961648e-16,
+    "tangent_error": 3.3139434843948637e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.382582795486116e-10,
+    "true_surrogate_strain_distance": 0.00037080774059569394
+  },
+  {
+    "step": 3,
+    "condition": 819,
+    "residual_error": 6.079420033984513e-16,
+    "tangent_error": 2.258400486804595e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 9.027024761613746e-11,
+    "true_surrogate_strain_distance": 0.0004212754681558207
+  },
+  {
+    "step": 3,
+    "condition": 845,
+    "residual_error": 6.5779622653285295e-15,
+    "tangent_error": 2.888705228928277e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.9788105130612544e-10,
+    "true_surrogate_strain_distance": 0.0002946226156716364
+  },
+  {
+    "step": 3,
+    "condition": 870,
+    "residual_error": 2.4813674554113724e-15,
+    "tangent_error": 4.544127717536495e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.085166050538635e-11,
+    "true_surrogate_strain_distance": 0.00029637394606535014
+  },
+  {
+    "step": 3,
+    "condition": 896,
+    "residual_error": 3.467855003133586e-16,
+    "tangent_error": 5.035459990749721e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 7.334034737111275e-10,
+    "true_surrogate_strain_distance": 0.0012230826833659707
+  },
+  {
+    "step": 4,
+    "condition": 617,
+    "residual_error": 9.518240486802243e-16,
+    "tangent_error": 4.054246511418042e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.959956845490812e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 642,
+    "residual_error": 1.2530810046028806e-15,
+    "tangent_error": 5.722440306466486e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.1695544817492012e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 667,
+    "residual_error": 5.964248946538095e-15,
+    "tangent_error": 1.9087209938898848e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.8838652598739724e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 693,
+    "residual_error": 2.2148585330812186e-15,
+    "tangent_error": 2.741161785498056e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.795230906912245e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 718,
+    "residual_error": 6.104444507863081e-15,
+    "tangent_error": 3.0949467080766314e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0908569731610884e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 743,
+    "residual_error": 4.758914619080851e-16,
+    "tangent_error": 5.478156494621979e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.9408267370807108e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 769,
+    "residual_error": 1.3958086814721376e-15,
+    "tangent_error": 4.195460704948738e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.378820126109399e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 794,
+    "residual_error": 3.7936593781330856e-16,
+    "tangent_error": 3.2381764726940073e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.9313943022436125e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 819,
+    "residual_error": 1.5569822092089665e-15,
+    "tangent_error": 2.30789921926727e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.7790725889460492e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 845,
+    "residual_error": 6.869732893802792e-15,
+    "tangent_error": 3.104310730426934e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.331514526635608e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 870,
+    "residual_error": 1.7513135857089832e-15,
+    "tangent_error": 4.388578984706868e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.870625484888451e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 4,
+    "condition": 896,
+    "residual_error": 5.712565022964063e-16,
+    "tangent_error": 4.859430531929259e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.895635628811136e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 5,
+    "condition": 617,
+    "residual_error": 9.389639896108816e-16,
+    "tangent_error": 4.2387848572248155e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.8279494525612295e-10,
+    "true_surrogate_strain_distance": 0.0011324164400570316
+  },
+  {
+    "step": 5,
+    "condition": 642,
+    "residual_error": 4.123196264153651e-15,
+    "tangent_error": 5.9752924980135635e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 8.038953201991087e-11,
+    "true_surrogate_strain_distance": 0.001672634029855691
+  },
+  {
+    "step": 5,
+    "condition": 667,
+    "residual_error": 4.491157462228916e-15,
+    "tangent_error": 2.1845369452125924e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.541324060152411e-10,
+    "true_surrogate_strain_distance": 0.0011924695038552818
+  },
+  {
+    "step": 5,
+    "condition": 693,
+    "residual_error": 5.2009600909415725e-15,
+    "tangent_error": 2.8929149046296e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.7556686700943664e-10,
+    "true_surrogate_strain_distance": 0.0011255185749557718
+  },
+  {
+    "step": 5,
+    "condition": 718,
+    "residual_error": 3.5809127530797524e-14,
+    "tangent_error": 3.1343889714347907e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.212545133319954e-10,
+    "true_surrogate_strain_distance": 0.0021084798068817384
+  },
+  {
+    "step": 5,
+    "condition": 743,
+    "residual_error": 9.902181263046967e-16,
+    "tangent_error": 5.1036382943978015e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.199988165079465e-10,
+    "true_surrogate_strain_distance": 0.0007936153651250419
+  },
+  {
+    "step": 5,
+    "condition": 769,
+    "residual_error": 5.1785479529276546e-15,
+    "tangent_error": 4.6591982874379375e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.630705547474603e-10,
+    "true_surrogate_strain_distance": 0.001080688586439833
+  },
+  {
+    "step": 5,
+    "condition": 794,
+    "residual_error": 5.611138799539115e-16,
+    "tangent_error": 3.04369828372808e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.1398534191130683e-09,
+    "true_surrogate_strain_distance": 0.0017107522620437234
+  },
+  {
+    "step": 5,
+    "condition": 819,
+    "residual_error": 1.9021972623150324e-15,
+    "tangent_error": 2.264908855269377e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.765398845487321e-10,
+    "true_surrogate_strain_distance": 0.0003996719475050005
+  },
+  {
+    "step": 5,
+    "condition": 845,
+    "residual_error": 1.882340203002861e-14,
+    "tangent_error": 3.7516653079607304e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.341174284079838e-10,
+    "true_surrogate_strain_distance": 0.0007362690052191921
+  },
+  {
+    "step": 5,
+    "condition": 870,
+    "residual_error": 2.9261715756430448e-15,
+    "tangent_error": 4.775142698461232e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.15078728084532e-09,
+    "true_surrogate_strain_distance": 0.0018367635402110228
+  },
+  {
+    "step": 5,
+    "condition": 896,
+    "residual_error": 2.2527128555985683e-16,
+    "tangent_error": 4.829339326348715e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.0791334296108e-10,
+    "true_surrogate_strain_distance": 0.001919053716618515
+  },
+  {
+    "step": 6,
+    "condition": 617,
+    "residual_error": 1.312857267017485e-15,
+    "tangent_error": 4.0389443716729445e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 6.225658996643975e-11,
+    "true_surrogate_strain_distance": 0.004660385722923903
+  },
+  {
+    "step": 6,
+    "condition": 642,
+    "residual_error": 3.700548219428139e-16,
+    "tangent_error": 5.968261290636521e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.701739831733935e-10,
+    "true_surrogate_strain_distance": 0.0011196783622331777
+  },
+  {
+    "step": 6,
+    "condition": 667,
+    "residual_error": 1.20815475086765e-14,
+    "tangent_error": 1.8690470682854854e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.1812019773998344e-09,
+    "true_surrogate_strain_distance": 0.0014957891960758354
+  },
+  {
+    "step": 6,
+    "condition": 693,
+    "residual_error": 8.23256090910749e-15,
+    "tangent_error": 2.8280966189103817e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.9304501129771235e-09,
+    "true_surrogate_strain_distance": 0.001456389161772236
+  },
+  {
+    "step": 6,
+    "condition": 718,
+    "residual_error": 2.029561328007419e-14,
+    "tangent_error": 2.540039060672293e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.380730000054408e-10,
+    "true_surrogate_strain_distance": 0.0019971873930646404
+  },
+  {
+    "step": 6,
+    "condition": 743,
+    "residual_error": 1.4133889473502273e-15,
+    "tangent_error": 5.865479200371536e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0752412127428837e-09,
+    "true_surrogate_strain_distance": 0.0005319454922380553
+  },
+  {
+    "step": 6,
+    "condition": 769,
+    "residual_error": 1.1547011186173996e-15,
+    "tangent_error": 4.2760601156561685e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.3362568925581384e-10,
+    "true_surrogate_strain_distance": 0.0008262529050953913
+  },
+  {
+    "step": 6,
+    "condition": 794,
+    "residual_error": 3.7961036602662053e-16,
+    "tangent_error": 3.5426370185185485e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.260412323219305e-09,
+    "true_surrogate_strain_distance": 0.0014832309623827758
+  },
+  {
+    "step": 6,
+    "condition": 819,
+    "residual_error": 5.042023479201693e-15,
+    "tangent_error": 2.416829293289644e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.2667992283073e-10,
+    "true_surrogate_strain_distance": 0.0016851018726232827
+  },
+  {
+    "step": 6,
+    "condition": 845,
+    "residual_error": 2.5280963569994897e-14,
+    "tangent_error": 3.1797043469247125e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0072981882140697e-09,
+    "true_surrogate_strain_distance": 0.0011784904626865457
+  },
+  {
+    "step": 6,
+    "condition": 870,
+    "residual_error": 1.219799540227871e-15,
+    "tangent_error": 5.045818953726606e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.918475403383697e-10,
+    "true_surrogate_strain_distance": 0.0011854957842614006
+  },
+  {
+    "step": 6,
+    "condition": 896,
+    "residual_error": 2.4446912210066655e-15,
+    "tangent_error": 5.072670204250286e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.1706565113926402e-09,
+    "true_surrogate_strain_distance": 0.004892330733463883
+  },
+  {
+    "step": 7,
+    "condition": 617,
+    "residual_error": 1.0887229112386745e-15,
+    "tangent_error": 4.18473632813933e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.9814700804773943e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 642,
+    "residual_error": 2.529604714323021e-15,
+    "tangent_error": 5.940368053490511e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 9.75615432773809e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 667,
+    "residual_error": 8.369965640986496e-15,
+    "tangent_error": 1.9947078600803297e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 9.075957924297507e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 693,
+    "residual_error": 3.746758754704646e-15,
+    "tangent_error": 2.867034513744851e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.0694407044679805e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 718,
+    "residual_error": 7.183201770414982e-15,
+    "tangent_error": 3.2712495698853617e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.2806043592691335e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 743,
+    "residual_error": 7.317115233878661e-16,
+    "tangent_error": 5.367667946139887e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.5744214497338746e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 769,
+    "residual_error": 1.7294963626638064e-15,
+    "tangent_error": 4.289489582001947e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 9.678961032804378e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 794,
+    "residual_error": 6.048583266457999e-16,
+    "tangent_error": 3.1529677405422204e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.6364728629927433e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 819,
+    "residual_error": 2.6640193661096283e-15,
+    "tangent_error": 2.38825954986312e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.248236054446188e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 845,
+    "residual_error": 1.2183452070972722e-14,
+    "tangent_error": 3.467201518204908e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.516566418273542e-11,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 870,
+    "residual_error": 3.0045361538928598e-15,
+    "tangent_error": 4.7339645990519715e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0566617643178201e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 7,
+    "condition": 896,
+    "residual_error": 4.895624788948693e-16,
+    "tangent_error": 4.8834224400492016e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.00906792221083e-10,
+    "true_surrogate_strain_distance": 0.0
+  },
+  {
+    "step": 8,
+    "condition": 617,
+    "residual_error": 1.4306804282807153e-15,
+    "tangent_error": 4.1836888241667635e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.568503286108457e-10,
+    "true_surrogate_strain_distance": 0.004181068716963964
+  },
+  {
+    "step": 8,
+    "condition": 642,
+    "residual_error": 1.3446382075069649e-15,
+    "tangent_error": 5.920285251847156e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.2952347850432e-10,
+    "true_surrogate_strain_distance": 0.0011768340280959287
+  },
+  {
+    "step": 8,
+    "condition": 667,
+    "residual_error": 1.7914943161368263e-14,
+    "tangent_error": 2.014177221106498e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 7.570612347235568e-11,
+    "true_surrogate_strain_distance": 0.0014873012667729498
+  },
+  {
+    "step": 8,
+    "condition": 693,
+    "residual_error": 1.4398152821982482e-14,
+    "tangent_error": 2.687762469122257e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 2.1825502720156636e-09,
+    "true_surrogate_strain_distance": 0.0014427109956878226
+  },
+  {
+    "step": 8,
+    "condition": 718,
+    "residual_error": 2.210272458132194e-14,
+    "tangent_error": 2.972189559807707e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 8.728253345862038e-11,
+    "true_surrogate_strain_distance": 0.0020576442957155228
+  },
+  {
+    "step": 8,
+    "condition": 743,
+    "residual_error": 1.712602747200156e-15,
+    "tangent_error": 5.522062882540364e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.260452737929077e-09,
+    "true_surrogate_strain_distance": 0.0005067907161517045
+  },
+  {
+    "step": 8,
+    "condition": 769,
+    "residual_error": 1.7679048126637586e-15,
+    "tangent_error": 4.422897623613957e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 4.436023856605459e-11,
+    "true_surrogate_strain_distance": 0.0008709481457435343
+  },
+  {
+    "step": 8,
+    "condition": 794,
+    "residual_error": 2.375435521701229e-16,
+    "tangent_error": 3.1866054020759864e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.063406946087016e-10,
+    "true_surrogate_strain_distance": 0.001277555555380686
+  },
+  {
+    "step": 8,
+    "condition": 819,
+    "residual_error": 4.539975826587668e-15,
+    "tangent_error": 2.1781613419394367e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 5.519933156093687e-10,
+    "true_surrogate_strain_distance": 0.0014685279634212298
+  },
+  {
+    "step": 8,
+    "condition": 845,
+    "residual_error": 1.423652434778157e-14,
+    "tangent_error": 3.3167250872937782e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.0602407621450901e-10,
+    "true_surrogate_strain_distance": 0.0009824776684569162
+  },
+  {
+    "step": 8,
+    "condition": 870,
+    "residual_error": 1.2325443611377338e-15,
+    "tangent_error": 4.3362824206610164e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 3.643806400065622e-10,
+    "true_surrogate_strain_distance": 0.0012265818574279967
+  },
+  {
+    "step": 8,
+    "condition": 896,
+    "residual_error": 3.2148970795379125e-15,
+    "tangent_error": 4.81891044599245e-15,
+    "trial_repeat_error": 0.0,
+    "finite_difference_error": 1.196654242658895e-09,
+    "true_surrogate_strain_distance": 0.004540955572030636
+  }
+]

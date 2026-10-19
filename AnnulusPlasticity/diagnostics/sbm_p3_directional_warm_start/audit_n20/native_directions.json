@@ -1,0 +1,26 @@
+[
+  {
+    "iteration": 0,
+    "residual_norm": 56.58899116722937,
+    "actual_update_norm": 0.012903990519534685,
+    "effective_step_scale": 0.6575626521188211,
+    "relative_K_update_minus_scaled_R": 2.131608885072812e-15,
+    "L2_relative_current": 0.23976456849589137
+  },
+  {
+    "iteration": 2,
+    "residual_norm": 60.76668444306667,
+    "actual_update_norm": 0.2270816330336985,
+    "effective_step_scale": 0.536186801470386,
+    "relative_K_update_minus_scaled_R": 2.0594708607686208e-14,
+    "L2_relative_current": 0.3402199917905254
+  },
+  {
+    "iteration": 99,
+    "residual_norm": 250.06181993948343,
+    "actual_update_norm": 0.2606426263676002,
+    "effective_step_scale": 0.4196837976757266,
+    "relative_K_update_minus_scaled_R": 5.4223636607433264e-15,
+    "L2_relative_current": 21.75330331251344
+  }
+]

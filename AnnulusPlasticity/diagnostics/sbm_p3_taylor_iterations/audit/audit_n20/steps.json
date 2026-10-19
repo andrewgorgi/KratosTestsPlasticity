@@ -1,0 +1,53 @@
+[
+  {
+    "time": 0.00025,
+    "state": "converged",
+    "iteration": 2,
+    "points": 280,
+    "both_elastic": 280,
+    "both_active_plastic": 0,
+    "elastic_s_plastic_t": 0,
+    "plastic_s_elastic_t": 0,
+    "robust_elastic_s_plastic_t": 0,
+    "robust_plastic_s_elastic_t": 0,
+    "near_yield_pairs": 0,
+    "accumulated_mismatch": 0,
+    "max_residual_validation_error": 1.718621663872389e-15,
+    "max_tangent_validation_error": 9.774160755865362e-16,
+    "max_stress_reference_error": 0.0
+  },
+  {
+    "time": 0.0005,
+    "state": "converged",
+    "iteration": 12,
+    "points": 280,
+    "both_elastic": 0,
+    "both_active_plastic": 224,
+    "elastic_s_plastic_t": 56,
+    "plastic_s_elastic_t": 0,
+    "robust_elastic_s_plastic_t": 56,
+    "robust_plastic_s_elastic_t": 0,
+    "near_yield_pairs": 0,
+    "accumulated_mismatch": 0,
+    "max_residual_validation_error": 1.408787068087463e-15,
+    "max_tangent_validation_error": 8.73397021538862e-16,
+    "max_stress_reference_error": 6.355908035549918e-14
+  },
+  {
+    "time": 0.00075,
+    "state": "failed",
+    "iteration": 100,
+    "points": 280,
+    "both_elastic": 0,
+    "both_active_plastic": 280,
+    "elastic_s_plastic_t": 0,
+    "plastic_s_elastic_t": 0,
+    "robust_elastic_s_plastic_t": 0,
+    "robust_plastic_s_elastic_t": 0,
+    "near_yield_pairs": 0,
+    "accumulated_mismatch": 56,
+    "max_residual_validation_error": 2.2691628923811173e-14,
+    "max_tangent_validation_error": 1.1424105348516847e-15,
+    "max_stress_reference_error": 4.167828315035731e-12
+  }
+]

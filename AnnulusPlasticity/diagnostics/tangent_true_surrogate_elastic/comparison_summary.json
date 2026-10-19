@@ -1,0 +1,26 @@
+[
+  {
+    "spans": 10,
+    "time": 0.0001,
+    "conditions": 80,
+    "max_relative_difference": 0.0
+  },
+  {
+    "spans": 10,
+    "time": 0.0002,
+    "conditions": 80,
+    "max_relative_difference": 0.0
+  },
+  {
+    "spans": 20,
+    "time": 0.0001,
+    "conditions": 200,
+    "max_relative_difference": 0.0
+  },
+  {
+    "spans": 20,
+    "time": 0.0002,
+    "conditions": 200,
+    "max_relative_difference": 0.0
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "mode": "new",
+  "degree": 3,
+  "spans": 40,
+  "seconds": 160.06664140103385,
+  "status": {
+    "status": "failed",
+    "time": 0.0025000000000000005,
+    "error": "Newton non convergente al tempo 0.0025; nessuna norma di errore viene calcolata.",
+    "completed_steps": 9,
+    "spans": [
+      40,
+      40
+    ],
+    "degree": 3
+  },
+  "metrics": [
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.006307167744933147,
+      "H1_bulk_amplitude_relative": 0.01138479785132871,
+      "step": 1,
+      "iterations": 3
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.029575642376133197,
+      "H1_bulk_amplitude_relative": 0.05025991257026324,
+      "step": 2,
+      "iterations": 12
+    },
+    {
+      "time": 0.00075,
+      "load_factor": 0.75,
+      "L2_amplitude_relative": 2.4170310126675156,
+      "H1_bulk_amplitude_relative": 4.664901537646861,
+      "step": 3,
+      "iterations": 29
+    },
+    {
+      "time": 0.001,
+      "load_factor": 1.0,
+      "L2_amplitude_relative": 5.848332202702519,
+      "H1_bulk_amplitude_relative": 9.76997093011013,
+      "step": 4,
+      "iterations": 24
+    },
+    {
+      "time": 0.00125,
+      "load_factor": 0.75,
+      "L2_amplitude_relative": 13.71177571900249,
+      "H1_bulk_amplitude_relative": 23.87313740686215,
+      "step": 5,
+      "iterations": 36
+    },
+    {
+      "time": 0.0015,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 13.714473486105684,
+      "H1_bulk_amplitude_relative": 23.85919922787084,
+      "step": 6,
+      "iterations": 23
+    },
+    {
+      "time": 0.00175,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 30.59059107860512,
+      "H1_bulk_amplitude_relative": 52.66408458828171,
+      "step": 7,
+      "iterations": 73
+    },
+    {
+      "time": 0.002,
+      "load_factor": 0.0,
+      "L2_amplitude_relative": 71.93410632294453,
+      "H1_bulk_amplitude_relative": 123.96880791293165,
+      "step": 8,
+      "iterations": 43
+    },
+    {
+      "time": 0.0022500000000000003,
+      "load_factor": -0.30000000000000027,
+      "L2_amplitude_relative": 166.18899382091766,
+      "H1_bulk_amplitude_relative": 286.4843912621535,
+      "step": 9,
+      "iterations": 44
+    }
+  ]
+}

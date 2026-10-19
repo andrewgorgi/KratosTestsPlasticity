@@ -1,0 +1,350 @@
+[
+  {
+    "initial_direction_cancellation_ratio": 4.1352360007595985,
+    "mesh": 20,
+    "baseline": {
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "time": 0.00075
+    },
+    "warm_start": {
+      "history_residual_repeat_relative_error": 0.0,
+      "mass_normal_equation_relative_error": 4.522138940533589e-16,
+      "original_initial_residual_norm": 56.58899116722937,
+      "projected_initial_residual_norm": 45.04642108989386,
+      "projected_L2_relative": 0.00732787790965807,
+      "time": 0.00075,
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "final_residual_norm": 44.18491650739053,
+      "final_L2_relative": 7.092932024065529
+    },
+    "native_directions": [
+      {
+        "iteration": 0,
+        "residual_norm": 56.58899116722937,
+        "actual_update_norm": 0.012903990519534685,
+        "effective_step_scale": 0.6575626521188211,
+        "relative_K_update_minus_scaled_R": 2.131608885072812e-15,
+        "L2_relative_current": 0.23976456849589137
+      },
+      {
+        "iteration": 2,
+        "residual_norm": 60.76668444306667,
+        "actual_update_norm": 0.2270816330336985,
+        "effective_step_scale": 0.536186801470386,
+        "relative_K_update_minus_scaled_R": 2.0594708607686208e-14,
+        "L2_relative_current": 0.3402199917905254
+      },
+      {
+        "iteration": 99,
+        "residual_norm": 250.06181993948343,
+        "actual_update_norm": 0.2606426263676002,
+        "effective_step_scale": 0.4196837976757266,
+        "relative_K_update_minus_scaled_R": 5.4223636607433264e-15,
+        "L2_relative_current": 21.75330331251344
+      }
+    ],
+    "derivatives": [
+      {
+        "iteration": 0,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 0.12478102162613337,
+        "backward_mismatch": 0.12752336196088582,
+        "predicted_phi_slope": 2451.242667395481,
+        "forward_phi_slope": 2101.685576235468
+      },
+      {
+        "iteration": 0,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 4.07646309516267e-10,
+        "backward_mismatch": 4.35989923769375e-10,
+        "predicted_phi_slope": 433.37021721215126,
+        "forward_phi_slope": 433.3706228862866
+      },
+      {
+        "iteration": 0,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 0.2834387583933022,
+        "backward_mismatch": 0.7132796377209722,
+        "predicted_phi_slope": -3009.148753302358,
+        "forward_phi_slope": -1675.9522914071567
+      },
+      {
+        "iteration": 0,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 0.4951954007740572,
+        "backward_mismatch": 1.2055340543933466,
+        "predicted_phi_slope": -2105.722035023334,
+        "forward_phi_slope": -1457.7289562112128
+      },
+      {
+        "iteration": 2,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 8.651829403346315e-06,
+        "backward_mismatch": 8.651377053554715e-06,
+        "predicted_phi_slope": -37268.04854729659,
+        "forward_phi_slope": -37267.83534148126
+      },
+      {
+        "iteration": 2,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 4.809816238100059e-11,
+        "backward_mismatch": 4.5666591136442026e-11,
+        "predicted_phi_slope": -9484.312592974185,
+        "forward_phi_slope": -9484.247758791753
+      },
+      {
+        "iteration": 2,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 5.604189859861338e-06,
+        "backward_mismatch": 5.603923619587003e-06,
+        "predicted_phi_slope": -22890.968849378587,
+        "forward_phi_slope": -22890.864671353484
+      },
+      {
+        "iteration": 2,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 0.0002306683386517651,
+        "backward_mismatch": 0.0002306562414463366,
+        "predicted_phi_slope": -1979.9179881069258,
+        "forward_phi_slope": -1980.0074601334927
+      },
+      {
+        "iteration": 99,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 1.6686756385377516e-07,
+        "backward_mismatch": 1.6676753192219804e-07,
+        "predicted_phi_slope": -678160.2557462277,
+        "forward_phi_slope": -678160.1168913767
+      },
+      {
+        "iteration": 99,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 2.77555986920763e-08,
+        "backward_mismatch": 2.7780806245841116e-08,
+        "predicted_phi_slope": -265643.84863255045,
+        "forward_phi_slope": -265643.79601040855
+      },
+      {
+        "iteration": 99,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 5.302406702898835e-08,
+        "backward_mismatch": 5.2993442499609525e-08,
+        "predicted_phi_slope": -382787.0130774441,
+        "forward_phi_slope": -382786.9357774034
+      },
+      {
+        "iteration": 99,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 8.105824401567549e-07,
+        "backward_mismatch": 8.099409877307582e-07,
+        "predicted_phi_slope": -26243.211372127793,
+        "forward_phi_slope": -26243.205949867843
+      }
+    ],
+    "previous_accepted_steps_identical": true,
+    "fresh_warm_start": {
+      "history_residual_repeat_relative_error": 0.0,
+      "mass_normal_equation_relative_error": 4.522138940533589e-16,
+      "original_initial_residual_norm": 56.58899116722937,
+      "projected_initial_residual_norm": 45.04642108989386,
+      "projected_L2_relative": 0.00732787790965807,
+      "time": 0.00075,
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "final_residual_norm": 44.18491650739053,
+      "final_L2_relative": 7.092932024065529
+    },
+    "fresh_restart_matches_exactly": true
+  },
+  {
+    "initial_direction_cancellation_ratio": 519.1605437994665,
+    "mesh": 40,
+    "baseline": {
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "time": 0.00075
+    },
+    "warm_start": {
+      "history_residual_repeat_relative_error": 0.0,
+      "mass_normal_equation_relative_error": 5.18977418342388e-16,
+      "original_initial_residual_norm": 37.96539219749611,
+      "projected_initial_residual_norm": 8.357917341075417,
+      "projected_L2_relative": 0.0019204215938500035,
+      "time": 0.00075,
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "final_residual_norm": 628.9817343794954,
+      "final_L2_relative": 13.584200172950936
+    },
+    "native_directions": [
+      {
+        "iteration": 0,
+        "residual_norm": 37.96539219749611,
+        "actual_update_norm": 0.27808721190075797,
+        "effective_step_scale": 0.09999999999999937,
+        "relative_K_update_minus_scaled_R": 1.0772000858678577e-13,
+        "L2_relative_current": 0.43700382028167845
+      },
+      {
+        "iteration": 2,
+        "residual_norm": 152.18535603472597,
+        "actual_update_norm": 0.053442395198154705,
+        "effective_step_scale": 0.21763732226193738,
+        "relative_K_update_minus_scaled_R": 1.576739888396977e-15,
+        "L2_relative_current": 0.7456697572982003
+      },
+      {
+        "iteration": 99,
+        "residual_norm": 463.53808306515026,
+        "actual_update_norm": 0.94433095202521,
+        "effective_step_scale": 0.3107815298105076,
+        "relative_K_update_minus_scaled_R": 5.848828156610861e-15,
+        "L2_relative_current": 14.013039433183769
+      }
+    ],
+    "derivatives": [
+      {
+        "iteration": 0,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 0.12061381414019781,
+        "backward_mismatch": 0.13450150411858822,
+        "predicted_phi_slope": 7279.938396792673,
+        "forward_phi_slope": 6484.551396169991
+      },
+      {
+        "iteration": 0,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 3.2558147339257263e-11,
+        "backward_mismatch": 2.872958549170654e-11,
+        "predicted_phi_slope": 847.4268899126006,
+        "forward_phi_slope": 847.4594766880728
+      },
+      {
+        "iteration": 0,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 0.12184466043377974,
+        "backward_mismatch": 0.24954279227969675,
+        "predicted_phi_slope": 9078.630987342241,
+        "forward_phi_slope": 7091.49734575476
+      },
+      {
+        "iteration": 0,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 38.016698683438946,
+        "backward_mismatch": 66.64340342882367,
+        "predicted_phi_slope": -144.13710047096893,
+        "forward_phi_slope": -476.18567987228744
+      },
+      {
+        "iteration": 2,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 7.562285278048103e-07,
+        "backward_mismatch": 7.562549871253872e-07,
+        "predicted_phi_slope": -6712.227746834836,
+        "forward_phi_slope": -6712.2256878064945
+      },
+      {
+        "iteration": 2,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 6.159112602678184e-08,
+        "backward_mismatch": 6.160627591935013e-08,
+        "predicted_phi_slope": -472.14366391308994,
+        "forward_phi_slope": -472.1434090697585
+      },
+      {
+        "iteration": 2,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 5.858882004407134e-07,
+        "backward_mismatch": 5.859412061583198e-07,
+        "predicted_phi_slope": -2313.9027338664914,
+        "forward_phi_slope": -2313.9013264881214
+      },
+      {
+        "iteration": 2,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 1.4469280026271381e-06,
+        "backward_mismatch": 1.4471047708795662e-06,
+        "predicted_phi_slope": -5040.563649757834,
+        "forward_phi_slope": -5040.563037255197
+      },
+      {
+        "iteration": 99,
+        "group": "bulk",
+        "eta": 1e-06,
+        "forward_mismatch": 1.1728680690757253e-06,
+        "backward_mismatch": 1.1728869254865545e-06,
+        "predicted_phi_slope": -356871.64991135115,
+        "forward_phi_slope": -356871.5453147888
+      },
+      {
+        "iteration": 99,
+        "group": "dirichlet",
+        "eta": 1e-06,
+        "forward_mismatch": 4.81141911717043e-07,
+        "backward_mismatch": 4.811725395855929e-07,
+        "predicted_phi_slope": -50170.86657449033,
+        "forward_phi_slope": -50170.85294093704
+      },
+      {
+        "iteration": 99,
+        "group": "neumann",
+        "eta": 1e-06,
+        "forward_mismatch": 1.8730773491920056e-07,
+        "backward_mismatch": 1.873179682363266e-07,
+        "predicted_phi_slope": -236182.9953940028,
+        "forward_phi_slope": -236182.91376624256
+      },
+      {
+        "iteration": 99,
+        "group": "total",
+        "eta": 1e-06,
+        "forward_mismatch": 3.9634787832055106e-06,
+        "backward_mismatch": 3.9635637312402155e-06,
+        "predicted_phi_slope": -66776.86727914626,
+        "forward_phi_slope": -66776.86258626636
+      }
+    ],
+    "previous_accepted_steps_identical": true,
+    "fresh_warm_start": {
+      "history_residual_repeat_relative_error": 0.0,
+      "mass_normal_equation_relative_error": 5.18977418342388e-16,
+      "original_initial_residual_norm": 37.96539219749611,
+      "projected_initial_residual_norm": 8.357917341075417,
+      "projected_L2_relative": 0.0019204215938500035,
+      "time": 0.00075,
+      "status": "failed",
+      "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+      "iterations": 100,
+      "final_residual_norm": 628.9817343794954,
+      "final_L2_relative": 13.584200172950936
+    },
+    "fresh_restart_matches_exactly": true
+  }
+]

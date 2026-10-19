@@ -1,0 +1,17 @@
+{
+  "time": 0.00025,
+  "residual_norm": 3.580298746613258e-14,
+  "dofs": 672,
+  "min_real_eigenvalue": -31713.793396270616,
+  "negative_real_eigenvalues": 66,
+  "symmetric_min_eigenvalue": -64850.14537086856,
+  "smallest_singular_value": 1.6294181959089415,
+  "condition_number_2": 68210.97475064284,
+  "mode_energy_by_entity": {
+    "SolidElement": 17943.975383705434,
+    "\"SbmSolidCondition\"": 3.0497422281098747,
+    "\"SbmLoadSolidCondition\"": -82797.17049680205
+  },
+  "mode_energy_reconstruction_error": 7.8537531424198e-16,
+  "mode_amplitude_fraction_r_less_1p3": 0.9644348790697086
+}

@@ -16,6 +16,12 @@ KM = shared.KM
 
 
 class Analysis(shared.Analysis):
+    def EvaluateSolution(self, points, time):
+        return evaluate(points, time)
+
+    def BoundaryTraction(self, points, time):
+        return boundary_traction(points, time)
+
     def KeepAdvancingSolutionLoop(self):
         # Floating-point accumulation can leave the last time just below end_time
         # and make the base class run an unintended extra load step.
@@ -28,11 +34,11 @@ class Analysis(shared.Analysis):
         skin.ProcessInfo[KM.TIME] = time
         for node in skin.Nodes:
             point = [[node.X0, node.Y0]]
-            value = evaluate(point,time)[0][0]
+            value = self.EvaluateSolution(point,time)[0][0]
             node.SetValue(KM.DISPLACEMENT,[float(value[0]),float(value[1]),0.])
             # On a linearized inner skin, nodal NORMAL can point into the material.
             # Prescribe traction with the analytic material-outward normal instead.
-            force = boundary_traction(point,time)[0]
+            force = self.BoundaryTraction(point,time)[0]
             node.SetValue(KM.FORCE,[float(force[0]),float(force[1]),0.])
         # GapSbmSolidCondition reads nonhistorical DISPLACEMENT on the condition.
         part = self.model['IgaModelPart']
@@ -43,9 +49,9 @@ class Analysis(shared.Analysis):
             point = [[center.X,center.Y]]
             if np.hypot(center.X,center.Y) < 1e-12:
                 continue
-            value = evaluate(point,time)[0][0]
+            value = self.EvaluateSolution(point,time)[0][0]
             condition.SetValue(KM.DISPLACEMENT,[float(value[0]),float(value[1]),0.])
-            force = boundary_traction(point,time)[0]
+            force = self.BoundaryTraction(point,time)[0]
             condition.SetValue(KM.FORCE,[float(force[0]),float(force[1]),0.])
         shared.StructuralMechanicsAnalysis.InitializeSolutionStep(self)
 
@@ -236,7 +242,8 @@ def main(method,action):
     parser.add_argument('--parameters',help='Alternative JSON relative to the method directory')
     parser.add_argument('--degree',type=int,default=2)
     parser.add_argument('--spans',type=int,nargs=2,default=[20,20])
-    parser.add_argument('--refinements',type=int,nargs='+',default=[10,20,39, 80, 160])
+    # parser.add_argument('--refinements',type=int,nargs='+',default=list(range(9,60)))
+    parser.add_argument('--refinements',type=int,nargs='+',default=list([10,20, 40]))#, 80]))
     parser.add_argument('--threads',type=int,default=1)
     parser.add_argument('--dt',type=float)
     parser.add_argument('--strategy',choices=('newton_raphson','line_search'),
@@ -263,10 +270,23 @@ def main(method,action):
         return
     meshes = [(n,n) for n in args.refinements] if action == 'convergence' else [args.spans]
     rows = []
+    failures = []
+    if action == 'convergence':
+        (output/'failures.json').write_text('[]\n')
+        for filename in ('convergence.csv','convergence.png'):
+            (output/filename).unlink(missing_ok=True)
     for spans in meshes:
         print(f'{method}: {args.boundary}, p={args.degree}, spans={spans}',flush=True)
-        samples,parameters,counts = solve(folder,args,spans)
-        metrics = errors(samples)
+        try:
+            samples,parameters,counts = solve(folder,args,spans)
+            metrics = errors(samples)
+        except RuntimeError as error:
+            if action != 'convergence':
+                raise
+            failures.append(dict(spans_x=spans[0],spans_y=spans[1],error=str(error)))
+            (output/'failures.json').write_text(json.dumps(failures,indent=2)+'\n')
+            print(f'Simulazione fallita, salto mesh {spans}: {error}',flush=True)
+            continue
         row = dict(spans_x=spans[0],spans_y=spans[1],h=4.4/min(spans),**metrics)
         for name in ('L2_relative','H1_bulk_relative'):
             row[name+'_slope'] = (float(np.log(rows[-1][name]/row[name])/np.log(rows[-1]['h']/row['h']))
@@ -287,6 +307,10 @@ def main(method,action):
                 writer.writeheader()
                 writer.writerows(rows)
     if action == 'convergence':
+        print(f'Convergence: {len(rows)} simulazioni riuscite, {len(failures)} fallite.',flush=True)
+        if not rows:
+            print(f'Nessuna simulazione riuscita; dettagli in {output/"failures.json"}.',flush=True)
+            return
         fig,ax = plt.subplots(constrained_layout=True)
         h_values = np.array([r['h'] for r in rows])
         for name in ('L2_relative','H1_bulk_relative'):

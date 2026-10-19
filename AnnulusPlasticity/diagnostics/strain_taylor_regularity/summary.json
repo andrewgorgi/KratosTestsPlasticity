@@ -1,0 +1,158 @@
+[
+  {
+    "mesh": 20,
+    "time": 0.00025,
+    "front_radius": 0.7500000000000001,
+    "crosses_front": false,
+    "count": 280,
+    "pairs_crossing_knots": 144,
+    "median_relative_errors": [
+      0.25945529765237346,
+      0.052916003158725924,
+      0.009712858195262145
+    ]
+  },
+  {
+    "mesh": 20,
+    "time": 0.00025,
+    "front_radius": 0.7500000000000001,
+    "crosses_front": true,
+    "count": 0,
+    "pairs_crossing_knots": 0,
+    "median_relative_errors": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "mesh": 20,
+    "time": 0.0005,
+    "front_radius": 1.0606601717798214,
+    "crosses_front": false,
+    "count": 0,
+    "pairs_crossing_knots": 0,
+    "median_relative_errors": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "mesh": 20,
+    "time": 0.0005,
+    "front_radius": 1.0606601717798214,
+    "crosses_front": true,
+    "count": 280,
+    "pairs_crossing_knots": 144,
+    "median_relative_errors": [
+      0.6501363610956078,
+      0.5525587416497901,
+      0.5321478070213832
+    ]
+  },
+  {
+    "mesh": 20,
+    "time": 0.00075,
+    "front_radius": 1.299038105676658,
+    "crosses_front": false,
+    "count": 280,
+    "pairs_crossing_knots": 144,
+    "median_relative_errors": [
+      0.5627661608443267,
+      0.11477636623473265,
+      0.0210674750374649
+    ]
+  },
+  {
+    "mesh": 20,
+    "time": 0.00075,
+    "front_radius": 1.299038105676658,
+    "crosses_front": true,
+    "count": 0,
+    "pairs_crossing_knots": 0,
+    "median_relative_errors": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.00025,
+    "front_radius": 0.7500000000000001,
+    "crosses_front": false,
+    "count": 560,
+    "pairs_crossing_knots": 264,
+    "median_relative_errors": [
+      0.14237936294179399,
+      0.015587057770249265,
+      0.0015266616751949164
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.00025,
+    "front_radius": 0.7500000000000001,
+    "crosses_front": true,
+    "count": 0,
+    "pairs_crossing_knots": 0,
+    "median_relative_errors": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.0005,
+    "front_radius": 1.0606601717798214,
+    "crosses_front": false,
+    "count": 208,
+    "pairs_crossing_knots": 112,
+    "median_relative_errors": [
+      0.386058170710307,
+      0.02168352129418873,
+      0.0010860308747821026
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.0005,
+    "front_radius": 1.0606601717798214,
+    "crosses_front": true,
+    "count": 352,
+    "pairs_crossing_knots": 152,
+    "median_relative_errors": [
+      0.6095900715396854,
+      0.5385717846339524,
+      0.5288837348333328
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.00075,
+    "front_radius": 1.299038105676658,
+    "crosses_front": false,
+    "count": 560,
+    "pairs_crossing_knots": 264,
+    "median_relative_errors": [
+      0.30882619699698743,
+      0.03380887442932978,
+      0.0033113806397801204
+    ]
+  },
+  {
+    "mesh": 40,
+    "time": 0.00075,
+    "front_radius": 1.299038105676658,
+    "crosses_front": true,
+    "count": 0,
+    "pairs_crossing_knots": 0,
+    "median_relative_errors": [
+      null,
+      null,
+      null
+    ]
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "mesh": 20,
+    "time": 0.00025,
+    "state": "converged",
+    "iterations": 2,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 3.5359436135321295e-14,
+    "peak_residual": 56.58899116722937,
+    "final_median_term2_ratio": 0.04140990852943101,
+    "peak_median_term2_ratio": 0.04140990852953855,
+    "residual_term2_correlation": null,
+    "median_term2_on_residual_rises": null,
+    "median_term2_on_residual_decreases": 0.04140990852948478,
+    "final_median_errors_q1_q2_q5": [
+      0.04773535126105895,
+      0.034305022658837434,
+      0.04171497555620762
+    ],
+    "final_median_q2_vs_local_continuation": 0.011385573972491986,
+    "final_crossing_knots": 144,
+    "final_crossing_exact_front": 0,
+    "final_phase_mismatches": 0,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 5.313623584149198e-15,
+    "missing_global_support_pairs": 280,
+    "final_pairs_term2_larger_than_order1": 0,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 136,
+        "median_error_q1_q2_q5": [
+          0.02867605903815108,
+          0.027079238544786832,
+          0.022858890126844868
+        ],
+        "median_term2_ratio": 0.023581770585097066
+      },
+      "crossing": {
+        "count": 144,
+        "median_error_q1_q2_q5": [
+          0.06205432753452583,
+          0.0455406125782393,
+          0.05241965845557768
+        ],
+        "median_term2_ratio": 0.05849907909186232
+      }
+    }
+  },
+  {
+    "mesh": 20,
+    "time": 0.0005,
+    "state": "converged",
+    "iterations": 12,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 9.211261876841521e-14,
+    "peak_residual": 56.58899116722938,
+    "final_median_term2_ratio": 0.15701525272582179,
+    "peak_median_term2_ratio": 0.15701525272814204,
+    "residual_term2_correlation": -0.6338706383651406,
+    "median_term2_on_residual_rises": 0.09760362481469789,
+    "median_term2_on_residual_decreases": 0.1387665915170902,
+    "final_median_errors_q1_q2_q5": [
+      0.25911782213806434,
+      0.18727230839182735,
+      0.17248951969541557
+    ],
+    "final_median_q2_vs_local_continuation": 0.021793817823510434,
+    "final_crossing_knots": 144,
+    "final_crossing_exact_front": 280,
+    "final_phase_mismatches": 56,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 6.6733898665336294e-15,
+    "missing_global_support_pairs": 280,
+    "final_pairs_term2_larger_than_order1": 0,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 136,
+        "median_error_q1_q2_q5": [
+          0.21818702230728604,
+          0.161960815587609,
+          0.15083331669271727
+        ],
+        "median_term2_ratio": 0.09129662678662998
+      },
+      "crossing": {
+        "count": 144,
+        "median_error_q1_q2_q5": [
+          0.300663049397542,
+          0.23548755484278816,
+          0.20959823095977304
+        ],
+        "median_term2_ratio": 0.20149306221593044
+      }
+    }
+  },
+  {
+    "mesh": 20,
+    "time": 0.00075,
+    "state": "failed",
+    "iterations": 100,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 155.17440941504557,
+    "peak_residual": 3125.524531274872,
+    "final_median_term2_ratio": 0.39661252429750493,
+    "peak_median_term2_ratio": 0.48539088705941,
+    "residual_term2_correlation": 0.6126171567793179,
+    "median_term2_on_residual_rises": 0.39972655016181535,
+    "median_term2_on_residual_decreases": 0.35931391548060476,
+    "final_median_errors_q1_q2_q5": [
+      3.133516368679934,
+      3.1519698796344335,
+      2.6805672765172184
+    ],
+    "final_median_q2_vs_local_continuation": 0.9361792458793885,
+    "final_crossing_knots": 144,
+    "final_crossing_exact_front": 0,
+    "final_phase_mismatches": 0,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 3.1406056931050595e-13,
+    "missing_global_support_pairs": 280,
+    "final_pairs_term2_larger_than_order1": 46,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 136,
+        "median_error_q1_q2_q5": [
+          2.513375365783894,
+          2.3865157179703083,
+          2.0072976530256335
+        ],
+        "median_term2_ratio": 0.34261736746369525
+      },
+      "crossing": {
+        "count": 144,
+        "median_error_q1_q2_q5": [
+          5.495723386371383,
+          4.745482997349826,
+          3.678054285308476
+        ],
+        "median_term2_ratio": 0.4845278422599899
+      }
+    }
+  },
+  {
+    "mesh": 40,
+    "time": 0.00025,
+    "state": "converged",
+    "iterations": 2,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 4.907983738042317e-14,
+    "peak_residual": 37.96539219749611,
+    "final_median_term2_ratio": 0.014395305582732465,
+    "peak_median_term2_ratio": 0.014395305582732465,
+    "residual_term2_correlation": null,
+    "median_term2_on_residual_rises": null,
+    "median_term2_on_residual_decreases": 0.014395305582700347,
+    "final_median_errors_q1_q2_q5": [
+      0.013457229703669998,
+      0.003875231591305528,
+      0.0034697253256583244
+    ],
+    "final_median_q2_vs_local_continuation": 0.0011727018256921398,
+    "final_crossing_knots": 264,
+    "final_crossing_exact_front": 0,
+    "final_phase_mismatches": 0,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 6.0956060679301114e-15,
+    "missing_global_support_pairs": 560,
+    "final_pairs_term2_larger_than_order1": 0,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 296,
+        "median_error_q1_q2_q5": [
+          0.013384364952176792,
+          0.0032616766389288454,
+          0.0045534042225633875
+        ],
+        "median_term2_ratio": 0.013629128140186596
+      },
+      "crossing": {
+        "count": 264,
+        "median_error_q1_q2_q5": [
+          0.013654304724168856,
+          0.00430781443958462,
+          0.0031243310896013577
+        ],
+        "median_term2_ratio": 0.01685545619968809
+      }
+    }
+  },
+  {
+    "mesh": 40,
+    "time": 0.0005,
+    "state": "converged",
+    "iterations": 7,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 8.871721356887961e-14,
+    "peak_residual": 37.96539219749611,
+    "final_median_term2_ratio": 0.14279591228124505,
+    "peak_median_term2_ratio": 0.1575277898118881,
+    "residual_term2_correlation": -0.34527119427825204,
+    "median_term2_on_residual_rises": null,
+    "median_term2_on_residual_decreases": 0.1427959080022789,
+    "final_median_errors_q1_q2_q5": [
+      0.21739626461624018,
+      0.10664198524663243,
+      0.09562725535202272
+    ],
+    "final_median_q2_vs_local_continuation": 0.014373422875124036,
+    "final_crossing_knots": 264,
+    "final_crossing_exact_front": 352,
+    "final_phase_mismatches": 32,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 1.2241764116878296e-14,
+    "missing_global_support_pairs": 560,
+    "final_pairs_term2_larger_than_order1": 0,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 296,
+        "median_error_q1_q2_q5": [
+          0.2171137751775737,
+          0.10596994526059043,
+          0.09256086480716591
+        ],
+        "median_term2_ratio": 0.14262745467414603
+      },
+      "crossing": {
+        "count": 264,
+        "median_error_q1_q2_q5": [
+          0.22320155574527878,
+          0.13469830288925774,
+          0.10447854342788075
+        ],
+        "median_term2_ratio": 0.1707702055832277
+      }
+    }
+  },
+  {
+    "mesh": 40,
+    "time": 0.00075,
+    "state": "failed",
+    "iterations": 100,
+    "instrumented_status_and_metrics_identical": true,
+    "final_residual": 360.79503474796,
+    "peak_residual": 1878.8555084362526,
+    "final_median_term2_ratio": 0.4665990382086892,
+    "peak_median_term2_ratio": 0.5713375370190052,
+    "residual_term2_correlation": 0.3648174461688808,
+    "median_term2_on_residual_rises": 0.41801497405104165,
+    "median_term2_on_residual_decreases": 0.3954902324366858,
+    "final_median_errors_q1_q2_q5": [
+      4.265301432937955,
+      4.894784573014034,
+      5.220701282193119
+    ],
+    "final_median_q2_vs_local_continuation": 0.7509462824346671,
+    "final_crossing_knots": 264,
+    "final_crossing_exact_front": 0,
+    "final_phase_mismatches": 0,
+    "final_crossing_median_local_vs_global": null,
+    "final_same_span_median_local_vs_global": null,
+    "max_full_taylor_validation": 1.3130755406978259e-12,
+    "missing_global_support_pairs": 560,
+    "final_pairs_term2_larger_than_order1": 140,
+    "by_knot_group": {
+      "not_crossing": {
+        "count": 296,
+        "median_error_q1_q2_q5": [
+          3.3654199279724604,
+          3.8867240861473604,
+          4.327079309910577
+        ],
+        "median_term2_ratio": 0.5062779781343387
+      },
+      "crossing": {
+        "count": 264,
+        "median_error_q1_q2_q5": [
+          5.4262415881404955,
+          6.436572843640975,
+          6.385229398010381
+        ],
+        "median_term2_ratio": 0.3966284032824975
+      }
+    }
+  }
+]

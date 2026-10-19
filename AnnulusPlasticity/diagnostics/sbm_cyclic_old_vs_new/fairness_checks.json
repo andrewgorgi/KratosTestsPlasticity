@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "spans": 10,
+      "parameters_identical": true,
+      "materials_identical": true,
+      "conditions_identical": true,
+      "new_completed_steps": 24,
+      "old_completed_steps": 4
+    },
+    {
+      "spans": 20,
+      "parameters_identical": true,
+      "materials_identical": true,
+      "conditions_identical": true,
+      "new_completed_steps": 24,
+      "old_completed_steps": 4
+    },
+    {
+      "spans": 40,
+      "parameters_identical": true,
+      "materials_identical": true,
+      "conditions_identical": true,
+      "new_completed_steps": 24,
+      "old_completed_steps": 6
+    },
+    {
+      "spans": 80,
+      "parameters_identical": true,
+      "materials_identical": true,
+      "conditions_identical": true,
+      "new_completed_steps": 24,
+      "old_completed_steps": 8
+    }
+  ],
+  "only_macro_differs": true,
+  "production_parameters_unchanged": true,
+  "production_material_unchanged": true
+}

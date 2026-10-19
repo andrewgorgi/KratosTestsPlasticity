@@ -1,0 +1,17 @@
+lambda_inner,spans,strategy,time,iteration,final_snapshot,points,elastic_s_plastic_t,plastic_s_elastic_t,both_elastic,both_active_plastic,accumulated_mismatch,committed_mismatch,active_mismatch_both_with_plastic_history,active_mismatch
+0.0,40,line_search,0.001,1,False,400,0,0,400,0,0,0,0,0
+0.0,40,line_search,0.001,2,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.001,3,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.001,4,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.001,5,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.001,6,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.001,6,True,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,1,False,400,110,88,88,114,0,0,198,198
+0.0,40,line_search,0.002,2,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,3,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,4,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,5,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,6,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,7,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,8,False,400,0,0,0,400,0,0,0,0
+0.0,40,line_search,0.002,8,True,400,0,0,0,400,0,0,0,0

@@ -1,0 +1,35 @@
+{
+  "mode": "new",
+  "degree": 3,
+  "spans": 20,
+  "seconds": 17.50247604213655,
+  "status": {
+    "status": "failed",
+    "time": 0.00075,
+    "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+    "completed_steps": 2,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3
+  },
+  "metrics": [
+    {
+      "time": 0.00025,
+      "load_factor": 0.25,
+      "L2_amplitude_relative": 0.00520126367976239,
+      "H1_bulk_amplitude_relative": 0.0033325206066920163,
+      "step": 1,
+      "iterations": 2
+    },
+    {
+      "time": 0.0005,
+      "load_factor": 0.5,
+      "L2_amplitude_relative": 0.09253527349123035,
+      "H1_bulk_amplitude_relative": 0.056876152834598626,
+      "step": 2,
+      "iterations": 12
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+--- a/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
++++ b/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp
+@@ -307,6 +307,38 @@
+     ConstitutiveLaw::Parameters values_true(r_geometry, GetProperties(), rCurrentProcessInfo);
+     ConstitutiveVariables constitutive_variables_true(strain_size);
+     ApplyConstitutiveLaw(mat_size, strain_true, values_true, constitutive_variables_true, true);
++    // Diagnostic: read active branch and history without committing either law.
++    const auto& audit_ep = KratosComponents<Variable<double>>::Get("EQUIVALENT_PLASTIC_STRAIN");
++    double audit_as_old=0., audit_at_old=0., audit_as=0., audit_at=0.;
++    mpConstitutiveLaw->GetValue(audit_ep, audit_as_old);
++#ifdef SBM_USE_PROJECTION_POINT_CONSTITUTIVE_LAW
++    auto audit_law_true = mpConstitutiveLawAtProjectionPoint;
++#else
++    auto audit_law_true = mpConstitutiveLaw;
++#endif
++    audit_law_true->GetValue(audit_ep, audit_at_old);
++    mpConstitutiveLaw->CalculateValue(Values, audit_ep, audit_as);
++    audit_law_true->CalculateValue(values_true, audit_ep, audit_at);
++    const double audit_E=GetProperties()[YOUNG_MODULUS];
++    const double audit_nu=GetProperties()[POISSON_RATIO];
++    Matrix audit_De=ZeroMatrix(3,3);
++    const double audit_c=audit_E/((1+audit_nu)*(1-2*audit_nu));
++    audit_De(0,0)=audit_De(1,1)=audit_c*(1-audit_nu);
++    audit_De(0,1)=audit_De(1,0)=audit_c*audit_nu;
++    audit_De(2,2)=audit_E/(2*(1+audit_nu));
++    Matrix audit_ds=Values.GetConstitutiveMatrix()-audit_De;
++    Matrix audit_dt=values_true.GetConstitutiveMatrix()-audit_De;
++    const double audit_rel_s=norm_frobenius(audit_ds)/norm_frobenius(audit_De);
++    const double audit_rel_t=norm_frobenius(audit_dt)/norm_frobenius(audit_De);
++    std::cerr.precision(17);
++    std::cerr << "REGIME_PAIR " << rCurrentProcessInfo[TIME] << " "
++              << rCurrentProcessInfo[NL_ITERATION_NUMBER] << " " << Id() << " "
++              << audit_rel_s << " " << audit_rel_t << " "
++              << audit_as_old << " " << audit_at_old << " "
++              << audit_as << " " << audit_at << " "
++              << r_geometry.Center().X() << " " << r_geometry.Center().Y() << " "
++              << mpProjectionNode->X() << " " << mpProjectionNode->Y() << std::endl;
++
+ #ifdef SBM_USE_PROJECTION_POINT_CONSTITUTIVE_LAW
+     const Matrix DB_sum = prod(values_true.GetConstitutiveMatrix(), B_sum);
+ #else

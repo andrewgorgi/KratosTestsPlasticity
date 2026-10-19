@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "time": 0.001,
+  "error": "Newton non convergente al tempo 0.001; nessuna norma di errore viene calcolata.",
+  "lambda_inner": 0.0,
+  "geometry": {
+    "points": 400,
+    "surrogate_radius_min": 1.0152817709620026,
+    "surrogate_radius_max": 1.1300223481855334,
+    "analytic_elastic_surrogate_points_at_first_step": 248
+  },
+  "spans": 40,
+  "strategy": "newton_raphson",
+  "steps": [
+    {
+      "time": 0.001,
+      "iteration": 100,
+      "converged": false
+    }
+  ]
+}

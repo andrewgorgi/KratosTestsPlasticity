@@ -1,0 +1,164 @@
+[
+  {
+    "law": "linear",
+    "gamma": 0.01,
+    "tau_actual": 135.86211866755693,
+    "tau_exact": 135.86211866755693,
+    "alpha_actual": 0.003432009235616053,
+    "alpha_exact": 0.0034320092356160525,
+    "yield_residual": 8.526512829121202e-14,
+    "shear_tangent": 3031.674208144799,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": 3031.6742081311077,
+        "tangent_relative_error": 4.516162456958026e-12
+      },
+      {
+        "h": 1e-07,
+        "derivative": 3031.6742076763603,
+        "tangent_relative_error": 1.5451491553440724e-10
+      },
+      {
+        "h": 1e-08,
+        "derivative": 3031.6742098079885,
+        "tangent_relative_error": 5.486042391272263e-10
+      }
+    ]
+  },
+  {
+    "law": "linear",
+    "gamma": 0.02,
+    "tau_actual": 166.17886074900485,
+    "tau_exact": 166.17886074900497,
+    "alpha_actual": 0.008683022996118984,
+    "alpha_exact": 0.008683022996118983,
+    "yield_residual": 0.0,
+    "shear_tangent": 3031.6742081447974,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": 3031.674208216373,
+        "tangent_relative_error": 2.3609203735066217e-11
+      },
+      {
+        "h": 1e-07,
+        "derivative": 3031.674208386903,
+        "tangent_relative_error": 7.985873612434426e-11
+      },
+      {
+        "h": 1e-08,
+        "derivative": 3031.674205544732,
+        "tangent_relative_error": 8.576334711897812e-10
+      }
+    ]
+  },
+  {
+    "law": "linear",
+    "gamma": 0.04,
+    "tau_actual": 226.81234491190116,
+    "tau_exact": 226.81234491190096,
+    "alpha_actual": 0.01918505051712484,
+    "alpha_exact": 0.019185050517124845,
+    "yield_residual": 6.821210263296962e-13,
+    "shear_tangent": 3031.6742081447974,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": 3031.6742080458425,
+        "tangent_relative_error": 3.264032866053984e-11
+      },
+      {
+        "h": 1e-07,
+        "derivative": 3031.6742072500347,
+        "tangent_relative_error": 2.951381465903719e-10
+      },
+      {
+        "h": 1e-08,
+        "derivative": 3031.6742254399287,
+        "tangent_relative_error": 5.704811943095648e-09
+      }
+    ]
+  },
+  {
+    "law": "saturation",
+    "gamma": 0.01,
+    "tau_actual": 116.04741948173253,
+    "tau_exact": 153.20806244995975,
+    "alpha_actual": 0.0037735024269249236,
+    "alpha_exact": 0.0031330634054035638,
+    "yield_residual": -76.56042720413103,
+    "shear_tangent": 5282.431485816763,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": 0.00016218848486460047,
+        "tangent_relative_error": 5282.431323628278
+      },
+      {
+        "h": 1e-07,
+        "derivative": 0.00016186163520615082,
+        "tangent_relative_error": 5282.4313239551275
+      },
+      {
+        "h": 1e-08,
+        "derivative": 0.00016058265828178264,
+        "tangent_relative_error": 5282.431325234104
+      }
+    ]
+  },
+  {
+    "law": "saturation",
+    "gamma": 0.02,
+    "tau_actual": 116.04741497022144,
+    "tau_exact": 203.305769815743,
+    "alpha_actual": 0.009547005196574082,
+    "alpha_exact": 0.008043165356003761,
+    "yield_residual": -175.0492778714429,
+    "shear_tangent": 4489.712967701887,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": -0.0005654214874084573,
+        "tangent_relative_error": 4489.713533123374
+      },
+      {
+        "h": 1e-07,
+        "derivative": -0.0005655920176650397,
+        "tangent_relative_error": 4489.713533293904
+      },
+      {
+        "h": 1e-08,
+        "derivative": -0.0005684341886080801,
+        "tangent_relative_error": 4489.713536136075
+      }
+    ]
+  },
+  {
+    "law": "saturation",
+    "gamma": 0.04,
+    "tau_actual": 116.04740851353313,
+    "tau_exact": 286.73960270574275,
+    "alpha_actual": 0.021094010691643336,
+    "alpha_exact": 0.018152243997152585,
+    "yield_residual": -332.37844551152375,
+    "shear_tangent": 3627.7492365293165,
+    "finite_differences": [
+      {
+        "h": 1e-06,
+        "derivative": -0.0001433591023669578,
+        "tangent_relative_error": 3627.749379888419
+      },
+      {
+        "h": 1e-07,
+        "derivative": -0.0001432454155292362,
+        "tangent_relative_error": 3627.749379774732
+      },
+      {
+        "h": 1e-08,
+        "derivative": -0.00013642420526593924,
+        "tangent_relative_error": 3627.7493729535217
+      }
+    ]
+  }
+]

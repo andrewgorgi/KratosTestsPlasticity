@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/libKratosIgaCore.so",
+    "sha256": "8529b82a253390a024e46080550ee0542552222fbf9eb9a8bea90466e9a63223",
+    "mtime": 1792179048.0
+  },
+  {
+    "path": "/home/agorgi/Documents/GECKO/Kratos/applications/IgaApplication/custom_conditions/gap_sbm_solid_interface_condition.cpp",
+    "sha256": "80887b582ec5f66ce7fdb75fd0aa10b72aef07a65e107edbccce27c6648057c1",
+    "mtime": 1791986511.9061255
+  },
+  {
+    "path": "/home/agorgi/Documents/GECKO/Kratos/applications/IgaApplication/custom_conditions/gap_sbm_load_solid_condition.cpp",
+    "sha256": "0ecd31a29d91c8c1a1801fed4c87f99448db5309e612c68125f313983d9a1e6e",
+    "mtime": 1792145210.325447
+  },
+  {
+    "path": "/home/agorgi/Documents/GECKO/Kratos/applications/IgaApplication/custom_elements/gap_sbm_solid_element.cpp",
+    "sha256": "21fcd06235d4a9215349026bd335f52fad4b8dfd8589e62a00d662698675d96f",
+    "mtime": 1791986525.0611525
+  }
+]

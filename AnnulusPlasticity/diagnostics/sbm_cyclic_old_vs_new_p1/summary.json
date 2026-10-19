@@ -1,0 +1,93 @@
+{
+  "degree": 1,
+  "availability": [
+    {
+      "mode": "old",
+      "spans": 10,
+      "h": 0.44000000000000006,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 2.5758160250261426
+    },
+    {
+      "mode": "new",
+      "spans": 10,
+      "h": 0.44000000000000006,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 2.5824676700867712
+    },
+    {
+      "mode": "old",
+      "spans": 20,
+      "h": 0.22000000000000003,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 5.529661666136235
+    },
+    {
+      "mode": "new",
+      "spans": 20,
+      "h": 0.22000000000000003,
+      "status": "failed",
+      "completed_steps": 20,
+      "last_converged_time": 0.005000000000000003,
+      "failed_time": 0.005250000000000003,
+      "seconds": 6.954621713608503
+    },
+    {
+      "mode": "old",
+      "spans": 40,
+      "h": 0.11000000000000001,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 14.049715170636773
+    },
+    {
+      "mode": "new",
+      "spans": 40,
+      "h": 0.11000000000000001,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 14.13208118500188
+    },
+    {
+      "mode": "old",
+      "spans": 80,
+      "h": 0.05500000000000001,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 42.29486507968977
+    },
+    {
+      "mode": "new",
+      "spans": 80,
+      "h": 0.05500000000000001,
+      "status": "converged",
+      "completed_steps": 24,
+      "last_converged_time": 0.006000000000000004,
+      "failed_time": "",
+      "seconds": 42.656026331707835
+    }
+  ],
+  "common_converged_states": 92,
+  "error_states": 188,
+  "meshes": [
+    10,
+    20,
+    40,
+    80
+  ]
+}

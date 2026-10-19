@@ -1,0 +1,19 @@
+{
+  "source": "/home/agorgi/Documents/GECKO/Kratos/applications/IgaApplication/custom_conditions/sbm_load_solid_condition.cpp",
+  "sha256": "43a06dabfde121d98afbd31f049c9717bcd5a37dd84962be2c4084d10b7c5c49",
+  "installed_library_sha256": "92af9c0a915f0e5e4e3491628ac276f2318e55e55abdc00ab308fc1bbb714cf1",
+  "variants": {
+    "old": "unchanged normal dot product",
+    "new": "unit factor in all three assembly terms"
+  },
+  "libraries": {
+    "old": {
+      "path": "/home/agorgi/Documents/GECKO/Kratos/bin/Release/libs/libKratosIgaCore.so",
+      "sha256": "92af9c0a915f0e5e4e3491628ac276f2318e55e55abdc00ab308fc1bbb714cf1"
+    },
+    "new": {
+      "path": "/tmp/sbm_p3_unit_normal_factor/libKratosIgaCore.so",
+      "sha256": "d6ced249a9eb4a32a154b16e4c722ed09753dc03500d889fd056789f121ad343"
+    }
+  }
+}

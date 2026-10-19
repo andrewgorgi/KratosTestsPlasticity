@@ -1,0 +1,13 @@
+{
+  "history_residual_repeat_relative_error": 0.0,
+  "mass_normal_equation_relative_error": 5.18977418342388e-16,
+  "original_initial_residual_norm": 37.96539219749611,
+  "projected_initial_residual_norm": 8.357917341075417,
+  "projected_L2_relative": 0.0019204215938500035,
+  "time": 0.00075,
+  "status": "failed",
+  "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+  "iterations": 100,
+  "final_residual_norm": 628.9817343794954,
+  "final_L2_relative": 13.584200172950936
+}

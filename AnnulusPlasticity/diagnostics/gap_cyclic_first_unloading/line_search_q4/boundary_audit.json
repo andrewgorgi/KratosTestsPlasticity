@@ -1,0 +1,32 @@
+[
+  {
+    "time": 0.00025,
+    "load_conditions": 120,
+    "max_traction_error": 2.842170943040401e-14,
+    "body_force": 0.0
+  },
+  {
+    "time": 0.0005,
+    "load_conditions": 120,
+    "max_traction_error": 5.684341886080802e-14,
+    "body_force": 0.0
+  },
+  {
+    "time": 0.00075,
+    "load_conditions": 120,
+    "max_traction_error": 8.526512829121202e-14,
+    "body_force": 0.0
+  },
+  {
+    "time": 0.001,
+    "load_conditions": 120,
+    "max_traction_error": 1.1368683772161603e-13,
+    "body_force": 0.0
+  },
+  {
+    "time": 0.00125,
+    "load_conditions": 120,
+    "max_traction_error": 8.526512829121202e-14,
+    "body_force": 0.0
+  }
+]

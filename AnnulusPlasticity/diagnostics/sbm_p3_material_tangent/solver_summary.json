@@ -1,0 +1,187 @@
+[
+  {
+    "variant": "utility_central",
+    "mesh": 20,
+    "status": "converged",
+    "time": 0.00075,
+    "completed_steps": 3,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3,
+    "last_L2": 0.4963648320858141,
+    "max_L2": 0.4963648320858141,
+    "max_NR": 77,
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.00520126367976239,
+        "H1_bulk_amplitude_relative": 0.0033325206066920163,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.09253527349123047,
+        "H1_bulk_amplitude_relative": 0.05687615283459872,
+        "step": 2,
+        "iterations": 12
+      },
+      {
+        "time": 0.00075,
+        "load_factor": 0.75,
+        "L2_amplitude_relative": 0.4963648320858141,
+        "H1_bulk_amplitude_relative": 0.73462650978379,
+        "step": 3,
+        "iterations": 77
+      }
+    ]
+  },
+  {
+    "variant": "utility_central",
+    "mesh": 40,
+    "status": "failed",
+    "time": 0.00075,
+    "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+    "completed_steps": 2,
+    "spans": [
+      40,
+      40
+    ],
+    "degree": 3,
+    "last_L2": 0.027106721960669326,
+    "max_L2": 0.027106721960669326,
+    "max_NR": 7,
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.0003430730827995097,
+        "H1_bulk_amplitude_relative": 0.0002830747718564086,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.027106721960669326,
+        "H1_bulk_amplitude_relative": 0.018951608682383162,
+        "step": 2,
+        "iterations": 7
+      }
+    ]
+  },
+  {
+    "variant": "utility_forward",
+    "mesh": 20,
+    "status": "failed",
+    "time": 0.00075,
+    "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+    "completed_steps": 2,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3,
+    "last_L2": 0.09253527349123046,
+    "max_L2": 0.09253527349123046,
+    "max_NR": 12,
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.00520126367976239,
+        "H1_bulk_amplitude_relative": 0.0033325206066920163,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.09253527349123046,
+        "H1_bulk_amplitude_relative": 0.056876152834598744,
+        "step": 2,
+        "iterations": 12
+      }
+    ]
+  },
+  {
+    "variant": "utility_central_h1e10",
+    "mesh": 20,
+    "status": "failed",
+    "time": 0.00075,
+    "error": "Newton non convergente al tempo 0.00075; nessuna norma di errore viene calcolata.",
+    "completed_steps": 2,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3,
+    "last_L2": 0.09253527349123118,
+    "max_L2": 0.09253527349123118,
+    "max_NR": 12,
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.00520126367976239,
+        "H1_bulk_amplitude_relative": 0.0033325206066920163,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.09253527349123118,
+        "H1_bulk_amplitude_relative": 0.05687615283459869,
+        "step": 2,
+        "iterations": 12
+      }
+    ]
+  },
+  {
+    "variant": "utility_central_full",
+    "mesh": 20,
+    "status": "failed",
+    "time": 0.001,
+    "error": "Newton non convergente al tempo 0.001; nessuna norma di errore viene calcolata.",
+    "completed_steps": 3,
+    "spans": [
+      20,
+      20
+    ],
+    "degree": 3,
+    "last_L2": 0.4963648320858141,
+    "max_L2": 0.4963648320858141,
+    "max_NR": 77,
+    "metrics": [
+      {
+        "time": 0.00025,
+        "load_factor": 0.25,
+        "L2_amplitude_relative": 0.00520126367976239,
+        "H1_bulk_amplitude_relative": 0.0033325206066920163,
+        "step": 1,
+        "iterations": 2
+      },
+      {
+        "time": 0.0005,
+        "load_factor": 0.5,
+        "L2_amplitude_relative": 0.09253527349123047,
+        "H1_bulk_amplitude_relative": 0.05687615283459872,
+        "step": 2,
+        "iterations": 12
+      },
+      {
+        "time": 0.00075,
+        "load_factor": 0.75,
+        "L2_amplitude_relative": 0.4963648320858141,
+        "H1_bulk_amplitude_relative": 0.73462650978379,
+        "step": 3,
+        "iterations": 77
+      }
+    ]
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "time": 0.0005,
+  "status": "converged",
+  "residual_norm": 1.0748858393343515e-13,
+  "iterations": [
+    {
+      "iteration": 1,
+      "residual_norm": 37.96539219749612,
+      "alpha": 1.0,
+      "trial_residual_norm": 6.743290083345135,
+      "accepted": true,
+      "correction_norm": 0.011741102475409776,
+      "linear_solve_relative_error": 5.377000793355951e-15
+    },
+    {
+      "iteration": 2,
+      "residual_norm": 6.743290083345135,
+      "alpha": 0.25,
+      "trial_residual_norm": 6.002617196617525,
+      "accepted": true,
+      "correction_norm": 0.024031802635246676,
+      "linear_solve_relative_error": 3.5382580883497385e-14
+    },
+    {
+      "iteration": 3,
+      "residual_norm": 6.002617196617525,
+      "alpha": 0.0625,
+      "trial_residual_norm": 5.864581774184688,
+      "accepted": true,
+      "correction_norm": 0.018062782645812646,
+      "linear_solve_relative_error": 1.795347435881154e-14
+    },
+    {
+      "iteration": 4,
+      "residual_norm": 5.864581774184688,
+      "alpha": 1.0,
+      "trial_residual_norm": 4.5136259277484,
+      "accepted": true,
+      "correction_norm": 0.0036510756787264224,
+      "linear_solve_relative_error": 6.298496941325074e-15
+    },
+    {
+      "iteration": 5,
+      "residual_norm": 4.5136259277484,
+      "alpha": 0.5,
+      "trial_residual_norm": 2.7685502947962064,
+      "accepted": true,
+      "correction_norm": 0.006925106776425683,
+      "linear_solve_relative_error": 8.181251513834326e-15
+    },
+    {
+      "iteration": 6,
+      "residual_norm": 2.7685502947962064,
+      "alpha": 1.0,
+      "trial_residual_norm": 2.457208753879442,
+      "accepted": true,
+      "correction_norm": 0.0012334624639458855,
+      "linear_solve_relative_error": 4.969161763527404e-15
+    },
+    {
+      "iteration": 7,
+      "residual_norm": 2.457208753879442,
+      "alpha": 1.0,
+      "trial_residual_norm": 0.2357408323688562,
+      "accepted": true,
+      "correction_norm": 0.0012025579719078918,
+      "linear_solve_relative_error": 4.941169936387249e-15
+    },
+    {
+      "iteration": 8,
+      "residual_norm": 0.2357408323688562,
+      "alpha": 1.0,
+      "trial_residual_norm": 0.0035036137324037336,
+      "accepted": true,
+      "correction_norm": 0.00029596622747760646,
+      "linear_solve_relative_error": 9.99546974964113e-15
+    },
+    {
+      "iteration": 9,
+      "residual_norm": 0.0035036137324037336,
+      "alpha": 1.0,
+      "trial_residual_norm": 5.244504464941068e-07,
+      "accepted": true,
+      "correction_norm": 6.834413248642225e-06,
+      "linear_solve_relative_error": 5.667487462162068e-15
+    },
+    {
+      "iteration": 10,
+      "residual_norm": 5.244504464941068e-07,
+      "alpha": 1.0,
+      "trial_residual_norm": 1.0748858393343515e-13,
+      "accepted": true,
+      "correction_norm": 1.3414920513038547e-09,
+      "linear_solve_relative_error": 4.961582483746856e-15
+    }
+  ],
+  "convergence": "absolute residual norm < 1e-10 and Newton correction norm < 1e-12",
+  "linear_solver": "same configured Kratos solver"
+}

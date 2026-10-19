@@ -1,0 +1,63 @@
+{
+  "status": "failed",
+  "time": 0.00175,
+  "error": "Newton non convergente al tempo 0.00175; nessuna norma di errore viene calcolata.",
+  "mode": "off",
+  "degree": 2,
+  "spans": 40,
+  "dt": 0.00025,
+  "reference_validation": {
+    "scalar_history_error": 5.551115123125783e-17,
+    "displacement_gradient_error": 1.1618766712628847e-11
+  },
+  "steps": [
+    {
+      "time": 0.00025,
+      "level": 0.25,
+      "iteration": 2,
+      "L2_amplitude_relative": 0.0043328301729391476,
+      "stress_amplitude_relative": 0.00867035466608318,
+      "alpha_rms_error": 0.0
+    },
+    {
+      "time": 0.0005,
+      "level": 0.5,
+      "iteration": 11,
+      "L2_amplitude_relative": 0.03345548355938057,
+      "stress_amplitude_relative": 0.06538601326867999,
+      "alpha_rms_error": 0.00012066288628274513
+    },
+    {
+      "time": 0.00075,
+      "level": 0.75,
+      "iteration": 10,
+      "L2_amplitude_relative": 0.04870762875442793,
+      "stress_amplitude_relative": 0.034838644496271935,
+      "alpha_rms_error": 0.00040356455595809914
+    },
+    {
+      "time": 0.001,
+      "level": 1.0,
+      "iteration": 11,
+      "L2_amplitude_relative": 0.11578226872335608,
+      "stress_amplitude_relative": 0.04847672325576775,
+      "alpha_rms_error": 0.0006661439335601386
+    },
+    {
+      "time": 0.00125,
+      "level": 0.75,
+      "iteration": 38,
+      "L2_amplitude_relative": 0.6035508839042099,
+      "stress_amplitude_relative": 1.3554489967886643,
+      "alpha_rms_error": 0.0006661439335601386
+    },
+    {
+      "time": 0.0015,
+      "level": 0.5,
+      "iteration": 33,
+      "L2_amplitude_relative": 0.6437765881649596,
+      "stress_amplitude_relative": 1.4362178952596052,
+      "alpha_rms_error": 0.0006673312293700646
+    }
+  ]
+}
